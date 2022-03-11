@@ -18,10 +18,13 @@ Next, obfuscating the source file with both *Jit* and *Virtualize* transformatio
 Obfuscating the source file with *JitDynamic* and *Virtualization* Transformation: `tigress --Environment=x86_64:Linux:Gcc:7.5 --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch --Transform=JitDynamic --Functions=sum --out=vir_JitDynamic.c tigressTest.c`.
 
 ### Check the impact added from *Opaque*
-*Tigress* inserts opaque predicates besides virtualizes the function *sum*: `tigress --Environment=x86_64:Linux:Gcc:7.5 --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch --Transform=InitOpaque --Functions=sum --InitOpaqueStructs=* --out=vir_opaque.c tigressTest.c`.
+We would like to further investigate the impact from opaque predicates.
+
+We start the obfuscation by creating the opaque invariant data structure -- list and add one opaque to the function *sum*.
+
+ The command we ran: `tigress --Environment=x86_64:Linux:Gcc:7.5 --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch --Transform=InitOpaque --Functions=sum --InitOpaqueStructs=list --Transform=AddOpaque --Functions=sum --AddOpaqueStructs=list --out=vir_add_opaque.c tigressTest.c`.
 
 *Noticed that *Tigress* will generate opaque expression using linked lists, arrays, input and entropy.
-
 
 ### Evaluation
 The raw results of the obfuscated function *sum* are saved under *diff* directory.
