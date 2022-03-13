@@ -1,0 +1,54 @@
+6a7,16
+>   struct _2_sum_1_opaque_NodeStruct *p10 ;
+>   int r11 ;
+>   struct _2_sum_1_opaque_NodeStruct *p12 ;
+>   int r13 ;
+>   struct _2_sum_1_opaque_NodeStruct *p14 ;
+>   int r15 ;
+>   struct _2_sum_1_opaque_NodeStruct *p16 ;
+>   int _2_sum__BEGIN_1 ;
+>   int _2_sum__END_1 ;
+>   int _2_sum__BARRIER_2 ;
+8a19,51
+>   {  /* __blockattribute__(__ATOMIC__)*/ 
+>   _2_sum__BEGIN_1 = 1;
+>   p10 = (struct _2_sum_1_opaque_NodeStruct *)malloc(sizeof(struct _2_sum_1_opaque_NodeStruct ));
+>   p10->next = p10;
+>   p10->prev = p10;
+>   _2_sum_1_opaque_list_1 = p10;
+>   r15 = rand();
+>   p16 = (struct _2_sum_1_opaque_NodeStruct *)malloc(sizeof(struct _2_sum_1_opaque_NodeStruct ));
+>   p16->data = 0 * r15;
+>   p16->next = _2_sum_1_opaque_list_1->next;
+>   p16->prev = _2_sum_1_opaque_list_1;
+>   (_2_sum_1_opaque_list_1->next)->prev = p16;
+>   _2_sum_1_opaque_list_1->next = p16;
+>   r13 = rand();
+>   p14 = (struct _2_sum_1_opaque_NodeStruct *)malloc(sizeof(struct _2_sum_1_opaque_NodeStruct ));
+>   p14->data = 1 * r13;
+>   p14->next = _2_sum_1_opaque_list_1->next;
+>   p14->prev = _2_sum_1_opaque_list_1;
+>   (_2_sum_1_opaque_list_1->next)->prev = p14;
+>   _2_sum_1_opaque_list_1->next = p14;
+>   r11 = rand();
+>   p12 = (struct _2_sum_1_opaque_NodeStruct *)malloc(sizeof(struct _2_sum_1_opaque_NodeStruct ));
+>   p12->data = 2 * r11;
+>   p12->next = _2_sum_1_opaque_list_1->next;
+>   p12->prev = _2_sum_1_opaque_list_1;
+>   (_2_sum_1_opaque_list_1->next)->prev = p12;
+>   _2_sum_1_opaque_list_1->next = p12;
+>   _2_sum_1_opaque_ptr_1 = _2_sum_1_opaque_list_1->next;
+>   _2_sum_1_opaque_ptr_2 = _2_sum_1_opaque_ptr_1;
+>   _2_sum_1_opaque_ptr_2 = _2_sum_1_opaque_ptr_2->next;
+>   _2_sum__END_1 = 1;
+>   }
+>   _2_sum__BARRIER_2 = 1;
+52a96,101
+>     {
+>     if (_2_sum_1_opaque_ptr_1 == _2_sum_1_opaque_ptr_2) {
+>       y = main(r13, 0, 0);
+>     } else {
+> 
+>     }
+53a103
+>     }

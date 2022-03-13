@@ -1,30 +1,83 @@
-## Investigation on possible impact from other transformations with Virtualization
+## Investigation on possible impact from other transformations with Virtualize
 
-Virtualization is so strong an obfuscation that researchers are eager to explore. In this project, our group would like to know what kind of impact that other transformations would potentially add to Virtualization by running various experiments.
+*Virtualize* is so strong an obfuscation that researchers are eager to explore. In this project, our group would like to know what kind of impact that other transformations would potentially add to Virtualization by running various experiments.
 
 *More specifically, We would like to start with simple tigressTest.c file to investigate the potential impact. Noticed that we keep the default configuration for all transformations at the moment.*
 
-### Baseline
-*Tigress* virtualizes the function *sum* in the program *tigressTest.c* with `switch` dispatch method: `tigress --Environment=x86_64:Linux:Gcc:7.5 --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch --out=baseline.c tigressTest.c`. More specifically, we will focus on the obfuscation code within function *sum*.
+### Steps and Explanation
 
-### Check the impact added from *Jit*
-In order to invoke *Jit* and *JitDynamic*, we have to specifically include `#include ".../jitter-amd64.c"` to our source code file. 
+```
+1. run the obfuscation on function sum w/ Virtualize and another transformation.
+2. check output a.out to make sure the obfuscated program obtain the same output as 
+   the original program. 
+3. cut out the function sum from the obfuscated source code file.
+4. use the command diff to compare the obfuscated function sum against the function sum 
+   in the baseline.
+```
 
-Next, obfuscating the source file with both *Jit* and *Virtualize* transformation: `tigress --Environment=x86_64:Linux:Gcc:7.5 --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch --Transform=Jit --Functions=sum --out=vir_Jit.c tigressTest.c`.
+The raw results (output of command diff) of comparison are saved under *diff_results* directory. More detailed information can be found at our [Google Docs](https://docs.google.com/document/d/1Zx8N51Ajv7L5oO82Yq2FWLIXia6XdBfb7kbXWaPedy0/edit?usp=sharing)!
 
-### Check the impact added from *JitDynamic*
-*JitDynamic* transformation is similar to the *Jit* except that the jitted code is continuously modified and updated at runtime.
+### Baseline Virtualize
+*Tigress* virtualizes the function *sum* in *tigressTest.c* with `switch` dispatch method.
+```
+tigress --Environment=x86_64:Linux:Gcc:7.5 
+        --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch 
+        --out=baseline.c tigressTest.c
+```
 
-Obfuscating the source file with *JitDynamic* and *Virtualization* Transformation: `tigress --Environment=x86_64:Linux:Gcc:7.5 --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch --Transform=JitDynamic --Functions=sum --out=vir_JitDynamic.c tigressTest.c`.
+### Virtualize w/ Jit
+Include `#include "PATH_TO_TIGRESS/jitter-amd64.c"` to *tigressTest.c*.
+```
+tigress --Environment=x86_64:Linux:Gcc:7.5 
+        --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch 
+        --Transform=Jit --Functions=sum 
+        --out=vir_Jit.c ../tigressTest.c
+```
 
-### Check the impact added from *Opaque*
-We would like to further investigate the impact from opaque predicates.
+### Virtualize w/ Jit Dynamics
+Include `#include "PATH_TO_TIGRESS/jitter-amd64.c"` to *tigressTest.c*.
+```
+tigress --Environment=x86_64:Linux:Gcc:7.5 
+        --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch 
+        --Transform=JitDynamic --Functions=sum 
+        --out=vir_JitDynamic.c ../tigressTest.c
+```
 
-We start the obfuscation by creating the opaque invariant data structure -- list and add one opaque to the function *sum*.
+### Virtualize w/ Flatten
+```
+tigress --Environment=x86_64:Linux:Gcc:7.5 
+        --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch 
+        --Transform=Flatten --Functions=sum 
+        --out=vir_flatten.c ../tigressTest.c
+```
 
- The command we ran: `tigress --Environment=x86_64:Linux:Gcc:7.5 --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch --Transform=InitOpaque --Functions=sum --InitOpaqueStructs=list --Transform=AddOpaque --Functions=sum --AddOpaqueStructs=list --out=vir_add_opaque.c tigressTest.c`.
+### Virtualize w/ Split
+```
+tigress --Environment=x86_64:Linux:Gcc:7.5 
+        --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch 
+        --Transform=Split --Functions=sum 
+        --out=vir_Split.c ../tigressTest.c
+```
 
-*Noticed that *Tigress* will generate opaque expression using linked lists, arrays, input and entropy.
+### Virtualize w/ Merge
+Notice that *Merge* requires multiple functions (at least two). It is useful as a precursor to *Virtualize*. For example, if you want to *Virtualize* two functions, first *Merge* them together and then *Virtualize* the result.
 
-### Evaluation
-The raw results of the obfuscated function *sum* are saved under *diff* directory.
+However, there are only function *sum* and function *main* (function *main* is not allowed to be involved) in the *tigressTest.c*. How to check *Merge* is TBD.
+
+### Virtualize w/ Add Opaque
+```
+ tigress --Environment=x86_64:Linux:Gcc:7.5 
+         --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch 
+         --Transform=InitOpaque --Functions=sum --InitOpaqueStructs=list 
+         --Transform=AddOpaque --Functions=sum --AddOpaqueStructs=list 
+         --out=vir_Add_Opaque.c ../tigressTest.c
+```
+
+### Virtualize w/ Encode Literals
+```
+tigress --Environment=x86_64:Linux:Gcc:7.5 
+        --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch 
+        --Transform=InitOpaque --Functions=sum --InitOpaqueStructs=list 
+        --Transform=EncodeLiterals --Functions=sum 
+        --out=vir_EncodeLiterals.c ../tigressTest.c
+```

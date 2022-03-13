@@ -2,12 +2,10 @@
 /* print_CIL_Input is false */
 
 union _1_sum_$node ;
-struct _2_sum_1_opaque_NodeStruct ;
 struct _IO_FILE ;
 struct timeval ;
 enum _1_sum_$op ;
 extern int gettimeofday(struct timeval *tv , void *tz ) ;
-typedef struct _2_sum_1_opaque_NodeStruct *_2_sum_1_opaque_StructureType;
 extern int pthread_cond_broadcast(int *cond ) ;
 char **_global_argv  =    (char **)0;
 enum _1_sum_$op {
@@ -27,15 +25,8 @@ unsigned char _1_sum_$array[1][31]  = { {        _1_sum__formal$result_STA_0$val
             (unsigned char)4,        (unsigned char)0,        (unsigned char)0,        (unsigned char)0, 
             _1_sum__local$result_STA_0$value_LIT_0,        (unsigned char)8,        (unsigned char)0,        (unsigned char)0, 
             (unsigned char)0,        _1_sum__load_int$left_STA_0$result_STA_0,        _1_sum__return_int$expr_STA_0}};
-struct _2_sum_1_opaque_NodeStruct {
-   struct _2_sum_1_opaque_NodeStruct *next ;
-   int data ;
-   struct _2_sum_1_opaque_NodeStruct *prev ;
-};
-struct _2_sum_1_opaque_NodeStruct *_2_sum_1_opaque_list_1  =    (struct _2_sum_1_opaque_NodeStruct *)0;
-struct _2_sum_1_opaque_NodeStruct *_2_sum_1_opaque_ptr_1  =    (struct _2_sum_1_opaque_NodeStruct *)0;
-extern int getpagesize() ;
 extern int posix_memalign(void **memptr , unsigned int alignment , unsigned int size ) ;
+extern int getpagesize() ;
 extern int pthread_join(void *thread , void **value_ptr ) ;
 extern unsigned int strlen(char const   *s ) ;
 extern int open(char const   *filename , int oflag  , ...) ;
@@ -45,42 +36,31 @@ extern int strncmp(char const   *s1 , char const   *s2 , unsigned int maxlen ) ;
 extern int ( /* missing proto */  printf)() ;
 int _global_argc  =    0;
 extern int pthread_cond_signal(int *cond ) ;
-extern int pthread_barrier_init(int *barrier , int *attr , unsigned int count ) ;
 extern int scanf(char const   *format  , ...) ;
 extern int raise(int sig ) ;
+extern int pthread_barrier_init(int *barrier , int *attr , unsigned int count ) ;
 char **_global_envp  =    (char **)0;
 extern int unlink(char const   *filename ) ;
 char const   *_1_sum_$strings  =    "";
-extern int pthread_barrier_wait(int *barrier ) ;
 extern double difftime(long tv1 , long tv0 ) ;
-unsigned int _2_sum__opaque_array[30]  = 
-  {      443,      635,      3,      158, 
-        327,      5,      123,      117, 
-        5,      183,      698,      7, 
-        253,      19,      45,      488, 
-        495,      9,      418,      355, 
-        17,      218,      292,      19, 
-        23,      306,      59,      78, 
-        362};
+extern int pthread_barrier_wait(int *barrier ) ;
 extern int pthread_mutex_lock(int *mutex ) ;
 extern void *memcpy(void *s1 , void const   *s2 , unsigned int size ) ;
-extern void *dlsym(void *handle , char *symbol ) ;
 extern int gethostname(char *name , unsigned int namelen ) ;
+extern void *dlsym(void *handle , char *symbol ) ;
 extern unsigned long strtoul(char const   *str , char const   *endptr , int base ) ;
 extern void abort() ;
-extern int fprintf(struct _IO_FILE *stream , char const   *format  , ...) ;
 extern void free(void *ptr ) ;
-int main(int _formal_argc , char **_formal_argv , char **_formal_envp ) ;
+extern int fprintf(struct _IO_FILE *stream , char const   *format  , ...) ;
 extern void exit(int status ) ;
+int main(int _formal_argc , char **_formal_argv , char **_formal_envp ) ;
 extern void signal(int sig , void *func ) ;
 typedef struct _IO_FILE FILE;
-extern int close(int filedes ) ;
 extern int mprotect(void *addr , unsigned int len , int prot ) ;
+extern int close(int filedes ) ;
 extern double strtod(char const   *str , char const   *endptr ) ;
 extern double log(double x ) ;
 extern double ceil(double x ) ;
-struct _2_sum_1_opaque_NodeStruct *_2_sum_1_opaque_ptr_2  =    (struct _2_sum_1_opaque_NodeStruct *)0;
-struct _2_sum_1_opaque_NodeStruct *_2_sum_1_opaque_list_2  =    (struct _2_sum_1_opaque_NodeStruct *)0;
 extern int fcntl(int filedes , int cmd  , ...) ;
 extern int fclose(void *stream ) ;
 union _1_sum_$node {
@@ -117,9 +97,9 @@ extern int rand() ;
 extern int strcmp(char const   *a , char const   *b ) ;
 extern void *fopen(char const   *filename , char const   *mode ) ;
 extern double sqrt(double x ) ;
-extern long strtol(char const   *str , char const   *endptr , int base ) ;
-extern void *malloc(unsigned int size ) ;
 extern int snprintf(char *str , unsigned int size , char const   *format  , ...) ;
+extern void *malloc(unsigned int size ) ;
+extern long strtol(char const   *str , char const   *endptr , int base ) ;
 extern int nanosleep(int *rqtp , int *rmtp ) ;
 extern int pthread_mutex_unlock(int *mutex ) ;
 extern int pthread_create(void *thread , void *attr , void *start_routine , void *arg ) ;
@@ -128,103 +108,6 @@ extern int fscanf(struct _IO_FILE *stream , char const   *format  , ...) ;
 extern int fseek(struct _IO_FILE *stream , long offs , int whence ) ;
 int sum(int x , int y ) ;
 void megaInit(void) ;
-void megaInit(void) 
-{ 
-
-
-  {
-
-}
-}
-int sum(int x , int y ) 
-{ 
-  char _1_sum_$locals[12] ;
-  union _1_sum_$node _1_sum_$stack[1][32] ;
-  union _1_sum_$node *_1_sum_$sp[1] ;
-  unsigned char *_1_sum_$pc[1] ;
-  struct _2_sum_1_opaque_NodeStruct *p10 ;
-  int r11 ;
-  struct _2_sum_1_opaque_NodeStruct *p12 ;
-  int r13 ;
-  struct _2_sum_1_opaque_NodeStruct *p14 ;
-  int _2_sum__BEGIN_1 ;
-  int _2_sum__END_1 ;
-  int _2_sum__BARRIER_2 ;
-
-  {
-  _2_sum__BEGIN_1 = 1;
-  p10 = (struct _2_sum_1_opaque_NodeStruct *)malloc(sizeof(struct _2_sum_1_opaque_NodeStruct ));
-  p10->next = p10;
-  p10->prev = p10;
-  _2_sum_1_opaque_list_1 = p10;
-  r13 = rand();
-  p14 = (struct _2_sum_1_opaque_NodeStruct *)malloc(sizeof(struct _2_sum_1_opaque_NodeStruct ));
-  p14->data = 0 * r13;
-  p14->next = _2_sum_1_opaque_list_1->next;
-  p14->prev = _2_sum_1_opaque_list_1;
-  (_2_sum_1_opaque_list_1->next)->prev = p14;
-  _2_sum_1_opaque_list_1->next = p14;
-  r11 = rand();
-  p12 = (struct _2_sum_1_opaque_NodeStruct *)malloc(sizeof(struct _2_sum_1_opaque_NodeStruct ));
-  p12->data = 1 * r11;
-  p12->next = _2_sum_1_opaque_list_1->next;
-  p12->prev = _2_sum_1_opaque_list_1;
-  (_2_sum_1_opaque_list_1->next)->prev = p12;
-  _2_sum_1_opaque_list_1->next = p12;
-  _2_sum_1_opaque_ptr_1 = _2_sum_1_opaque_list_1->next;
-  _2_sum_1_opaque_ptr_2 = _2_sum_1_opaque_ptr_1;
-  _2_sum_1_opaque_ptr_2 = _2_sum_1_opaque_ptr_2->next;
-  _2_sum__END_1 = 1;
-  _2_sum__BARRIER_2 = 1;
-  _1_sum_$sp[0] = _1_sum_$stack[0];
-  _1_sum_$pc[0] = _1_sum_$array[0];
-  while (1) {
-    switch (*(_1_sum_$pc[0])) {
-    case _1_sum__local$result_STA_0$value_LIT_0: 
-    (_1_sum_$pc[0]) ++;
-    (_1_sum_$sp[0] + 1)->_void_star = (void *)(_1_sum_$locals + *((int *)_1_sum_$pc[0]));
-    (_1_sum_$sp[0]) ++;
-    _1_sum_$pc[0] += 4;
-    break;
-    case _1_sum__load_int$left_STA_0$result_STA_0: 
-    (_1_sum_$pc[0]) ++;
-    (_1_sum_$sp[0] + 0)->_int = *((int *)(_1_sum_$sp[0] + 0)->_void_star);
-    break;
-    case _1_sum__store_int$left_STA_0$right_STA_1: 
-    (_1_sum_$pc[0]) ++;
-    *((int *)(_1_sum_$sp[0] + 0)->_void_star) = (_1_sum_$sp[0] + -1)->_int;
-    _1_sum_$sp[0] += -2;
-    break;
-    case _1_sum__formal$result_STA_0$value_LIT_0: 
-    (_1_sum_$pc[0]) ++;
-    switch (*((int *)_1_sum_$pc[0])) {
-    case 1: 
-    (_1_sum_$sp[0] + 1)->_void_star = (void *)(& y);
-    break;
-    case 0: 
-    (_1_sum_$sp[0] + 1)->_void_star = (void *)(& x);
-    break;
-    }
-    (_1_sum_$sp[0]) ++;
-    _1_sum_$pc[0] += 4;
-    break;
-    case _1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1: 
-    (_1_sum_$pc[0]) ++;
-    (_1_sum_$sp[0] + -1)->_int = (_1_sum_$sp[0] + 0)->_int + (_1_sum_$sp[0] + -1)->_int;
-    (_1_sum_$sp[0]) --;
-    break;
-    case _1_sum__return_int$expr_STA_0: 
-    (_1_sum_$pc[0]) ++;
-    return ((_1_sum_$sp[0] + 0)->_int);
-    break;
-    case _1_sum__goto$label_LAB_0: 
-    (_1_sum_$pc[0]) ++;
-    _1_sum_$pc[0] += *((int *)_1_sum_$pc[0]);
-    break;
-    }
-  }
-}
-}
 int main(int _formal_argc , char **_formal_argv , char **_formal_envp ) 
 { 
   int x ;
@@ -245,5 +128,199 @@ int main(int _formal_argc , char **_formal_argv , char **_formal_envp )
   z = tmp;
   printf("The sum is %d.\n", z);
   return (0);
+}
+}
+void megaInit(void) 
+{ 
+
+
+  {
+
+}
+}
+int sum(int x , int y ) 
+{ 
+  char _1_sum_$locals[12] ;
+  union _1_sum_$node _1_sum_$stack[1][32] ;
+  union _1_sum_$node *_1_sum_$sp[1] ;
+  unsigned char *_1_sum_$pc[1] ;
+  unsigned long _2_sum_next ;
+
+  {
+  {
+  _2_sum_next = 7UL;
+  }
+  while (1) {
+    switch (_2_sum_next) {
+    case 18: 
+    (_1_sum_$sp[0] + 1)->_void_star = (void *)(& x);
+    {
+    _2_sum_next = 23UL;
+    }
+    break;
+    case 25: 
+    _1_sum_$pc[0] += *((int *)_1_sum_$pc[0]);
+    {
+    _2_sum_next = 20UL;
+    }
+    break;
+    case 4: 
+    (_1_sum_$sp[0] + 1)->_void_star = (void *)(& y);
+    {
+    _2_sum_next = 23UL;
+    }
+    break;
+    case 14: 
+    (_1_sum_$sp[0] + 0)->_int = *((int *)(_1_sum_$sp[0] + 0)->_void_star);
+    {
+    _2_sum_next = 20UL;
+    }
+    break;
+    case 15: 
+    (_1_sum_$sp[0] + -1)->_int = (_1_sum_$sp[0] + 0)->_int + (_1_sum_$sp[0] + -1)->_int;
+    (_1_sum_$sp[0]) --;
+    {
+    _2_sum_next = 20UL;
+    }
+    break;
+    case 23: 
+    (_1_sum_$sp[0]) ++;
+    _1_sum_$pc[0] += 4;
+    {
+    _2_sum_next = 20UL;
+    }
+    break;
+    case 16: 
+    (_1_sum_$pc[0]) ++;
+    {
+    _2_sum_next = 14UL;
+    }
+    break;
+    case 21: ;
+    return ((_1_sum_$sp[0] + 0)->_int);
+    break;
+    case 26: 
+    (_1_sum_$pc[0]) ++;
+    {
+    _2_sum_next = 25UL;
+    }
+    break;
+    case 9: 
+    (_1_sum_$pc[0]) ++;
+    {
+    _2_sum_next = 0UL;
+    }
+    break;
+    case 19: 
+    (_1_sum_$pc[0]) ++;
+    {
+    _2_sum_next = 15UL;
+    }
+    break;
+    case 27: 
+    (_1_sum_$pc[0]) ++;
+    {
+    _2_sum_next = 28UL;
+    }
+    break;
+    case 22: 
+    (_1_sum_$sp[0] + 1)->_void_star = (void *)(_1_sum_$locals + *((int *)_1_sum_$pc[0]));
+    (_1_sum_$sp[0]) ++;
+    _1_sum_$pc[0] += 4;
+    {
+    _2_sum_next = 20UL;
+    }
+    break;
+    case 28: 
+    *((int *)(_1_sum_$sp[0] + 0)->_void_star) = (_1_sum_$sp[0] + -1)->_int;
+    _1_sum_$sp[0] += -2;
+    {
+    _2_sum_next = 20UL;
+    }
+    break;
+    case 10: 
+    (_1_sum_$pc[0]) ++;
+    {
+    _2_sum_next = 21UL;
+    }
+    break;
+    case 0: ;
+    switch (*((int *)_1_sum_$pc[0])) {
+    case 0: 
+    {
+    _2_sum_next = 18UL;
+    }
+    break;
+    case 1: 
+    {
+    _2_sum_next = 4UL;
+    }
+    break;
+    default: 
+    {
+    _2_sum_next = 23UL;
+    }
+    break;
+    }
+    break;
+    case 7: 
+    _1_sum_$sp[0] = _1_sum_$stack[0];
+    _1_sum_$pc[0] = _1_sum_$array[0];
+    {
+    _2_sum_next = 20UL;
+    }
+    break;
+    case 29: 
+    (_1_sum_$pc[0]) ++;
+    {
+    _2_sum_next = 22UL;
+    }
+    break;
+    case 20: ;
+    switch (*(_1_sum_$pc[0])) {
+    case _1_sum__goto$label_LAB_0: 
+    {
+    _2_sum_next = 26UL;
+    }
+    break;
+    case _1_sum__return_int$expr_STA_0: 
+    {
+    _2_sum_next = 10UL;
+    }
+    break;
+    case _1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1: 
+    {
+    _2_sum_next = 19UL;
+    }
+    break;
+    case _1_sum__formal$result_STA_0$value_LIT_0: 
+    {
+    _2_sum_next = 9UL;
+    }
+    break;
+    case _1_sum__store_int$left_STA_0$right_STA_1: 
+    {
+    _2_sum_next = 27UL;
+    }
+    break;
+    case _1_sum__load_int$left_STA_0$result_STA_0: 
+    {
+    _2_sum_next = 16UL;
+    }
+    break;
+    case _1_sum__local$result_STA_0$value_LIT_0: 
+    {
+    _2_sum_next = 29UL;
+    }
+    break;
+    default: 
+    {
+    _2_sum_next = 20UL;
+    }
+    break;
+    }
+    break;
+    }
+  }
 }
 }

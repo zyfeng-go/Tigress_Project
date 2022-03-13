@@ -1,0 +1,10 @@
+15,17c15
+<     (_1_sum_$sp[0] + 1)->_void_star = (void *)(_1_sum_$locals + *((int *)_1_sum_$pc[0]));
+<     (_1_sum_$sp[0]) ++;
+<     _1_sum_$pc[0] += 4;
+---
+>     _2_sum_sum_split_1(& _1_sum_$locals, & _1_sum_$sp, & _1_sum_$pc);
+21c19
+<     (_1_sum_$sp[0] + 0)->_int = *((int *)(_1_sum_$sp[0] + 0)->_void_star);
+---
+>     _2_sum_sum_split_2(& _1_sum_$sp);

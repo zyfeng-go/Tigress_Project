@@ -1,0 +1,119 @@
+6a7,16
+>   struct _2_sum_1_opaque_NodeStruct *p10 ;
+>   int r11 ;
+>   struct _2_sum_1_opaque_NodeStruct *p12 ;
+>   int r13 ;
+>   struct _2_sum_1_opaque_NodeStruct *p14 ;
+>   int r15 ;
+>   struct _2_sum_1_opaque_NodeStruct *p16 ;
+>   int _2_sum__BEGIN_1 ;
+>   int _2_sum__END_1 ;
+>   int _2_sum__BARRIER_2 ;
+8a19,51
+>   {  /* __blockattribute__(__ATOMIC__)*/ 
+>   _2_sum__BEGIN_1 = 1;
+>   p10 = (struct _2_sum_1_opaque_NodeStruct *)malloc(24U);
+>   p10->next = p10;
+>   p10->prev = p10;
+>   _2_sum_1_opaque_list_1 = p10;
+>   r15 = rand();
+>   p16 = (struct _2_sum_1_opaque_NodeStruct *)malloc(24U);
+>   p16->data = 0;
+>   p16->next = _2_sum_1_opaque_list_1->next;
+>   p16->prev = _2_sum_1_opaque_list_1;
+>   (_2_sum_1_opaque_list_1->next)->prev = p16;
+>   _2_sum_1_opaque_list_1->next = p16;
+>   r13 = rand();
+>   p14 = (struct _2_sum_1_opaque_NodeStruct *)malloc(24U);
+>   p14->data = r13;
+>   p14->next = _2_sum_1_opaque_list_1->next;
+>   p14->prev = _2_sum_1_opaque_list_1;
+>   (_2_sum_1_opaque_list_1->next)->prev = p14;
+>   _2_sum_1_opaque_list_1->next = p14;
+>   r11 = rand();
+>   p12 = (struct _2_sum_1_opaque_NodeStruct *)malloc(24U);
+>   p12->data = 2 * r11;
+>   p12->next = _2_sum_1_opaque_list_1->next;
+>   p12->prev = _2_sum_1_opaque_list_1;
+>   (_2_sum_1_opaque_list_1->next)->prev = p12;
+>   _2_sum_1_opaque_list_1->next = p12;
+>   _2_sum_1_opaque_ptr_1 = _2_sum_1_opaque_list_1->next;
+>   _2_sum_1_opaque_ptr_2 = _2_sum_1_opaque_ptr_1;
+>   _2_sum_1_opaque_ptr_2 = _2_sum_1_opaque_ptr_2->next;
+>   _2_sum__END_1 = 1;
+>   }
+>   _2_sum__BARRIER_2 = _2_sum_1_opaque_ptr_1 != _2_sum_1_opaque_ptr_2;
+13,26c56,69
+<     case _1_sum__local$result_STA_0$value_LIT_0: 
+<     (_1_sum_$pc[0]) ++;
+<     (_1_sum_$sp[0] + 1)->_void_star = (void *)(_1_sum_$locals + *((int *)_1_sum_$pc[0]));
+<     (_1_sum_$sp[0]) ++;
+<     _1_sum_$pc[0] += 4;
+<     break;
+<     case _1_sum__load_int$left_STA_0$result_STA_0: 
+<     (_1_sum_$pc[0]) ++;
+<     (_1_sum_$sp[0] + 0)->_int = *((int *)(_1_sum_$sp[0] + 0)->_void_star);
+<     break;
+<     case _1_sum__store_int$left_STA_0$right_STA_1: 
+<     (_1_sum_$pc[0]) ++;
+<     *((int *)(_1_sum_$sp[0] + 0)->_void_star) = (_1_sum_$sp[0] + -1)->_int;
+<     _1_sum_$sp[0] += -2;
+---
+>     case 126: 
+>     _1_sum_$pc[0] += (_2_sum_1_opaque_ptr_1 == _2_sum_1_opaque_ptr_2) + (_2_sum_1_opaque_ptr_1 != _2_sum_1_opaque_ptr_2);
+>     (_1_sum_$sp[0] + ((_2_sum_1_opaque_ptr_1 == _2_sum_1_opaque_ptr_2) + (_2_sum_1_opaque_ptr_1 != _2_sum_1_opaque_ptr_2)))->_void_star = (void *)(_1_sum_$locals + *((int *)_1_sum_$pc[0]));
+>     _1_sum_$sp[0] += (_2_sum_1_opaque_ptr_1 != _2_sum_1_opaque_ptr_2) - (_2_sum_1_opaque_ptr_1 == _2_sum_1_opaque_ptr_2);
+>     _1_sum_$pc[0] += _2_sum_1_opaque_ptr_1 == _2_sum_1_opaque_ptr_2 ? 4 | 10 : 4;
+>     break;
+>     case 89: 
+>     _1_sum_$pc[0] += _2_sum_1_opaque_ptr_1 != _2_sum_1_opaque_ptr_2;
+>     (_1_sum_$sp[0] + ! (_2_sum_1_opaque_ptr_1 != _2_sum_1_opaque_ptr_2))->_int = *((int *)(_1_sum_$sp[0] + (_2_sum_1_opaque_ptr_1 == _2_sum_1_opaque_ptr_2))->_void_star);
+>     break;
+>     case 242: 
+>     _1_sum_$pc[0] += (_2_sum_1_opaque_ptr_1 != _2_sum_1_opaque_ptr_2) - (_2_sum_1_opaque_ptr_1 == _2_sum_1_opaque_ptr_2);
+>     *((int *)(_1_sum_$sp[0] + (_2_sum_1_opaque_ptr_1 == _2_sum_1_opaque_ptr_2))->_void_star) = (_1_sum_$sp[0] + (-1 - (_2_sum_1_opaque_ptr_1 == _2_sum_1_opaque_ptr_2)))->_int;
+>     _1_sum_$sp[0] += _2_sum_1_opaque_ptr_1 != _2_sum_1_opaque_ptr_2 ? -2 : 10;
+28,29c71,72
+<     case _1_sum__formal$result_STA_0$value_LIT_0: 
+<     (_1_sum_$pc[0]) ++;
+---
+>     case 183: 
+>     _1_sum_$pc[0] += (_2_sum_1_opaque_ptr_1 != _2_sum_1_opaque_ptr_2) - (_2_sum_1_opaque_ptr_1 == _2_sum_1_opaque_ptr_2);
+32c75
+<     (_1_sum_$sp[0] + 1)->_void_star = (void *)(& y);
+---
+>     (_1_sum_$sp[0] + (_2_sum_1_opaque_ptr_1 != _2_sum_1_opaque_ptr_2))->_void_star = (void *)(& y);
+35c78
+<     (_1_sum_$sp[0] + 1)->_void_star = (void *)(& x);
+---
+>     (_1_sum_$sp[0] + ((_2_sum_1_opaque_ptr_1 != _2_sum_1_opaque_ptr_2) - (_2_sum_1_opaque_ptr_1 == _2_sum_1_opaque_ptr_2)))->_void_star = (void *)(& x);
+38,39c81,82
+<     (_1_sum_$sp[0]) ++;
+<     _1_sum_$pc[0] += 4;
+---
+>     _1_sum_$sp[0] += (_2_sum_1_opaque_ptr_1 == _2_sum_1_opaque_ptr_2) + (_2_sum_1_opaque_ptr_1 != _2_sum_1_opaque_ptr_2);
+>     _1_sum_$pc[0] += _2_sum_1_opaque_ptr_1 != _2_sum_1_opaque_ptr_2 ? 4 : x;
+41,48c84,91
+<     case _1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1: 
+<     (_1_sum_$pc[0]) ++;
+<     (_1_sum_$sp[0] + -1)->_int = (_1_sum_$sp[0] + 0)->_int + (_1_sum_$sp[0] + -1)->_int;
+<     (_1_sum_$sp[0]) --;
+<     break;
+<     case _1_sum__return_int$expr_STA_0: 
+<     (_1_sum_$pc[0]) ++;
+<     return ((_1_sum_$sp[0] + 0)->_int);
+---
+>     case 178: 
+>     _1_sum_$pc[0] += ! (_2_sum_1_opaque_ptr_1 == _2_sum_1_opaque_ptr_2);
+>     (_1_sum_$sp[0] + (_2_sum_1_opaque_ptr_1 == _2_sum_1_opaque_ptr_2 ? x : -1))->_int = (_1_sum_$sp[0] + (_2_sum_1_opaque_ptr_1 == _2_sum_1_opaque_ptr_2))->_int + (_1_sum_$sp[0] + (_2_sum_1_opaque_ptr_1 != _2_sum_1_opaque_ptr_2 ? -1 : -1 * x))->_int;
+>     _1_sum_$sp[0] += -1 * ! (_2_sum_1_opaque_ptr_1 == _2_sum_1_opaque_ptr_2);
+>     break;
+>     case 249: 
+>     _1_sum_$pc[0] += _2_sum_1_opaque_ptr_1 != _2_sum_1_opaque_ptr_2;
+>     return ((_1_sum_$sp[0] + (_2_sum_1_opaque_ptr_1 == _2_sum_1_opaque_ptr_2))->_int);
+50,51c93,94
+<     case _1_sum__goto$label_LAB_0: 
+<     (_1_sum_$pc[0]) ++;
+---
+>     case 62: 
+>     _1_sum_$pc[0] += (_2_sum_1_opaque_ptr_1 != _2_sum_1_opaque_ptr_2) - (_2_sum_1_opaque_ptr_1 == _2_sum_1_opaque_ptr_2);

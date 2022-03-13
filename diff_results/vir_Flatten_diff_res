@@ -1,0 +1,207 @@
+6a7
+>   unsigned long _2_sum_next ;
+9,10c10,12
+<   _1_sum_$sp[0] = _1_sum_$stack[0];
+<   _1_sum_$pc[0] = _1_sum_$array[0];
+---
+>   {
+>   _2_sum_next = 7UL;
+>   }
+12,15c14,46
+<     switch (*(_1_sum_$pc[0])) {
+<     case _1_sum__local$result_STA_0$value_LIT_0: 
+<     (_1_sum_$pc[0]) ++;
+<     (_1_sum_$sp[0] + 1)->_void_star = (void *)(_1_sum_$locals + *((int *)_1_sum_$pc[0]));
+---
+>     switch (_2_sum_next) {
+>     case 18: 
+>     (_1_sum_$sp[0] + 1)->_void_star = (void *)(& x);
+>     {
+>     _2_sum_next = 23UL;
+>     }
+>     break;
+>     case 25: 
+>     _1_sum_$pc[0] += *((int *)_1_sum_$pc[0]);
+>     {
+>     _2_sum_next = 20UL;
+>     }
+>     break;
+>     case 4: 
+>     (_1_sum_$sp[0] + 1)->_void_star = (void *)(& y);
+>     {
+>     _2_sum_next = 23UL;
+>     }
+>     break;
+>     case 14: 
+>     (_1_sum_$sp[0] + 0)->_int = *((int *)(_1_sum_$sp[0] + 0)->_void_star);
+>     {
+>     _2_sum_next = 20UL;
+>     }
+>     break;
+>     case 15: 
+>     (_1_sum_$sp[0] + -1)->_int = (_1_sum_$sp[0] + 0)->_int + (_1_sum_$sp[0] + -1)->_int;
+>     (_1_sum_$sp[0]) --;
+>     {
+>     _2_sum_next = 20UL;
+>     }
+>     break;
+>     case 23: 
+17a49,51
+>     {
+>     _2_sum_next = 20UL;
+>     }
+19c53
+<     case _1_sum__load_int$left_STA_0$result_STA_0: 
+---
+>     case 16: 
+21c55,57
+<     (_1_sum_$sp[0] + 0)->_int = *((int *)(_1_sum_$sp[0] + 0)->_void_star);
+---
+>     {
+>     _2_sum_next = 14UL;
+>     }
+23c59,74
+<     case _1_sum__store_int$left_STA_0$right_STA_1: 
+---
+>     case 21: ;
+>     return ((_1_sum_$sp[0] + 0)->_int);
+>     break;
+>     case 26: 
+>     (_1_sum_$pc[0]) ++;
+>     {
+>     _2_sum_next = 25UL;
+>     }
+>     break;
+>     case 9: 
+>     (_1_sum_$pc[0]) ++;
+>     {
+>     _2_sum_next = 0UL;
+>     }
+>     break;
+>     case 19: 
+24a76,94
+>     {
+>     _2_sum_next = 15UL;
+>     }
+>     break;
+>     case 27: 
+>     (_1_sum_$pc[0]) ++;
+>     {
+>     _2_sum_next = 28UL;
+>     }
+>     break;
+>     case 22: 
+>     (_1_sum_$sp[0] + 1)->_void_star = (void *)(_1_sum_$locals + *((int *)_1_sum_$pc[0]));
+>     (_1_sum_$sp[0]) ++;
+>     _1_sum_$pc[0] += 4;
+>     {
+>     _2_sum_next = 20UL;
+>     }
+>     break;
+>     case 28: 
+26a97,99
+>     {
+>     _2_sum_next = 20UL;
+>     }
+28c101
+<     case _1_sum__formal$result_STA_0$value_LIT_0: 
+---
+>     case 10: 
+29a103,107
+>     {
+>     _2_sum_next = 21UL;
+>     }
+>     break;
+>     case 0: ;
+30a109,113
+>     case 0: 
+>     {
+>     _2_sum_next = 18UL;
+>     }
+>     break;
+32c115,117
+<     (_1_sum_$sp[0] + 1)->_void_star = (void *)(& y);
+---
+>     {
+>     _2_sum_next = 4UL;
+>     }
+34,35c119,122
+<     case 0: 
+<     (_1_sum_$sp[0] + 1)->_void_star = (void *)(& x);
+---
+>     default: 
+>     {
+>     _2_sum_next = 23UL;
+>     }
+38,39d124
+<     (_1_sum_$sp[0]) ++;
+<     _1_sum_$pc[0] += 4;
+41,44c126,131
+<     case _1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1: 
+<     (_1_sum_$pc[0]) ++;
+<     (_1_sum_$sp[0] + -1)->_int = (_1_sum_$sp[0] + 0)->_int + (_1_sum_$sp[0] + -1)->_int;
+<     (_1_sum_$sp[0]) --;
+---
+>     case 7: 
+>     _1_sum_$sp[0] = _1_sum_$stack[0];
+>     _1_sum_$pc[0] = _1_sum_$array[0];
+>     {
+>     _2_sum_next = 20UL;
+>     }
+46c133
+<     case _1_sum__return_int$expr_STA_0: 
+---
+>     case 29: 
+48c135,137
+<     return ((_1_sum_$sp[0] + 0)->_int);
+---
+>     {
+>     _2_sum_next = 22UL;
+>     }
+49a139,140
+>     case 20: ;
+>     switch (*(_1_sum_$pc[0])) {
+51,52c142,181
+<     (_1_sum_$pc[0]) ++;
+<     _1_sum_$pc[0] += *((int *)_1_sum_$pc[0]);
+---
+>     {
+>     _2_sum_next = 26UL;
+>     }
+>     break;
+>     case _1_sum__return_int$expr_STA_0: 
+>     {
+>     _2_sum_next = 10UL;
+>     }
+>     break;
+>     case _1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1: 
+>     {
+>     _2_sum_next = 19UL;
+>     }
+>     break;
+>     case _1_sum__formal$result_STA_0$value_LIT_0: 
+>     {
+>     _2_sum_next = 9UL;
+>     }
+>     break;
+>     case _1_sum__store_int$left_STA_0$right_STA_1: 
+>     {
+>     _2_sum_next = 27UL;
+>     }
+>     break;
+>     case _1_sum__load_int$left_STA_0$result_STA_0: 
+>     {
+>     _2_sum_next = 16UL;
+>     }
+>     break;
+>     case _1_sum__local$result_STA_0$value_LIT_0: 
+>     {
+>     _2_sum_next = 29UL;
+>     }
+>     break;
+>     default: 
+>     {
+>     _2_sum_next = 20UL;
+>     }
+>     break;
+>     }

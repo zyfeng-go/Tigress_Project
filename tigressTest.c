@@ -1,5 +1,4 @@
 #include "/bin/tigress/3.1/tigress.h"
-//#include "/bin/tigress/3.1/jitter-amd64.c"
 
 int sum(int x, int y) {
 	return x + y;
