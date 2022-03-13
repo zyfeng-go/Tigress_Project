@@ -1,21 +1,21 @@
 ## Investigation on possible impact from other transformations with Virtualize
 
-*Virtualize* is so strong an obfuscation that researchers are eager to explore. In this project, our group would like to know what kind of impact that other transformations would potentially add to Virtualization by running various experiments.
+*Virtualize* is so strong an obfuscation that researchers are eager to explore. In this project, our group would like to know what kind of impact other transformations would potentially add to Virtualization by running various experiments.
 
-*More specifically, We would like to start with simple tigressTest.c file to investigate the potential impact. Noticed that we keep the default configuration for all transformations at the moment.*
+*More specifically, We would like to start with simple tigressTest.c file to investigate the potential impact. Noticed that we will keep the "default" configuration for all transformations at the moment.*
 
 ### Steps and Explanation
 
 ```
 1. run the obfuscation on function sum w/ Virtualize and another transformation.
-2. check output a.out to make sure the obfuscated program obtain the same output as 
+2. check output a.out to make sure the obfuscated program obtains the same output as 
    the original program. 
 3. cut out the function sum from the obfuscated source code file.
 4. use the command diff to compare the obfuscated function sum against the function sum 
    in the baseline.
 ```
 
-The raw results (output of command diff) of comparison are saved under *diff_results* directory. More detailed information can be found at our [Google Docs](https://docs.google.com/document/d/1Zx8N51Ajv7L5oO82Yq2FWLIXia6XdBfb7kbXWaPedy0/edit?usp=sharing)!
+The raw results (output of command diff) of comparison are saved under [diff_results](https://github.com/zyfeng-go/Tigress_Project/tree/main/diff_results) directory. More detailed information can be found at our [Google Docs](https://docs.google.com/document/d/1Zx8N51Ajv7L5oO82Yq2FWLIXia6XdBfb7kbXWaPedy0/edit?usp=sharing)!
 
 ### Baseline Virtualize
 *Tigress* virtualizes the function *sum* in *tigressTest.c* with `switch` dispatch method.
