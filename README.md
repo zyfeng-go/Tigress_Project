@@ -1,4 +1,4 @@
-## Investigation on possible impact from other transformations with Virtualize
+## Investigation on Possible Impact from Other Transformations on Virtualize
 
 *Virtualize* is so strong an obfuscation that researchers are eager to explore. In this project, our group would like to know what kind of impact other transformations would potentially add to Virtualization by running various experiments.
 
@@ -7,15 +7,15 @@
 ### Steps and Explanation
 
 ```
-1. run the obfuscation on function sum w/ Virtualize and another transformation.
+1. run the obfuscation on tigressTest.c w/ Virtualize and another transformation at a time.
 2. check output a.out to make sure the obfuscated program obtains the same output as 
    the original program. 
-3. cut out the function sum from the obfuscated source code file.
+3. locate and copy the obfuscated function sum from the obfuscated source code file.
 4. use the command diff to compare the obfuscated function sum against the function sum 
    in the baseline.
 ```
 
-The raw results (output of command diff) of comparison are saved under [diff_results](https://github.com/zyfeng-go/Tigress_Project/tree/main/diff_results) directory. More detailed information can be found at our [Google Docs](https://docs.google.com/document/d/1Zx8N51Ajv7L5oO82Yq2FWLIXia6XdBfb7kbXWaPedy0/edit?usp=sharing)!
+The raw results (output of command diff) of comparisons are saved under [diff_results](https://github.com/zyfeng-go/Tigress_Project/tree/main/diff_results) directory. More detailed information can be found at our [Shared Google Docs](https://docs.google.com/document/d/1Zx8N51Ajv7L5oO82Yq2FWLIXia6XdBfb7kbXWaPedy0/edit?usp=sharing)!
 
 ### Baseline Virtualize
 *Tigress* virtualizes the function *sum* in *tigressTest.c* with `switch` dispatch method.
@@ -62,7 +62,7 @@ tigress --Environment=x86_64:Linux:Gcc:7.5
 ### Virtualize w/ Merge
 Notice that *Merge* requires multiple functions (at least two). It is useful as a precursor to *Virtualize*. For example, if you want to *Virtualize* two functions, first *Merge* them together and then *Virtualize* the result.
 
-However, there are only function *sum* and function *main* (function *main* is not allowed to be involved) in the *tigressTest.c*. How to check *Merge* is TBD.
+However, there are only function *sum* and function *main* (function *main* is not allowed to be involved) in the *tigressTest.c*. How to check *Merge* is TBD...
 
 ### Virtualize w/ Add Opaque
 ```
