@@ -1,0 +1,1533 @@
+7,15c7,391
+<   void *_3_sum_$array[1][16]  = {{&& _3_sum__local$result_STA_0$value_LIT_0, (void *)8UL,
+<                                   && _3_sum__formal$result_STA_0$value_LIT_0, (void *)0UL,
+<                                   && _3_sum__load_int$left_STA_0$result_STA_0, && _3_sum__formal$result_STA_0$value_LIT_0,
+<                                   (void *)1UL, && _3_sum__load_int$left_STA_0$result_STA_0,
+<                                   && _3_sum__PlusA_int_int2int$right_STA_0$result_STA_0$left_STA_1,
+<                                   && _3_sum__store_int$right_STA_0$left_STA_1, && _3_sum__goto$label_LAB_0,
+<                                   (void *)1UL, && _3_sum__local$result_STA_0$value_LIT_0,
+<                                   (void *)8UL, && _3_sum__load_int$left_STA_0$result_STA_0,
+<                                   && _3_sum__return_int$expr_STA_0}};
+---
+>   void *_3_sum_$array[1][16] ;
+>   int __retres11 ;
+>   static struct jit *p12 ;
+>   static int (*_4_sum___foo)(int x , int y ) ;
+>   int localSize14 ;
+>   unsigned int KEY_1918301893_3786249548_975574495_634376995[4]  = {1918301893U, 3786249548U,
+>                                                                     975574495U, 634376995U};
+>   struct jit_op *block_22_BEGIN16 ;
+>   struct jit_op *block_22_END17 ;
+>   struct jit_op *block_16_BEGIN18 ;
+>   struct jit_op *block_16_END19 ;
+>   struct jit_op *block_18_BEGIN20 ;
+>   struct jit_op *block_18_END21 ;
+>   struct jit_op *block_3_BEGIN22 ;
+>   struct jit_op *block_3_END23 ;
+>   struct jit_op *block_14_BEGIN24 ;
+>   struct jit_op *block_14_END25 ;
+>   struct jit_op *block_23_BEGIN26 ;
+>   struct jit_op *block_23_END27 ;
+>   struct jit_op *block_19_BEGIN28 ;
+>   struct jit_op *block_19_END29 ;
+>   struct jit_op *block_13_BEGIN30 ;
+>   struct jit_op *block_13_END31 ;
+>   struct jit_op *block_15_BEGIN32 ;
+>   struct jit_op *block_15_END33 ;
+>   struct jit_op *block_5_BEGIN34 ;
+>   struct jit_op *block_5_END35 ;
+>   struct jit_op *block_7_BEGIN36 ;
+>   struct jit_op *block_7_END37 ;
+>   struct jit_op *block_30_BEGIN38 ;
+>   struct jit_op *block_30_END39 ;
+>   struct jit_op *block_28_BEGIN40 ;
+>   struct jit_op *block_28_END41 ;
+>   struct jit_op *block_24_BEGIN42 ;
+>   struct jit_op *block_24_END43 ;
+>   struct jit_op *block_26_BEGIN44 ;
+>   struct jit_op *block_26_END45 ;
+>   struct jit_op *block_31_BEGIN46 ;
+>   struct jit_op *block_31_END47 ;
+>   struct jit_label *self48 ;
+>   struct jit_op *op49 ;
+>   struct jit_label *label50 ;
+>   struct jit_op *op51 ;
+>   struct jit_label *label52 ;
+>   struct jit_op *op53 ;
+>   struct jit_op *op54 ;
+>   struct jit_label *label55 ;
+>   struct jit_op *op56 ;
+>   struct jit_label *label57 ;
+>   struct jit_op *op58 ;
+>   struct jit_label *label59 ;
+>   struct jit_op *op60 ;
+>   struct jit_op *op61 ;
+>   struct jit_label *label62 ;
+>   struct jit_op *op63 ;
+>   struct jit_label *label64 ;
+>   struct jit_label *label65 ;
+>   struct jit_op *op66 ;
+>   struct jit_op *op67 ;
+>   struct jit_label *label68 ;
+>   struct jit_op *op69 ;
+>   struct jit_label *label70 ;
+>   struct jit_label *label71 ;
+>   struct jit_op *op72 ;
+>   struct jit_op *op73 ;
+>   struct jit_label *label74 ;
+>   struct jit_label *label75 ;
+>   struct jit_op *op76 ;
+>   struct jit_label *label77 ;
+>   struct jit_op *op78 ;
+>   struct jit_op *op79 ;
+>   struct jit_label *label80 ;
+>   struct jit_op *op81 ;
+>   struct jit_label *label82 ;
+>   struct jit_op *op83 ;
+>   struct jit_op *op84 ;
+>   struct jit_label *label85 ;
+>   struct jit_op *op86 ;
+>   struct jit_op *op87 ;
+>   struct jit_label *label88 ;
+>   struct jit_op *op89 ;
+>   struct jit_op *op90 ;
+>   struct jit_op *op91 ;
+>   struct jit_op *op92 ;
+>   struct jit_op *op93 ;
+>   struct jit_op *op94 ;
+>   struct jit_op *op95 ;
+>   struct jit_op *op96 ;
+>   struct jit_op *op97 ;
+>   struct jit_op *op98 ;
+>   struct jit_op *op99 ;
+>   struct jit_op *op100 ;
+>   struct jit_label *label101 ;
+>   struct jit_label *label102 ;
+>   struct jit_op *op103 ;
+>   struct jit_label *label104 ;
+>   struct jit_op *op105 ;
+>   struct jit_label *label106 ;
+>   struct jit_op *op107 ;
+>   struct jit_label *label108 ;
+>   struct jit_label *label109 ;
+>   struct jit_op *op110 ;
+>   struct jit_label *label111 ;
+>   struct jit_op *op112 ;
+>   struct jit_op *op113 ;
+>   struct jit_label *label114 ;
+>   struct jit_op *op115 ;
+>   struct jit_label *label116 ;
+>   struct jit_label *label117 ;
+>   struct jit_op *op118 ;
+>   struct jit_label *label119 ;
+>   struct jit_op *op120 ;
+>   struct jit_op *op121 ;
+>   struct jit_label *label122 ;
+>   struct jit_op *op123 ;
+>   struct jit_label *label124 ;
+>   struct jit_op *op125 ;
+>   struct jit_label *label126 ;
+>   struct jit_label *label127 ;
+>   struct jit_label *label128 ;
+>   struct jit_label *label129 ;
+>   struct jit_op *op130 ;
+>   struct jit_label *label131 ;
+>   struct jit_op *op132 ;
+>   struct jit_label *label133 ;
+>   struct jit_op *op134 ;
+>   struct jit_label *label135 ;
+>   struct jit_op *op136 ;
+>   struct jit_label *label137 ;
+>   struct jit_label *label138 ;
+>   struct jit_op *op139 ;
+>   struct jit_label *label140 ;
+>   struct jit_label *label141 ;
+>   struct jit_label *label142 ;
+>   struct jit_label *label143 ;
+>   struct jit_label *label144 ;
+>   struct jit_op *op145 ;
+>   struct jit_label *label146 ;
+>   struct jit_label *label147 ;
+>   struct jit_op *op148 ;
+>   struct jit_label *label149 ;
+>   struct jit_label *label150 ;
+>   struct jit_op *op151 ;
+>   struct jit_label *label152 ;
+>   struct jit_label *label153 ;
+>   struct jit_label *label154 ;
+>   struct jit_op *op155 ;
+>   struct jit_label *label156 ;
+>   struct jit_op *op157 ;
+>   struct jit_op *op158 ;
+>   struct jit_label *label159 ;
+>   struct jit_label *label160 ;
+>   struct jit_label *label161 ;
+>   struct jit_label *label162 ;
+>   struct jit_label *label163 ;
+>   struct jit_label *label164 ;
+>   struct jit_label *label165 ;
+>   struct jit_label *label166 ;
+>   struct jit_op *op167 ;
+>   struct jit_op *op168 ;
+>   struct jit_label *label169 ;
+>   struct jit_label *label170 ;
+>   struct jit_label *label171 ;
+>   struct jit_label *label172 ;
+>   struct jit_label *label173 ;
+>   struct jit_label *label174 ;
+>   struct jit_label *label175 ;
+>   struct jit_label *label176 ;
+>   struct jit_label *label177 ;
+>   struct jit_label *label178 ;
+>   struct jit_label *label179 ;
+>   struct jit_label *label180 ;
+>   int result181 ;
+>   unsigned int _4_sum__block_18_182[46]  = {573079797U, 2012589848U, 1957066307U,
+>                                             188075189U, 1122689780U, 3846835516U,
+>                                             3909901075U, 640326962U, 1247073917U,
+>                                             3139690569U, 1470476650U, 1408719571U,
+>                                             1295910111U, 563203223U, 3242580243U,
+>                                             3244851236U, 2961343200U, 22907385U, 2792393103U,
+>                                             600865609U, 1552999495U, 1424594919U,
+>                                             2739305933U, 992332437U, 2552704148U,
+>                                             291750595U, 1030061400U, 377377360U, 586843120U,
+>                                             1993221306U, 746679426U, 4133431095U,
+>                                             217650703U, 1537774629U, 1411193893U,
+>                                             509446770U, 1627736694U, 1343025353U,
+>                                             1960570298U, 653090990U, 3051342602U,
+>                                             2622800040U, 3517366146U, 1050721581U,
+>                                             1682021300U, 1661888780U};
+>   unsigned int _4_sum__block_30_183[4]  = {3244492034U, 2637488831U, 2418090735U,
+>                                            2966336243U};
+>   unsigned int _4_sum__block_14_184[48]  = {3824129807U, 1869944024U, 3411283174U,
+>                                             638763586U, 3908216732U, 4281944513U,
+>                                             3909901075U, 640326962U, 1813224340U,
+>                                             3186307230U, 259664212U, 372155881U, 272190450U,
+>                                             566548200U, 8549430U, 3017654941U, 2961343200U,
+>                                             22907385U, 207515810U, 2601234292U, 3831206094U,
+>                                             3402454731U, 3232195548U, 927242374U,
+>                                             497517825U, 2472862170U, 3856215518U,
+>                                             2982786413U, 4029829968U, 3013618358U,
+>                                             3131642143U, 365828860U, 1031977062U,
+>                                             3174279629U, 865483554U, 128437740U, 3660546258U,
+>                                             3951444141U, 2886035330U, 3682900985U,
+>                                             3724547709U, 4057148873U, 3944417091U,
+>                                             2757629986U, 3909901075U, 640326962U,
+>                                             38007769U, 4261943231U};
+>   unsigned int _4_sum__block_15_185[38]  = {3824129807U, 1869944024U, 3411283174U,
+>                                             638763586U, 3908216732U, 4281944513U,
+>                                             3909901075U, 640326962U, 1813224340U,
+>                                             3186307230U, 259664212U, 372155881U, 272190450U,
+>                                             566548200U, 8549430U, 3017654941U, 2961343200U,
+>                                             22907385U, 203533658U, 2809029687U, 2802817124U,
+>                                             3409599854U, 2361075622U, 2003688007U,
+>                                             3590778346U, 3268777602U, 2987479263U,
+>                                             1519383824U, 792315253U, 2011403914U,
+>                                             367708683U, 1581272529U, 1439175412U,
+>                                             466862756U, 1807823464U, 1453248145U,
+>                                             2852814079U, 263745013U};
+>   unsigned int _4_sum__block_31_186[4]  = {3244492034U, 2637488831U, 2418090735U,
+>                                            2966336243U};
+>   unsigned int _4_sum__block_23_187[4]  = {3244492034U, 2637488831U, 2418090735U,
+>                                            2966336243U};
+>   unsigned int _4_sum__block_3_188[26]  = {3824129807U, 1869944024U, 3411283174U,
+>                                            638763586U, 3908216732U, 4281944513U, 3909901075U,
+>                                            640326962U, 1813224340U, 3186307230U, 259664212U,
+>                                            372155881U, 2271490549U, 1656851355U, 3323471735U,
+>                                            4146411254U, 1611583498U, 3965889276U,
+>                                            1344433227U, 1475548077U, 3543110503U,
+>                                            4230840293U, 3320358848U, 4021135154U,
+>                                            2803971160U, 1717121115U};
+>   unsigned int _4_sum__block_16_189[20]  = {3824129807U, 1869944024U, 3411283174U,
+>                                             638763586U, 3908216732U, 4281944513U,
+>                                             3909901075U, 640326962U, 1813224340U,
+>                                             3186307230U, 2149193138U, 1200490542U,
+>                                             3688583500U, 3530278313U, 1807823464U,
+>                                             1453248145U, 1002391260U, 3374147120U,
+>                                             3413105612U, 1226850241U};
+>   unsigned int _4_sum__block_24_190[4]  = {3244492034U, 2637488831U, 2418090735U,
+>                                            2966336243U};
+>   unsigned int _4_sum__block_26_191[4]  = {3244492034U, 2637488831U, 2418090735U,
+>                                            2966336243U};
+>   unsigned int _4_sum__block_13_192[22]  = {1234440838U, 2327467330U, 339509834U,
+>                                             1482979545U, 1742771627U, 2618702476U,
+>                                             3469880244U, 1973174428U, 884651306U,
+>                                             458136709U, 3937335362U, 67419301U, 2251248765U,
+>                                             3359687617U, 3168229939U, 2109232157U,
+>                                             2940624107U, 1264715667U, 3861147062U,
+>                                             2546737067U, 3413105612U, 1226850241U};
+>   unsigned int _4_sum__block_19_193[20]  = {3824129807U, 1869944024U, 3411283174U,
+>                                             638763586U, 3908216732U, 4281944513U,
+>                                             3909901075U, 640326962U, 1813224340U,
+>                                             3186307230U, 2253714173U, 715541125U,
+>                                             1468995399U, 1461298032U, 2936681288U,
+>                                             4031375398U, 3966324130U, 1942773042U,
+>                                             1819648247U, 640940788U};
+>   unsigned int _4_sum__block_22_194[4]  = {3244492034U, 2637488831U, 2418090735U,
+>                                            2966336243U};
+>   unsigned int _4_sum__block_28_195[4]  = {3244492034U, 2637488831U, 2418090735U,
+>                                            2966336243U};
+>   unsigned int _4_sum__block_5_196[12]  = {1234440838U, 2327467330U, 924384978U, 451356220U,
+>                                            1364518141U, 1061895442U, 1438369229U,
+>                                            2131605251U, 2540945658U, 1240111647U,
+>                                            3720581452U, 2535981114U};
+>   unsigned int _4_sum__block_7_197[12]  = {1234440838U, 2327467330U, 924384978U, 451356220U,
+>                                            1364518141U, 1061895442U, 1438369229U,
+>                                            2131605251U, 541986537U, 4026755614U, 3720581452U,
+>                                            2535981114U};
+>   struct jit_label *self198 ;
+>   struct jit_op *op199 ;
+>   struct jit_label *label200 ;
+>   struct jit_op *op201 ;
+>   struct jit_label *label202 ;
+>   struct jit_op *op203 ;
+>   struct jit_op *op204 ;
+>   struct jit_label *label205 ;
+>   struct jit_op *op206 ;
+>   struct jit_label *label207 ;
+>   struct jit_op *op208 ;
+>   struct jit_op *op209 ;
+>   struct jit_label *label210 ;
+>   struct jit_op *op211 ;
+>   struct jit_label *label212 ;
+>   struct jit_label *label213 ;
+>   struct jit_op *op214 ;
+>   struct jit_op *op215 ;
+>   struct jit_label *label216 ;
+>   struct jit_op *op217 ;
+>   struct jit_label *label218 ;
+>   struct jit_label *label219 ;
+>   struct jit_op *op220 ;
+>   struct jit_op *op221 ;
+>   struct jit_label *label222 ;
+>   struct jit_label *label223 ;
+>   struct jit_op *op224 ;
+>   struct jit_label *label225 ;
+>   struct jit_op *op226 ;
+>   struct jit_op *op227 ;
+>   struct jit_op *op228 ;
+>   struct jit_label *label229 ;
+>   struct jit_op *op230 ;
+>   struct jit_op *op231 ;
+>   struct jit_label *label232 ;
+>   struct jit_op *op233 ;
+>   struct jit_op *op234 ;
+>   struct jit_op *op235 ;
+>   struct jit_op *op236 ;
+>   struct jit_op *op237 ;
+>   struct jit_op *op238 ;
+>   struct jit_op *op239 ;
+>   struct jit_op *op240 ;
+>   struct jit_op *op241 ;
+>   struct jit_op *op242 ;
+>   struct jit_op *op243 ;
+>   struct jit_op *op244 ;
+>   struct jit_label *label245 ;
+>   struct jit_label *label246 ;
+>   struct jit_op *op247 ;
+>   struct jit_label *label248 ;
+>   struct jit_op *op249 ;
+>   struct jit_label *label250 ;
+>   struct jit_op *op251 ;
+>   struct jit_label *label252 ;
+>   struct jit_label *label253 ;
+>   struct jit_op *op254 ;
+>   struct jit_label *label255 ;
+>   struct jit_op *op256 ;
+>   struct jit_op *op257 ;
+>   struct jit_label *label258 ;
+>   struct jit_op *op259 ;
+>   struct jit_label *label260 ;
+>   struct jit_label *label261 ;
+>   struct jit_op *op262 ;
+>   struct jit_label *label263 ;
+>   struct jit_op *op264 ;
+>   struct jit_op *op265 ;
+>   struct jit_label *label266 ;
+>   struct jit_op *op267 ;
+>   struct jit_label *label268 ;
+>   struct jit_op *op269 ;
+>   struct jit_label *label270 ;
+>   struct jit_label *label271 ;
+>   struct jit_label *label272 ;
+>   struct jit_op *op273 ;
+>   struct jit_label *label274 ;
+>   struct jit_op *op275 ;
+>   struct jit_label *label276 ;
+>   struct jit_op *op277 ;
+>   struct jit_label *label278 ;
+>   struct jit_op *op279 ;
+>   struct jit_label *label280 ;
+>   struct jit_label *label281 ;
+>   struct jit_label *label282 ;
+>   struct jit_label *label283 ;
+>   struct jit_label *label284 ;
+>   struct jit_op *op285 ;
+>   struct jit_label *label286 ;
+>   struct jit_label *label287 ;
+>   struct jit_op *op288 ;
+>   struct jit_label *label289 ;
+>   struct jit_label *label290 ;
+>   struct jit_op *op291 ;
+>   struct jit_label *label292 ;
+>   struct jit_label *label293 ;
+>   struct jit_label *label294 ;
+>   struct jit_op *op295 ;
+>   struct jit_label *label296 ;
+>   struct jit_op *op297 ;
+>   struct jit_label *label298 ;
+>   struct jit_label *label299 ;
+>   struct jit_label *label300 ;
+>   struct jit_label *label301 ;
+>   struct jit_label *label302 ;
+>   struct jit_label *label303 ;
+>   struct jit_label *label304 ;
+>   struct jit_op *op305 ;
+>   struct jit_op *op306 ;
+>   struct jit_label *label307 ;
+>   struct jit_label *label308 ;
+>   struct jit_label *label309 ;
+>   struct jit_label *label310 ;
+>   struct jit_label *label311 ;
+>   struct jit_label *label312 ;
+>   struct jit_label *label313 ;
+>   struct jit_label *label314 ;
+>   struct jit_label *label315 ;
+>   int result316 ;
+18,34c394,1480
+<   _3_sum_$sp[0] = _3_sum_$stack[0];
+<   _3_sum_$pc[0] = _3_sum_$array[0];
+<   goto *(*(_3_sum_$pc[0]));
+<   Lab_2000001: /* CIL Label */ ;
+<   _3_sum__load_int$left_STA_0$result_STA_0: /* CIL Label */ ;
+<   (_3_sum_$pc[0]) ++;
+<   (_3_sum_$sp[0] + 0)->_int = *((int *)(_3_sum_$sp[0] + 0)->_void_star);
+<   goto *(*(_3_sum_$pc[0]));
+<   _3_sum__formal$result_STA_0$value_LIT_0: /* CIL Label */ ;
+<   (_3_sum_$pc[0]) ++;
+<   switch (*((int *)_3_sum_$pc[0])) {
+<   case 1: 
+<   (_3_sum_$sp[0] + 1)->_void_star = (void *)(& y);
+<   break;
+<   case 0: 
+<   (_3_sum_$sp[0] + 1)->_void_star = (void *)(& x);
+<   break;
+---
+>   if (_4_sum___freq % 1 == 0) {
+>     if (p12 != 0) {
+>       jit_free(p12);
+>       p12 = 0;
+>     } else {
+> 
+>     }
+>     p12 = jit_init();
+>     jit_enable_optimization(p12, 1L);
+>     jit_enable_optimization(p12, 2L);
+>     jit_enable_optimization(p12, 4L);
+>     jit_enable_optimization(p12, 8L);
+>     self198 = jit_get_label(p12);
+>     jit_add_prolog(p12, & _4_sum___foo, 0);
+>     localSize14 = jit_allocai(p12, 436L);
+>     jit_add_op(p12, JIT_DECL_ARG, ((0 << 4) | (2 << 2)) | 2, 0, 4, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_DECL_ARG, ((0 << 4) | (2 << 2)) | 2, 0, 4, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 400),
+>                0L, 0);
+>     jit_add_op(p12, JIT_GETARG, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                1L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)), 0L, 4, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 404),
+>                0L, 0);
+>     jit_add_op(p12, JIT_GETARG, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((4 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((4 & 268435455) << 4)), 0L, 4, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((5 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 424),
+>                0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((6 & 268435455) << 4)),
+>                (jit_value )(& _4_sum___stringStore), 0L, 0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((5 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((6 & 268435455) << 4)), 0L, 8, 0);
+>     op199 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     jit_add_op(p12, JIT_CODE_ALIGN | 2, ((0 << 4) | (0 << 2)) | 2, 8L, 0L, 0L, 0L,
+>                0);
+>     label200 = jit_get_label(p12);
+>     jit_data_bytes(p12, 184L, (unsigned char *)(_4_sum__block_18_182));
+>     jit_add_op(p12, JIT_TOUCH, ((0 << 4) | (0 << 2)) | 3, 4L, 0L, 0L, 0L, 0);
+>     op201 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     label202 = jit_get_label(p12);
+>     op203 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 3L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 104L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_decipher),
+>                0L, 0L, 0L, 0);
+>     op204 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     label205 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op201, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                (jit_value )label200, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 18L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 184L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_encipher),
+>                0L, 0L, 0L, 0);
+>     op206 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     label207 = jit_get_label(p12);
+>     op208 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 14L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 192L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_decipher),
+>                0L, 0L, 0L, 0);
+>     op209 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     label210 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 392),
+>                0L, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 392),
+>                0L, 0);
+>     jit_add_op(p12, JIT_LD | (1 | 4), ((0 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)), 0L, 8, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((4 & 268435455) << 4)),
+>                1L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 1, ((0 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((5 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((4 & 268435455) << 4)), 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MUL | (2 | 4), ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((6 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((5 & 268435455) << 4)), 8L, 0L, 0);
+>     jit_add_op(p12, JIT_ADD | 1, ((1 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((7 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)), (0 & 1) | (((0 & 3) << 1) | ((6 & 268435455) << 4)),
+>                0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((7 & 268435455) << 4)), 0L, 8, 0);
+>     op211 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     jit_add_op(p12, JIT_CODE_ALIGN | 2, ((0 << 4) | (0 << 2)) | 2, 8L, 0L, 0L, 0L,
+>                0);
+>     label212 = jit_get_label(p12);
+>     jit_data_bytes(p12, 16L, (unsigned char *)(_4_sum__block_30_183));
+>     jit_add_op(p12, JIT_TOUCH, ((0 << 4) | (0 << 2)) | 3, 4L, 0L, 0L, 0L, 0);
+>     label213 = jit_get_label(p12);
+>     op214 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 5L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 48L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_decipher),
+>                0L, 0L, 0L, 0);
+>     op215 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     jit_add_op(p12, JIT_CODE_ALIGN | 2, ((0 << 4) | (0 << 2)) | 2, 8L, 0L, 0L, 0L,
+>                0);
+>     label216 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op208, 0L,
+>                0L, 0L, 0);
+>     jit_data_bytes(p12, 192L, (unsigned char *)(_4_sum__block_14_184));
+>     jit_add_op(p12, JIT_TOUCH, ((0 << 4) | (0 << 2)) | 3, 4L, 0L, 0L, 0L, 0);
+>     op217 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     jit_add_op(p12, JIT_CODE_ALIGN | 2, ((0 << 4) | (0 << 2)) | 2, 8L, 0L, 0L, 0L,
+>                0);
+>     label218 = jit_get_label(p12);
+>     jit_data_bytes(p12, 152L, (unsigned char *)(_4_sum__block_15_185));
+>     jit_add_op(p12, JIT_TOUCH, ((0 << 4) | (0 << 2)) | 3, 4L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label212,
+>                0L, 0L, 0L, 0);
+>     label219 = jit_get_label(p12);
+>     op220 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 19L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 80L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_decipher),
+>                0L, 0L, 0L, 0);
+>     op221 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     jit_add_op(p12, JIT_CODE_ALIGN | 2, ((0 << 4) | (0 << 2)) | 2, 8L, 0L, 0L, 0L,
+>                0);
+>     label222 = jit_get_label(p12);
+>     jit_data_bytes(p12, 16L, (unsigned char *)(_4_sum__block_31_186));
+>     jit_add_op(p12, JIT_TOUCH, ((0 << 4) | (0 << 2)) | 3, 4L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_TOUCH, ((0 << 4) | (0 << 2)) | 3, 48L, 0L, 0L, 0L, 0);
+>     label223 = jit_get_label(p12);
+>     op224 = jit_add_op(p12, JIT_REF_DATA, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((4 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_SUB | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)), 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MUL | (2 | 0), ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)), 8L, 0L, 0);
+>     jit_add_op(p12, JIT_LDX | (1 | 4), ((1 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((5 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((4 & 268435455) << 4)), (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                8, 0);
+>     jit_add_op(p12, JIT_JMP | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((5 & 268435455) << 4)),
+>                0, 0L, 0L, 0);
+>     label225 = jit_get_label(p12);
+>     op226 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 28L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 16L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_encipher),
+>                0L, 0L, 0L, 0);
+>     op227 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 22L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 16L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_encipher),
+>                0L, 0L, 0L, 0);
+>     op228 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     label229 = jit_get_label(p12);
+>     op230 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 23L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 16L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_decipher),
+>                0L, 0L, 0L, 0);
+>     op231 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     label232 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 0),
+>                0L, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)), 120L, 0L, 0);
+>     op233 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)), 0L, 8, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 0),
+>                0L, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)), 112L, 0L, 0);
+>     op234 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)), 0L, 8, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 0),
+>                0L, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)), 104L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                8L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 1, ((0 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((4 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)), 0L, 0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((4 & 268435455) << 4)), 0L, 8, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 0),
+>                0L, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)), 96L, 0L, 0);
+>     op235 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)), 0L, 8, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 0),
+>                0L, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)), 88L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                1L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 1, ((0 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((4 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)), 0L, 0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((4 & 268435455) << 4)), 0L, 8, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 0),
+>                0L, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)), 80L, 0L, 0);
+>     op236 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)), 0L, 8, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 0),
+>                0L, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)), 72L, 0L, 0);
+>     op237 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)), 0L, 8, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 0),
+>                0L, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)), 64L, 0L, 0);
+>     op238 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)), 0L, 8, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 0),
+>                0L, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)), 56L, 0L, 0);
+>     op239 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)), 0L, 8, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 0),
+>                0L, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)), 48L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                1L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 1, ((0 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((4 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)), 0L, 0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((4 & 268435455) << 4)), 0L, 8, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 0),
+>                0L, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)), 40L, 0L, 0);
+>     op240 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)), 0L, 8, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 0),
+>                0L, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)), 32L, 0L, 0);
+>     op241 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)), 0L, 8, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 0),
+>                0L, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)), 24L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 1, ((0 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((4 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)), 0L, 0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((4 & 268435455) << 4)), 0L, 8, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 0),
+>                0L, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)), 16L, 0L, 0);
+>     op242 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)), 0L, 8, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 0),
+>                0L, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)), 8L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                8L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 1, ((0 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((4 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)), 0L, 0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((4 & 268435455) << 4)), 0L, 8, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 0),
+>                0L, 0);
+>     op243 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)), 0L, 8, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 128),
+>                0L, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 136),
+>                0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)), 0L, 8, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 392),
+>                0L, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 0),
+>                0L, 0);
+>     jit_add_op(p12, JIT_ST | 1, ((0 << 4) | (1 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)), 0L, 8, 0);
+>     op244 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     jit_add_op(p12, JIT_CODE_ALIGN | 2, ((0 << 4) | (0 << 2)) | 2, 8L, 0L, 0L, 0L,
+>                0);
+>     label245 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op230, 0L,
+>                0L, 0L, 0);
+>     jit_data_bytes(p12, 16L, (unsigned char *)(_4_sum__block_23_187));
+>     jit_add_op(p12, JIT_TOUCH, ((0 << 4) | (0 << 2)) | 3, 4L, 0L, 0L, 0L, 0);
+>     label246 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op199, 0L,
+>                0L, 0L, 0);
+>     op247 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 24L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 16L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_decipher),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label219,
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CODE_ALIGN | 2, ((0 << 4) | (0 << 2)) | 2, 8L, 0L, 0L, 0L,
+>                0);
+>     label248 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op204, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op203, 0L,
+>                0L, 0L, 0);
+>     jit_data_bytes(p12, 104L, (unsigned char *)(_4_sum__block_3_188));
+>     jit_add_op(p12, JIT_TOUCH, ((0 << 4) | (0 << 2)) | 3, 4L, 0L, 0L, 0L, 0);
+>     op249 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     jit_add_op(p12, JIT_CODE_ALIGN | 2, ((0 << 4) | (0 << 2)) | 2, 8L, 0L, 0L, 0L,
+>                0);
+>     label250 = jit_get_label(p12);
+>     jit_data_bytes(p12, 80L, (unsigned char *)(_4_sum__block_16_189));
+>     jit_add_op(p12, JIT_TOUCH, ((0 << 4) | (0 << 2)) | 3, 4L, 0L, 0L, 0L, 0);
+>     op251 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     jit_add_op(p12, JIT_CODE_ALIGN | 2, ((0 << 4) | (0 << 2)) | 2, 8L, 0L, 0L, 0L,
+>                0);
+>     label252 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op247, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op244, 0L,
+>                0L, 0L, 0);
+>     jit_data_bytes(p12, 16L, (unsigned char *)(_4_sum__block_24_190));
+>     jit_add_op(p12, JIT_TOUCH, ((0 << 4) | (0 << 2)) | 3, 4L, 0L, 0L, 0L, 0);
+>     label253 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op242, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op240, 0L,
+>                0L, 0L, 0);
+>     op254 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     label255 = jit_get_label(p12);
+>     op256 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 19L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 80L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_encipher),
+>                0L, 0L, 0L, 0);
+>     op257 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     label258 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op221, 0L,
+>                0L, 0L, 0);
+>     op259 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 28L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 16L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_decipher),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label213,
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CODE_ALIGN | 2, ((0 << 4) | (0 << 2)) | 2, 8L, 0L, 0L, 0L,
+>                0);
+>     label260 = jit_get_label(p12);
+>     jit_data_bytes(p12, 16L, (unsigned char *)(_4_sum__block_26_191));
+>     jit_add_op(p12, JIT_TOUCH, ((0 << 4) | (0 << 2)) | 3, 4L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_TOUCH, ((0 << 4) | (0 << 2)) | 3, 48L, 0L, 0L, 0L, 0);
+>     label261 = jit_get_label(p12);
+>     op262 = jit_add_op(p12, JIT_BGT | (2 | 0), ((2 << 4) | (1 << 2)) | 2, 0, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                        1L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label223,
+>                0L, 0L, 0L, 0);
+>     label263 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op224, 0L,
+>                0L, 0L, 0);
+>     op264 = jit_add_op(p12, JIT_DATA_REF_CODE | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L,
+>                        0L, 0L, 0);
+>     op265 = jit_add_op(p12, JIT_DATA_REF_CODE | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L,
+>                        0L, 0L, 0);
+>     jit_add_op(p12, JIT_CODE_ALIGN | 2, ((0 << 4) | (0 << 2)) | 2, 8L, 0L, 0L, 0L,
+>                0);
+>     label266 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op262, 0L,
+>                0L, 0L, 0);
+>     jit_data_bytes(p12, 88L, (unsigned char *)(_4_sum__block_13_192));
+>     jit_add_op(p12, JIT_TOUCH, ((0 << 4) | (0 << 2)) | 3, 4L, 0L, 0L, 0L, 0);
+>     op267 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     label268 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op251, 0L,
+>                0L, 0L, 0);
+>     op269 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 5L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 48L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_encipher),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label255,
+>                0L, 0L, 0L, 0);
+>     label270 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op249, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                (jit_value )label248, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 3L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 104L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_encipher),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label260,
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CODE_ALIGN | 2, ((0 << 4) | (0 << 2)) | 2, 8L, 0L, 0L, 0L,
+>                0);
+>     label271 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op256, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op220, 0L,
+>                0L, 0L, 0);
+>     jit_data_bytes(p12, 80L, (unsigned char *)(_4_sum__block_19_193));
+>     jit_add_op(p12, JIT_TOUCH, ((0 << 4) | (0 << 2)) | 3, 4L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label245,
+>                0L, 0L, 0L, 0);
+>     label272 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op233, 0L,
+>                0L, 0L, 0);
+>     op273 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     label274 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op228, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                (jit_value )label212, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 30L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 16L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_encipher),
+>                0L, 0L, 0L, 0);
+>     op275 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     label276 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                (jit_value )label245, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 23L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 16L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_encipher),
+>                0L, 0L, 0L, 0);
+>     op277 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     label278 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op209, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                (jit_value )label218, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 15L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 152L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_decipher),
+>                0L, 0L, 0L, 0);
+>     op279 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     label280 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op267, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                (jit_value )label266, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 13L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 88L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_encipher),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label222,
+>                0L, 0L, 0L, 0);
+>     label281 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op237, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label218,
+>                0L, 0L, 0L, 0);
+>     label282 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op257, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                (jit_value )label218, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 15L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 152L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_encipher),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label225,
+>                0L, 0L, 0L, 0);
+>     label283 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op254, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                (jit_value )label266, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 13L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 88L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_decipher),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label210,
+>                0L, 0L, 0L, 0);
+>     label284 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op243, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op235, 0L,
+>                0L, 0L, 0);
+>     op285 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     label286 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op231, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                (jit_value )label222, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 31L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 16L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_decipher),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label232,
+>                0L, 0L, 0L, 0);
+>     label287 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op275, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                (jit_value )label222, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 31L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 16L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_encipher),
+>                0L, 0L, 0L, 0);
+>     op288 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     label289 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op285, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                (jit_value )label200, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 18L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 184L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_decipher),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label200,
+>                0L, 0L, 0L, 0);
+>     label290 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op288, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                (jit_value )label252, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 24L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 16L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_encipher),
+>                0L, 0L, 0L, 0);
+>     op291 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     jit_add_op(p12, JIT_CODE_ALIGN | 2, ((0 << 4) | (0 << 2)) | 2, 8L, 0L, 0L, 0L,
+>                0);
+>     label292 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op227, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op206, 0L,
+>                0L, 0L, 0);
+>     jit_data_bytes(p12, 16L, (unsigned char *)(_4_sum__block_22_194));
+>     jit_add_op(p12, JIT_TOUCH, ((0 << 4) | (0 << 2)) | 3, 4L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CODE_ALIGN | 2, ((0 << 4) | (0 << 2)) | 2, 8L, 0L, 0L, 0L,
+>                0);
+>     label293 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op259, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op226, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op217, 0L,
+>                0L, 0L, 0);
+>     jit_data_bytes(p12, 16L, (unsigned char *)(_4_sum__block_28_195));
+>     jit_add_op(p12, JIT_TOUCH, ((0 << 4) | (0 << 2)) | 3, 4L, 0L, 0L, 0L, 0);
+>     label294 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                (jit_value )label216, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 14L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 192L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_encipher),
+>                0L, 0L, 0L, 0);
+>     op295 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     label296 = jit_get_label(p12);
+>     op297 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 7L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 48L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_encipher),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label266,
+>                0L, 0L, 0L, 0);
+>     label298 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op295, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                (jit_value )label250, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 16L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 80L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_encipher),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label276,
+>                0L, 0L, 0L, 0);
+>     label299 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op291, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                (jit_value )label260, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 26L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 16L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_encipher),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label294,
+>                0L, 0L, 0L, 0);
+>     label300 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                (jit_value )label292, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 22L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 16L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_decipher),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label207,
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CODE_ALIGN | 2, ((0 << 4) | (0 << 2)) | 2, 8L, 0L, 0L, 0L,
+>                0);
+>     label301 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op269, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op214, 0L,
+>                0L, 0L, 0);
+>     jit_data_bytes(p12, 48L, (unsigned char *)(_4_sum__block_5_196));
+>     jit_add_op(p12, JIT_TOUCH, ((0 << 4) | (0 << 2)) | 3, 4L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label266,
+>                0L, 0L, 0L, 0);
+>     label302 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op215, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                (jit_value )label260, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 26L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 16L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_decipher),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label300,
+>                0L, 0L, 0L, 0);
+>     label303 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op238, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label216,
+>                0L, 0L, 0L, 0);
+>     label304 = jit_get_label(p12);
+>     op305 = jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                        0, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 7L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 48L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_decipher),
+>                0L, 0L, 0L, 0);
+>     op306 = jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, 0, 0L, 0L, 0L,
+>                        0);
+>     label307 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op211, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 392),
+>                0L, 0);
+>     jit_add_op(p12, JIT_LD | (1 | 4), ((0 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)), 0L, 8, 0);
+>     jit_add_op(p12, JIT_LD | (1 | 0), ((0 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)), 0L, 4, 0);
+>     jit_add_op(p12, JIT_BLT | (2 | 0), ((2 << 4) | (1 << 2)) | 2, (jit_value )label266,
+>                (0 & 1) | (((0 & 3) << 1) | ((3 & 268435455) << 4)), 0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label261,
+>                0L, 0L, 0L, 0);
+>     label308 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op265, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label301,
+>                0L, 0L, 0L, 0);
+>     label309 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op273, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                (jit_value )label250, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 16L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 80L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_decipher),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label250,
+>                0L, 0L, 0L, 0);
+>     label310 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op241, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op239, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op234, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label202,
+>                0L, 0L, 0L, 0);
+>     label311 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op279, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_REF_CODE, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                (jit_value )label212, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_MOV | 2, ((0 << 4) | (2 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                (jit_value )(KEY_1918301893_3786249548_975574495_634376995), 0L, 0L,
+>                0);
+>     jit_add_op(p12, JIT_PREPARE, ((0 << 4) | (2 << 2)) | 2, 0L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 30L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 32L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((22 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((23 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_PUTARG | 2, ((0 << 4) | (0 << 2)) | 2, 16L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CALL | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )(& _cipher$_xtea_decipher),
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label229,
+>                0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_CODE_ALIGN | 2, ((0 << 4) | (0 << 2)) | 2, 8L, 0L, 0L, 0L,
+>                0);
+>     label312 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op306, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op305, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op297, 0L,
+>                0L, 0L, 0);
+>     jit_data_bytes(p12, 48L, (unsigned char *)(_4_sum__block_7_197));
+>     jit_add_op(p12, JIT_TOUCH, ((0 << 4) | (0 << 2)) | 3, 4L, 0L, 0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label296,
+>                0L, 0L, 0L, 0);
+>     label313 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op236, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label271,
+>                0L, 0L, 0L, 0);
+>     label314 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op264, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_JMP | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )label304,
+>                0L, 0L, 0L, 0);
+>     label315 = jit_get_label(p12);
+>     jit_add_op(p12, JIT_PATCH | 2, ((0 << 4) | (0 << 2)) | 2, (jit_value )op277, 0L,
+>                0L, 0L, 0);
+>     jit_add_op(p12, JIT_ADD | 2, ((2 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)),
+>                (0 & 1) | (((2 & 3) << 1) | ((0 & 268435455) << 4)), (jit_value )(localSize14 + 408),
+>                0L, 0);
+>     jit_add_op(p12, JIT_LD | (1 | 0), ((0 << 4) | (1 << 2)) | 3, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                (0 & 1) | (((0 & 3) << 1) | ((1 & 268435455) << 4)), 0L, 4, 0);
+>     jit_add_op(p12, JIT_RET | 1, ((0 << 4) | (0 << 2)) | 1, (0 & 1) | (((0 & 3) << 1) | ((2 & 268435455) << 4)),
+>                0L, 0L, 0L, 0);
+>     jit_generate_code(p12);
+>     _4_sum___freq ++;
+>   } else {
+> 
+36,62c1482,1483
+<   (_3_sum_$sp[0]) ++;
+<   (_3_sum_$pc[0]) ++;
+<   goto *(*(_3_sum_$pc[0]));
+<   _3_sum__PlusA_int_int2int$right_STA_0$result_STA_0$left_STA_1: /* CIL Label */ ;
+<   (_3_sum_$pc[0]) ++;
+<   (_3_sum_$sp[0] + -1)->_int = (_3_sum_$sp[0] + -1)->_int + (_3_sum_$sp[0] + 0)->_int;
+<   (_3_sum_$sp[0]) --;
+<   goto *(*(_3_sum_$pc[0]));
+<   _3_sum__store_int$right_STA_0$left_STA_1: /* CIL Label */ ;
+<   (_3_sum_$pc[0]) ++;
+<   *((int *)(_3_sum_$sp[0] + -1)->_void_star) = (_3_sum_$sp[0] + 0)->_int;
+<   _3_sum_$sp[0] += -2;
+<   goto *(*(_3_sum_$pc[0]));
+<   _3_sum__return_int$expr_STA_0: /* CIL Label */ ;
+<   (_3_sum_$pc[0]) ++;
+<   return ((_3_sum_$sp[0] + 0)->_int);
+<   goto *(*(_3_sum_$pc[0]));
+<   _3_sum__local$result_STA_0$value_LIT_0: /* CIL Label */ ;
+<   (_3_sum_$pc[0]) ++;
+<   (_3_sum_$sp[0] + 1)->_void_star = (void *)(_3_sum_$locals + *((int *)_3_sum_$pc[0]));
+<   (_3_sum_$sp[0]) ++;
+<   (_3_sum_$pc[0]) ++;
+<   goto *(*(_3_sum_$pc[0]));
+<   _3_sum__goto$label_LAB_0: /* CIL Label */ ;
+<   (_3_sum_$pc[0]) ++;
+<   _3_sum_$pc[0] += *((int *)_3_sum_$pc[0]);
+<   goto *(*(_3_sum_$pc[0]));
+---
+>   result316 = (*_4_sum___foo)(x, y);
+>   return (result316);

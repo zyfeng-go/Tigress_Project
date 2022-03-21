@@ -1,0 +1,167 @@
+8,37d7
+<   unsigned char left11 ;
+<   unsigned char right12 ;
+<   unsigned char result13 ;
+<   unsigned char left14 ;
+<   unsigned char right15 ;
+<   unsigned char result16 ;
+<   unsigned char left17 ;
+<   unsigned char right18 ;
+<   unsigned char result19 ;
+<   unsigned char left20 ;
+<   unsigned char right21 ;
+<   unsigned char result22 ;
+<   unsigned char left23 ;
+<   unsigned char right24 ;
+<   unsigned char result25 ;
+<   unsigned char left26 ;
+<   unsigned char right27 ;
+<   unsigned char result28 ;
+<   int left29 ;
+<   int right30 ;
+<   int result31 ;
+<   int selfModify_BEGIN_3 ;
+<   int selfModify_END_3 ;
+<   unsigned long *addrPtr34 ;
+<   unsigned int *opPtr35 ;
+<   int selfModify_BEGIN_4 ;
+<   int selfModify_END_4 ;
+<   unsigned char left38 ;
+<   unsigned char right39 ;
+<   unsigned char result40 ;
+40,83d9
+<   if (_2_init_tigress__opaque_array[((unsigned int )(((_1_entropy | 9) + ((long )(_1_entropy | 9) >> 63L)) ^ ((long )(_1_entropy | 9) >> 63L)) % 10) * 3 + 0] % _2_init_tigress__opaque_array[5] != _2_init_tigress__opaque_array[2]) {
+<     goto *((void *)((_1_entropy & 3) * (_1_entropy | 3) + (_1_entropy & ~ 3) * (~ _1_entropy & 3)));
+<   } else {
+< 
+<   }
+<   addrPtr34 = (unsigned long *)((unsigned long )(&& Lab_2000001) + 34);
+<   *addrPtr34 = (unsigned long )(& left29);
+<   addrPtr34 = (unsigned long *)((unsigned long )(&& Lab_2000001) + 66);
+<   *addrPtr34 = (unsigned long )(& right30);
+<   addrPtr34 = (unsigned long *)((unsigned long )(&& Lab_2000001) + 112);
+<   *addrPtr34 = (unsigned long )(& result31);
+<   opPtr35 = (unsigned int *)((unsigned long )(&& Lab_2000001) + 96);
+<   addrPtr34 = (unsigned long *)((unsigned long )(&& Lab_2000001) + 170);
+<   *addrPtr34 = (unsigned long )(&& Lab_2000002);
+<   selfModify_BEGIN_3 = 1;
+<   Lab_2000001: /* CIL Label */ 
+<   __asm__  volatile   (".byte 0x9b,0xf9,0xf9,0xf5,0x90,0xf9,0x9b,0xf5,0xf5,0xfc;\n"
+<                        ".byte 0x50;\n"
+<                        ".byte 0xf5,0x90,0xfd,0xfd,0x9b,0x90,0xf8,0x90,0x90,0xfd;\n"
+<                        ".byte 0x51;\n"
+<                        ".byte 0xf5,0xf8,0x9b,0xf8,0xf9,0xf5,0x9b,0xfc,0x9b,0xfc;\n"
+<                        ".byte 0x48, 0xb8, 0xba,0xfe,0xbf,0xc,0x98,0x82,0xce,0xba;\n"
+<                        ".byte 0xf9,0x90,0x90,0x9b,0x9b,0xf9,0x9b,0xf9,0xf5,0x90;\n"
+<                        ".byte 0x8b, 0x00;\n"
+<                        ".byte 0xf8,0xf9,0xfd,0xfd,0xf9,0x90,0xf8,0x90,0xf5,0xf9;\n"
+<                        ".byte 0x48, 0xb9,  0xaa,0xa0,0x4c,0x99,0xf3,0x41,0x8a,0x1f;\n"
+<                        ".byte 0x9b,0x90,0xfc,0xf9,0xf9,0xf8,0xf9,0x9b,0xfc,0x9b;\n"
+<                        ".byte 0x8b, 0x09;\n"
+<                        ".byte 0x9b,0xfd,0x90,0x9b,0xfc,0xfd,0x9b,0xf5,0xf5,0xfd;\n"
+<                        ".byte  0x90, 0x01, 0xc8, 0x90;\n"
+<                        ".byte 0xf9,0x9b,0x90,0xf9,0xfc,0x9b,0x90,0x90,0xf9,0xf5;\n"
+<                        ".byte 0x48, 0xb9, 0xe4,0xe8,0xd7,0xc6,0x78,0x78,0x14,0xcd;\n"
+<                        ".byte 0xfc,0xf9,0xfd,0xf5,0xf9,0xf5,0xf8,0xf5,0xf9,0xfc;\n"
+<                        ".byte 0x89, 0x01;\n"
+<                        ".byte 0x90,0x9b,0xfc,0xf5,0xfd,0xf9,0xf9,0xf8,0x90,0xfc;\n"
+<                        ".byte 0x59;\n"
+<                        ".byte 0xfc,0xfc,0xf8,0xf8,0xfc,0x90,0xfc,0xfd,0xf8,0xfd;\n"
+<                        ".byte 0x58;\n"
+<                        ".byte 0xf8,0x9b,0xfd,0xfd,0xfd,0x9b,0x9b,0xf5,0xfc,0x9b;\n"
+<                        ".byte 0xff, 0x25, 00, 00, 00, 00, 0xfc,0x21,0x9e,0x25,0x66,0xe9,0xfc,0x6a;\n"
+<                        ".byte 0x90,0xf9,0xfd,0xf8,0x9b,0x9b,0xfc,0x90,0xf5,0xfc;\n":);
+<   Lab_2000002: /* CIL Label */ 
+<   selfModify_END_3 = 1;
+<   {
+86d11
+<   }
+88d12
+<     {
+90d13
+<     }
+92d14
+<       {
+96d17
+<       }
+99d19
+<       {
+102d21
+<       }
+105d23
+<       {
+107d24
+<       }
+110d26
+<       {
+112d27
+<       }
+115d29
+<       {
+117d30
+<       }
+120d32
+<       {
+123d34
+<       }
+126d36
+<       {
+129d38
+<       }
+132d40
+<       {
+134d41
+<       }
+138d44
+<       {
+140,154c46
+<       {
+<       left29 = (_3_sum_$sp[0] + -1)->_int;
+<       right30 = (_3_sum_$sp[0] + 0)->_int;
+<       addrPtr34 = (unsigned long *)((unsigned long )(&& Lab_2000003) + 6);
+<       *addrPtr34 = (unsigned long )(&& Lab_2000001);
+<       addrPtr34 = (unsigned long *)((unsigned long )(&& Lab_2000001) + 170);
+<       *addrPtr34 = (unsigned long )(&& Lab_2000004);
+<       *opPtr35 = 2429026704U;
+<       selfModify_BEGIN_4 = 1;
+<       Lab_2000003: /* CIL Label */ 
+<       __asm__  volatile   (".byte 0xff, 0x25, 00, 00, 00, 00, 0xf0,0x15,0xa3,0xca,0x6a,0x65,0xef,0x31;\n":);
+<       Lab_2000004: /* CIL Label */ 
+<       selfModify_END_4 = 1;
+<       (_3_sum_$sp[0] + -1)->_int = result31;
+<       }
+---
+>       (_3_sum_$sp[0] + -1)->_int = (_3_sum_$sp[0] + -1)->_int + (_3_sum_$sp[0] + 0)->_int;
+156d47
+<       }
+159d49
+<       {
+164d53
+<       }
+166d54
+<       {
+168d55
+<       }
+171,192d57
+< }
+< }
+< int main(int _formal_argc , char **_formal_argv , char **_formal_envp ) 
+< { 
+<   int x ;
+<   int y ;
+<   int z ;
+<   int tmp ;
+<   int _BARRIER_0 ;
+< 
+<   {
+<   megaInit();
+<   _global_argc = _formal_argc;
+<   _global_argv = _formal_argv;
+<   _global_envp = _formal_envp;
+<   _BARRIER_0 = 1;
+<   x = 6;
+<   y = 9;
+<   tmp = sum(x, y);
+<   z = tmp;
+<   printf("The sum is %d.\n", z);
+<   return (0);

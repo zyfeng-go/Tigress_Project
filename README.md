@@ -25,6 +25,32 @@ tigress --Environment=x86_64:Linux:Gcc:7.5
         --out=baseline.c tigressTest.c
 ```
 
+### Research on Recipes
+#### 1. Recipe #2 Virtualization and Self-Modification
+
+The goal of transformation *Self-Modify* is to make specified functions (e.g. sum) self-modifying. It is especially useful after virtualization with a direct or indirect dispatch because most de-virtualization tools look for indirect branches and these are now gone from the code.
+
+Notice that the generated obfuscated source code should be compiled to run with ` gcc --static -Wl,--omagic source_code_file_name -o executable_file_name ` in Linux.
+
+Compared the function *sum* before and after using transformation *Self-Modify*, we conclude that transformation *Self-Modify* has impact on transformation *Virtualize*. The most intuitive difference is that *Self-Modify* inserts a binary code template into the code.
+
+The running commands are saved in [Recipes/2/run.sh](https://github.com/zyfeng-go/Tigress_Project/tree/main/Recipes/2/run.sh).
+
+#### 2. Recipe #3 Virtualization and Dynamic Obfuscation
+In this recipe, *Tigress* first virtualized and then added dynamic obfuscation to the source code. Notice that we got rid of transformation *Measure* because it did not really matter here.
+
+Transformation *JitDynamic* enables the program decode and re-encode itself as it is running. Compared the function *sum* before and after using transformation *JitDynamic*, we conclude that transformation *JitDynamic* has impact on transformation *Virtualize*.
+
+The running commands are saved in [Recipes/3/run.sh](https://github.com/zyfeng-go/Tigress_Project/tree/main/Recipes/3/run.sh).
+
+#### 3. Recipe #4 Merge, Virtualization, and Encode Literals
+In order to understand recipe #4, we modified our *tigressTest.c*. We inserted another function *mul* so that transformation *Merge* can be properly adapted.
+
+The running commands are saved in [Recipes/4/run.sh](https://github.com/zyfeng-go/Tigress_Project/tree/main/Recipes/4/run.sh).
+
+#### 4. Observations
+In general, we observed that the effect / impact of a transformation is added to the previous results. 
+
 ### Virtualize w/ Jit
 Include `#include "PATH_TO_TIGRESS/jitter-amd64.c"` to *tigressTest.c*.
 ```
@@ -80,4 +106,10 @@ tigress --Environment=x86_64:Linux:Gcc:7.5
         --Transform=InitOpaque --Functions=sum --InitOpaqueStructs=list 
         --Transform=EncodeLiterals --Functions=sum 
         --out=vir_EncodeLiterals.c ../tigressTest.c
+```
+
+### Virtualize w/ Encode Encode Data
+The goal is for a variable's real value to never be revealed. Notice that it only supports obfuscating integers, pointers to integers, arrays of integers or combinations of these at the moment. In addition, only *poly1* makes sense.
+
+```
 ```

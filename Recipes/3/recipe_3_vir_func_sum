@@ -1,0 +1,64 @@
+int sum(int x , int y ) 
+{ 
+  char _3_sum_$locals[12] ;
+  union _3_sum_$node _3_sum_$stack[1][32] ;
+  union _3_sum_$node *_3_sum_$sp[1] ;
+  void **_3_sum_$pc[1] ;
+  void *_3_sum_$array[1][16]  = {{&& _3_sum__local$result_STA_0$value_LIT_0, (void *)8UL,
+                                  && _3_sum__formal$result_STA_0$value_LIT_0, (void *)0UL,
+                                  && _3_sum__load_int$left_STA_0$result_STA_0, && _3_sum__formal$result_STA_0$value_LIT_0,
+                                  (void *)1UL, && _3_sum__load_int$left_STA_0$result_STA_0,
+                                  && _3_sum__PlusA_int_int2int$right_STA_0$result_STA_0$left_STA_1,
+                                  && _3_sum__store_int$right_STA_0$left_STA_1, && _3_sum__goto$label_LAB_0,
+                                  (void *)1UL, && _3_sum__local$result_STA_0$value_LIT_0,
+                                  (void *)8UL, && _3_sum__load_int$left_STA_0$result_STA_0,
+                                  && _3_sum__return_int$expr_STA_0}};
+
+  {
+  _3_sum_$sp[0] = _3_sum_$stack[0];
+  _3_sum_$pc[0] = _3_sum_$array[0];
+  goto *(*(_3_sum_$pc[0]));
+  Lab_2000001: /* CIL Label */ ;
+  _3_sum__load_int$left_STA_0$result_STA_0: /* CIL Label */ ;
+  (_3_sum_$pc[0]) ++;
+  (_3_sum_$sp[0] + 0)->_int = *((int *)(_3_sum_$sp[0] + 0)->_void_star);
+  goto *(*(_3_sum_$pc[0]));
+  _3_sum__formal$result_STA_0$value_LIT_0: /* CIL Label */ ;
+  (_3_sum_$pc[0]) ++;
+  switch (*((int *)_3_sum_$pc[0])) {
+  case 1: 
+  (_3_sum_$sp[0] + 1)->_void_star = (void *)(& y);
+  break;
+  case 0: 
+  (_3_sum_$sp[0] + 1)->_void_star = (void *)(& x);
+  break;
+  }
+  (_3_sum_$sp[0]) ++;
+  (_3_sum_$pc[0]) ++;
+  goto *(*(_3_sum_$pc[0]));
+  _3_sum__PlusA_int_int2int$right_STA_0$result_STA_0$left_STA_1: /* CIL Label */ ;
+  (_3_sum_$pc[0]) ++;
+  (_3_sum_$sp[0] + -1)->_int = (_3_sum_$sp[0] + -1)->_int + (_3_sum_$sp[0] + 0)->_int;
+  (_3_sum_$sp[0]) --;
+  goto *(*(_3_sum_$pc[0]));
+  _3_sum__store_int$right_STA_0$left_STA_1: /* CIL Label */ ;
+  (_3_sum_$pc[0]) ++;
+  *((int *)(_3_sum_$sp[0] + -1)->_void_star) = (_3_sum_$sp[0] + 0)->_int;
+  _3_sum_$sp[0] += -2;
+  goto *(*(_3_sum_$pc[0]));
+  _3_sum__return_int$expr_STA_0: /* CIL Label */ ;
+  (_3_sum_$pc[0]) ++;
+  return ((_3_sum_$sp[0] + 0)->_int);
+  goto *(*(_3_sum_$pc[0]));
+  _3_sum__local$result_STA_0$value_LIT_0: /* CIL Label */ ;
+  (_3_sum_$pc[0]) ++;
+  (_3_sum_$sp[0] + 1)->_void_star = (void *)(_3_sum_$locals + *((int *)_3_sum_$pc[0]));
+  (_3_sum_$sp[0]) ++;
+  (_3_sum_$pc[0]) ++;
+  goto *(*(_3_sum_$pc[0]));
+  _3_sum__goto$label_LAB_0: /* CIL Label */ ;
+  (_3_sum_$pc[0]) ++;
+  _3_sum_$pc[0] += *((int *)_3_sum_$pc[0]);
+  goto *(*(_3_sum_$pc[0]));
+}
+}
