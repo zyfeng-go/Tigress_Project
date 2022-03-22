@@ -1,0 +1,202 @@
+void merged(void *tigressRetVal , int x__6 , int y__7 , int whichBlock__8 ) 
+{ 
+  struct _2_init_tigress_1_opaque_NodeStruct *p1__0 ;
+  int i2__1 ;
+  struct _2_init_tigress_1_opaque_NodeStruct *p3__2 ;
+  int _2_init_tigress__BEGIN_1__3 ;
+  int _2_init_tigress__END_1__4 ;
+  char _4_merged_$locals[44] ;
+  union _4_merged_$node _4_merged_$stack[1][32] ;
+  union _4_merged_$node *_4_merged_$sp[1] ;
+  void **_4_merged_$pc[1] ;
+  void *_4_merged_$array[1][96]  = {{&& _4_merged__constant_int$result_STA_0$value_LIT_0,
+                                     (void *)0UL, && _4_merged__formal$result_STA_0$value_LIT_0,
+                                     (void *)3UL, && _4_merged__load_int$left_STA_0$result_STA_0,
+                                     && _4_merged__Eq_int_int2int$left_STA_0$result_STA_0$right_STA_1,
+                                     && _4_merged__branchIfTrue$expr_STA_0$label_LAB_0,
+                                     (void *)3UL, && _4_merged__goto$label_LAB_0,
+                                     (void *)14UL, && _4_merged__atomic$func_LIT_0,
+                                     (void *)1UL, && _4_merged__constant_int$result_STA_0$value_LIT_0,
+                                     (void *)1UL, && _4_merged__local$result_STA_0$value_LIT_0,
+                                     (void *)20UL, && _4_merged__store_int$left_STA_0$right_STA_1,
+                                     && _4_merged__goto$label_LAB_0, (void *)1UL,
+                                     && _4_merged__goto$label_LAB_0, (void *)1UL,
+                                     && _4_merged__goto$label_LAB_0, (void *)73UL,
+                                     && _4_merged__constant_int$result_STA_0$value_LIT_0,
+                                     (void *)1UL, && _4_merged__formal$result_STA_0$value_LIT_0,
+                                     (void *)3UL, && _4_merged__load_int$left_STA_0$result_STA_0,
+                                     && _4_merged__Eq_int_int2int$left_STA_0$result_STA_0$right_STA_1,
+                                     && _4_merged__branchIfTrue$expr_STA_0$label_LAB_0,
+                                     (void *)3UL, && _4_merged__goto$label_LAB_0,
+                                     (void *)16UL, && _4_merged__constant_int$result_STA_0$value_LIT_0,
+                                     (void *)4UL, && _4_merged__formal$result_STA_0$value_LIT_0,
+                                     (void *)1UL, && _4_merged__load_int$left_STA_0$result_STA_0,
+                                     && _4_merged__Mult_int_int2int$left_STA_0$result_STA_0$right_STA_1,
+                                     && _4_merged__formal$result_STA_0$value_LIT_0,
+                                     (void *)0UL, && _4_merged__load_void_star$left_STA_0$result_STA_0,
+                                     && _4_merged__convert_void_star2void_star$left_STA_0$result_STA_0,
+                                     && _4_merged__store_int$left_STA_0$right_STA_1,
+                                     && _4_merged__goto$label_LAB_0, (void *)1UL,
+                                     && _4_merged__goto$label_LAB_0, (void *)48UL,
+                                     && _4_merged__constant_int$result_STA_0$value_LIT_0,
+                                     (void *)2UL, && _4_merged__formal$result_STA_0$value_LIT_0,
+                                     (void *)3UL, && _4_merged__load_int$left_STA_0$result_STA_0,
+                                     && _4_merged__Eq_int_int2int$left_STA_0$result_STA_0$right_STA_1,
+                                     && _4_merged__branchIfTrue$expr_STA_0$label_LAB_0,
+                                     (void *)3UL, && _4_merged__goto$label_LAB_0,
+                                     (void *)36UL, && _4_merged__local$result_STA_0$value_LIT_0,
+                                     (void *)24UL, && _4_merged__formal$result_STA_0$value_LIT_0,
+                                     (void *)1UL, && _4_merged__store_void_star$right_STA_0$left_STA_1,
+                                     && _4_merged__formal$result_STA_0$value_LIT_0,
+                                     (void *)1UL, && _4_merged__load_int$left_STA_0$result_STA_0,
+                                     && _4_merged__local$result_STA_0$value_LIT_0,
+                                     (void *)32UL, && _4_merged__store_int$left_STA_0$right_STA_1,
+                                     && _4_merged__local$result_STA_0$value_LIT_0,
+                                     (void *)40UL, && _4_merged__load_int$left_STA_0$result_STA_0,
+                                     && _4_merged__local$result_STA_0$value_LIT_0,
+                                     (void *)36UL, && _4_merged__store_int$left_STA_0$right_STA_1,
+                                     && _4_merged__call$func_LIT_0, (void *)1UL, && _4_merged__formal$result_STA_0$value_LIT_0,
+                                     (void *)2UL, && _4_merged__load_int$left_STA_0$result_STA_0,
+                                     && _4_merged__formal$result_STA_0$value_LIT_0,
+                                     (void *)1UL, && _4_merged__load_int$left_STA_0$result_STA_0,
+                                     && _4_merged__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1,
+                                     && _4_merged__formal$result_STA_0$value_LIT_0,
+                                     (void *)0UL, && _4_merged__load_void_star$left_STA_0$result_STA_0,
+                                     && _4_merged__convert_void_star2void_star$left_STA_0$result_STA_0,
+                                     && _4_merged__store_int$left_STA_0$right_STA_1,
+                                     && _4_merged__goto$label_LAB_0, (void *)1UL,
+                                     && _4_merged__goto$label_LAB_0, (void *)3UL,
+                                     && _4_merged__goto$label_LAB_0, (void *)1UL,
+                                     && _4_merged__returnVoid$}};
+
+  {
+  _4_merged_$sp[0] = _4_merged_$stack[0];
+  _4_merged_$pc[0] = _4_merged_$array[0];
+  goto *(*(_4_merged_$pc[0]));
+  Lab_2000002: /* CIL Label */ ;
+  _4_merged__Mult_int_int2int$left_STA_0$result_STA_0$right_STA_1: /* CIL Label */ ;
+  (_4_merged_$pc[0]) ++;
+  (_4_merged_$sp[0] + -1)->_int = (_4_merged_$sp[0] + 0)->_int * (_4_merged_$sp[0] + -1)->_int;
+  (_4_merged_$sp[0]) --;
+  goto *(*(_4_merged_$pc[0]));
+  _4_merged__local$result_STA_0$value_LIT_0: /* CIL Label */ ;
+  (_4_merged_$pc[0]) ++;
+  (_4_merged_$sp[0] + 1)->_void_star = (void *)(_4_merged_$locals + *((int *)_4_merged_$pc[0]));
+  (_4_merged_$sp[0]) ++;
+  (_4_merged_$pc[0]) ++;
+  goto *(*(_4_merged_$pc[0]));
+  _4_merged__store_void_star$right_STA_0$left_STA_1: /* CIL Label */ ;
+  (_4_merged_$pc[0]) ++;
+  *((void **)(_4_merged_$sp[0] + -1)->_void_star) = (_4_merged_$sp[0] + 0)->_void_star;
+  _4_merged_$sp[0] += -2;
+  goto *(*(_4_merged_$pc[0]));
+  _4_merged__convert_void_star2void_star$left_STA_0$result_STA_0: /* CIL Label */ ;
+  (_4_merged_$pc[0]) ++;
+  (_4_merged_$sp[0] + 0)->_void_star = (_4_merged_$sp[0] + 0)->_void_star;
+  goto *(*(_4_merged_$pc[0]));
+  _4_merged__constant_int$result_STA_0$value_LIT_0: /* CIL Label */ ;
+  (_4_merged_$pc[0]) ++;
+  (_4_merged_$sp[0] + 1)->_int = *((int *)_4_merged_$pc[0]);
+  (_4_merged_$sp[0]) ++;
+  (_4_merged_$pc[0]) ++;
+  goto *(*(_4_merged_$pc[0]));
+  _4_merged__store_int$left_STA_0$right_STA_1: /* CIL Label */ ;
+  (_4_merged_$pc[0]) ++;
+  *((int *)(_4_merged_$sp[0] + 0)->_void_star) = (_4_merged_$sp[0] + -1)->_int;
+  _4_merged_$sp[0] += -2;
+  goto *(*(_4_merged_$pc[0]));
+  _4_merged__atomic$func_LIT_0: /* CIL Label */ ;
+  (_4_merged_$pc[0]) ++;
+  switch (*((int *)_4_merged_$pc[0])) {
+  case 1: 
+  {  /* __blockattribute__(__ATOMIC__)*/ 
+  _2_init_tigress__BEGIN_1__3 = 1;
+  p1__0 = (struct _2_init_tigress_1_opaque_NodeStruct *)malloc(sizeof(struct _2_init_tigress_1_opaque_NodeStruct ));
+  p1__0->next = p1__0;
+  p1__0->prev = p1__0;
+  _2_init_tigress_1_opaque_list_1 = p1__0;
+  i2__1 = 0;
+  while (i2__1 < 4) {
+    p3__2 = (struct _2_init_tigress_1_opaque_NodeStruct *)malloc(sizeof(struct _2_init_tigress_1_opaque_NodeStruct ));
+    p3__2->data = i2__1 * (((_1_entropy + 9) + 1UL) + ((- _1_entropy - 1UL) | (- 9 - 1UL)));
+    p3__2->next = _2_init_tigress_1_opaque_list_1->next;
+    p3__2->prev = _2_init_tigress_1_opaque_list_1;
+    (_2_init_tigress_1_opaque_list_1->next)->prev = p3__2;
+    _2_init_tigress_1_opaque_list_1->next = p3__2;
+    i2__1 ++;
+  }
+  _2_init_tigress_1_opaque_ptr_1 = _2_init_tigress_1_opaque_list_1->next;
+  _2_init_tigress_1_opaque_ptr_2 = _2_init_tigress_1_opaque_ptr_1;
+  _2_init_tigress_1_opaque_ptr_2 = _2_init_tigress_1_opaque_ptr_2->next;
+  _2_init_tigress__END_1__4 = 1;
+  }
+  break;
+  }
+  (_4_merged_$pc[0]) ++;
+  goto *(*(_4_merged_$pc[0]));
+  _4_merged__Eq_int_int2int$left_STA_0$result_STA_0$right_STA_1: /* CIL Label */ ;
+  (_4_merged_$pc[0]) ++;
+  (_4_merged_$sp[0] + -1)->_int = (_4_merged_$sp[0] + 0)->_int == (_4_merged_$sp[0] + -1)->_int;
+  (_4_merged_$sp[0]) --;
+  goto *(*(_4_merged_$pc[0]));
+  _4_merged__goto$label_LAB_0: /* CIL Label */ ;
+  (_4_merged_$pc[0]) ++;
+  _4_merged_$pc[0] += *((int *)_4_merged_$pc[0]);
+  goto *(*(_4_merged_$pc[0]));
+  _4_merged__returnVoid$: /* CIL Label */ ;
+  (_4_merged_$pc[0]) ++;
+  return;
+  goto *(*(_4_merged_$pc[0]));
+  _4_merged__call$func_LIT_0: /* CIL Label */ ;
+  (_4_merged_$pc[0]) ++;
+  switch (*((int *)_4_merged_$pc[0])) {
+  case 1: 
+  merged(*((int **)(_4_merged_$locals + 24)), *((int *)(_4_merged_$locals + 32)),
+         *((int *)(_4_merged_$locals + 36)), 1);
+  break;
+  }
+  (_4_merged_$pc[0]) ++;
+  goto *(*(_4_merged_$pc[0]));
+  _4_merged__load_void_star$left_STA_0$result_STA_0: /* CIL Label */ ;
+  (_4_merged_$pc[0]) ++;
+  (_4_merged_$sp[0] + 0)->_void_star = *((void **)(_4_merged_$sp[0] + 0)->_void_star);
+  goto *(*(_4_merged_$pc[0]));
+  _4_merged__load_int$left_STA_0$result_STA_0: /* CIL Label */ ;
+  (_4_merged_$pc[0]) ++;
+  (_4_merged_$sp[0] + 0)->_int = *((int *)(_4_merged_$sp[0] + 0)->_void_star);
+  goto *(*(_4_merged_$pc[0]));
+  _4_merged__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1: /* CIL Label */ ;
+  (_4_merged_$pc[0]) ++;
+  (_4_merged_$sp[0] + -1)->_int = (_4_merged_$sp[0] + 0)->_int + (_4_merged_$sp[0] + -1)->_int;
+  (_4_merged_$sp[0]) --;
+  goto *(*(_4_merged_$pc[0]));
+  _4_merged__branchIfTrue$expr_STA_0$label_LAB_0: /* CIL Label */ ;
+  (_4_merged_$pc[0]) ++;
+  if ((_4_merged_$sp[0] + 0)->_int) {
+    _4_merged_$pc[0] += *((int *)_4_merged_$pc[0]);
+  } else {
+    (_4_merged_$pc[0]) ++;
+  }
+  (_4_merged_$sp[0]) --;
+  goto *(*(_4_merged_$pc[0]));
+  _4_merged__formal$result_STA_0$value_LIT_0: /* CIL Label */ ;
+  (_4_merged_$pc[0]) ++;
+  switch (*((int *)_4_merged_$pc[0])) {
+  case 3: 
+  (_4_merged_$sp[0] + 1)->_void_star = (void *)(& whichBlock__8);
+  break;
+  case 0: 
+  (_4_merged_$sp[0] + 1)->_void_star = (void *)(& tigressRetVal);
+  break;
+  case 1: 
+  (_4_merged_$sp[0] + 1)->_void_star = (void *)(& x__6);
+  break;
+  case 2: 
+  (_4_merged_$sp[0] + 1)->_void_star = (void *)(& y__7);
+  break;
+  }
+  (_4_merged_$sp[0]) ++;
+  (_4_merged_$pc[0]) ++;
+  goto *(*(_4_merged_$pc[0]));
+}
+}
