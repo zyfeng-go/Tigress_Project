@@ -89,7 +89,7 @@ The transformation *Encode Data* hides real values of integer variables with non
 
 ❗ ❗ **Transformation *Encode Data* cannot handle local variables properly.** ❗ ❗
 
-Variable x, y, and q or any combinations of them can be encoded through `LocalVariables` option. However, although variable z is also a local variable, *Tigres* returns "*[[Tigress]] <<ERROR: Transformation not possible>> Transformation 'EncodeData': Local variable(s) 'z' in function 'sum' do not exist.*"
+Variable x, y, and q or any combinations of them can be encoded through `LocalVariables` option. However, although variable z is also a local variable, *Tigres* returns "*[[Tigress]] <<ERROR: Transformation not possible>> Transformation 'EncodeData': Local variable(s) 'z' in function 'sum' do not exist.*" **We found only formal parameters can be correctly recognized as local variables.**
 
 ![ed](https://i.stack.imgur.com/MhIN6.png)
 
