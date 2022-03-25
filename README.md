@@ -84,8 +84,34 @@ tigress --Environment=x86_64:Linux:Gcc:7.5
         --out=vir_EncodeLiterals.c ../tigressTest.c
 ```
 
-### Virtualize w/ Encode Encode Data
-The goal is for a variable's real value to never be revealed. Notice that it only supports obfuscating integers, pointers to integers, arrays of integers or combinations of these at the moment. In addition, only *poly1* makes sense.
+### Virtualize w/ Encode Data
+The transformation *Encode Data* hides real values of integer variables with non-standard data representation.
+
+❗ ❗ **Transformation *Encode Data* cannot handle local variables properly.** ❗ ❗
+
+Variable x, y, and q or any combinations of them can be encoded through `LocalVariables` option. However, although variable z is also a local variable, *Tigres* returns "*[[Tigress]] <<ERROR: Transformation not possible>> Transformation 'EncodeData': Local variable(s) 'z' in function 'sum' do not exist.*"
+
+![ed](https://i.stack.imgur.com/MhIN6.png)
+
+If we re-declare z as a global variable and encode it through `GlobalVariables` option, everything works as we expect.
+
+![ed2](https://i.stack.imgur.com/9hDHv.png)
 
 ```
+tigress --Environment=x86_64:Linux:Gcc:7.5                      
+        --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch 
+        --Transform=EncodeData --LocalVariables='sum:x,y' 
+        --out=vir_EncodeData.c ../tigressTest.c
 ```
+
+### Virtualize w/ Encode Arithmetic
+The transformation *Encode Arithmetic* replaces integer arithmetic with randomly selected more complex expressions. (Note that in the latest version *3.3.2*, transformed expressions can be dumped into a file)
+```
+ tigress --Environment=x86_64:Linux:Gcc:7.5 
+         --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch 
+         --Transform=EncodeArithmetic --Functions=sum 
+         --out=vir_EncodeArithmetic.c ../tigressTest.c
+```
+
+### Virtualize w/ Encode External
+The transformation *Encode External* replaces the direct calls to external functions with indirect ones. Therefore, we would need to insert a call to external functions inside the *sum* function.
