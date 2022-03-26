@@ -1,9 +1,13 @@
 #include "/bin/tigress/3.1/tigress.h"
 #include <stdio.h>
+#include<unistd.h>
+#include<sys/time.h>
 
 void init_tigress () {}
 
 int sum(int x, int y) {
+	int z = getpid(); 
+	printf("PID: %d\n", z);
 	return x + y;
 }
 

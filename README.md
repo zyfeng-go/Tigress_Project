@@ -28,7 +28,7 @@ tigress --Environment=x86_64:Linux:Gcc:7.5
 
 
 ### Virtualize w/ Jit
-Include `#include "PATH_TO_TIGRESS/jitter-amd64.c"` to *tigressTest.c*.
+The transformation *Jit* turns a function into one that generates its code during runtime. Include `#include "PATH_TO_TIGRESS/jitter-amd64.c"` to *tigressTest.c*.
 ```
 tigress --Environment=x86_64:Linux:Gcc:7.5 
         --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch 
@@ -37,7 +37,7 @@ tigress --Environment=x86_64:Linux:Gcc:7.5
 ```
 
 ### Virtualize w/ Jit Dynamics
-Include `#include "PATH_TO_TIGRESS/jitter-amd64.c"` to *tigressTest.c*.
+The transformation *Jit Dynamics* turns a function into one that continuously transforms itself. Include `#include "PATH_TO_TIGRESS/jitter-amd64.c"` to *tigressTest.c*.
 ```
 tigress --Environment=x86_64:Linux:Gcc:7.5 
         --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch 
@@ -46,6 +46,7 @@ tigress --Environment=x86_64:Linux:Gcc:7.5
 ```
 
 ### Virtualize w/ Flatten
+The transformation *Flatten* removes control flow from a function.
 ```
 tigress --Environment=x86_64:Linux:Gcc:7.5 
         --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch 
@@ -54,6 +55,7 @@ tigress --Environment=x86_64:Linux:Gcc:7.5
 ```
 
 ### Virtualize w/ Split
+The transformation *Split* splits a function into smaller parts.
 ```
 tigress --Environment=x86_64:Linux:Gcc:7.5 
         --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch 
@@ -62,11 +64,22 @@ tigress --Environment=x86_64:Linux:Gcc:7.5
 ```
 
 ### Virtualize w/ Merge
-Notice that *Merge* requires multiple functions (at least two). It is useful as a precursor to *Virtualize*. For example, if you want to *Virtualize* two functions, first *Merge* them together and then *Virtualize* the result.
+The transformation *Merge* merges multiple functions into one.
 
-However, there are only function *sum* and function *main* (function *main* is not allowed to be involved) in the *tigressTest.c*. How to check *Merge* is TBD...
+```
+tigress --Environment=x86_64:Linux:Gcc:7.5 
+	 --Transform=Merge 
+		--Functions=sum,mul 
+		--MergeName=merged 
+     --Transform=Virtualize 
+        --Functions=merged 
+        --VirtualizeDispatch=switch 
+    --out=vir_Merge.c tigressTest.c
+	  
+```
 
 ### Virtualize w/ Add Opaque
+The transformation *Add Opaque* splits up control flow by adding opaque branches.
 ```
  tigress --Environment=x86_64:Linux:Gcc:7.5 
          --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch 
@@ -76,6 +89,7 @@ However, there are only function *sum* and function *main* (function *main* is n
 ```
 
 ### Virtualize w/ Encode Literals
+The transformation *Encode Literals* replaces integer and string literals with less obvious expressions.
 ```
 tigress --Environment=x86_64:Linux:Gcc:7.5 
         --Transform=Virtualize --Functions=sum --VirtualizeDispatch=switch 
@@ -114,4 +128,81 @@ The transformation *Encode Arithmetic* replaces integer arithmetic with randomly
 ```
 
 ### Virtualize w/ Encode External
-The transformation *Encode External* replaces the direct calls to external functions with indirect ones. Therefore, we would need to insert a call to external functions inside the *sum* function.
+The transformation *Encode External* replaces the direct calls to external functions with indirect ones.
+
+```
+tigress -ldl --Environment=x86_64:Linux:Gcc:7.5
+     --Transform=InitEncodeExternal
+        --Functions=init_tigress
+        --InitEncodeExternalSymbols=getpid
+     --Transform=Virtualize
+        --Functions=sum
+        --VirtualizeDispatch=switch
+	 --Transform=EncodeExternal
+	    --Functions=sum
+		--EncodeExternalSymbols=getpid
+    --out=vir_EncodeExternal.c tigressTest.c	  
+```
+
+❗ ❗ The compiled result returned *segmentation fault*.
+
+### Virtualize w/ Encode Branches
+The transformation *Encode Branches* makes it harder for automatic analysis tools to determine the target of branches.
+
+```
+tigress --Environment=x86_64:Linux:Gcc:7.5
+     --Transform=Virtualize
+        --Functions=sum
+        --VirtualizeDispatch=switch
+     --Transform=InitBranchFuns
+        --InitBranchFunsCount=2
+     --Transform=AntiBranchAnalysis
+        --Functions=sum
+    --out=vir_EncodeBranch.c tigressTest.c
+```
+
+### Virtualize w/ AntiAliasAnalysis
+The transformation *AntiAliasAnalysis* disrupts static analysis tools that make use of inter-procedural alias analysis.
+
+```
+tigress --Environment=x86_64:Linux:Gcc:7.5
+     --Transform=Virtualize
+        --Functions=sum
+        --VirtualizeDispatch=switch
+	 --Transform=AntiAliasAnalysis
+	    --Functions=sum
+		--AntiAliasAnalysisObfuscateIndex=false
+    --out=vir_AntiAliasAnalysis.c tigressTest.c
+```
+
+### Virtualize w/ AntiTaintAnalysis
+The transformation *AntiTaintAnalysis* disrupts analysis tools that make use of dynamic taint analysis. Currently, it can only un-taint a few variables.
+
+```
+tigress --Environment=x86_64:Linux:Gcc:7.5
+     --Transform=Virtualize 
+        --Functions=sum 
+        --VirtualizeDispatch=switch  
+	 --Transform=InitImplicitFlow 
+	    --Functions=sum 
+	 --Transform=AntiTaintAnalysis 
+	    --Functions=sum 
+    --out=vir_AntiTaintAnalysis.c tigressTest.c
+```
+
+### Virtualize w/ Randomize Arguments
+The transformation *Randomize Arguments* randomizes the order of arguments to a function and optionally adds extra bogus arguments.
+
+```
+tigress --Environment=x86_64:Linux:Gcc:7.5
+     --Transform=Virtualize
+        --Functions=sum
+        --VirtualizeDispatch=switch
+	 --Transform=RndArgs
+		--RndArgsBogusNo=5
+		--Functions=sum
+    --out=vir_Randarg.c ../tigressTest.c
+```
+
+### Virtualize w/ Inline
+The transformation *Inline* replaces a function call with the body of the function. ❗ ❗ It is **not available** in *Tigress* 3.1

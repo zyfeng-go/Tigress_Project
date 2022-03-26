@@ -1,0 +1,4 @@
+17c17
+<     *((int *)(_1_sum_$locals + 12)) = ((int (*)(int x ))_2__functionPtrArray[0])(*((int *)(_1_sum_$locals + 8)));
+---
+>     *((int *)(_1_sum_$locals + 12)) = mul(*((int *)(_1_sum_$locals + 8)));

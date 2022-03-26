@@ -1,0 +1,5 @@
+1,2c1
+< int sum(long bogus___1 , void *bogus___5 , int y , int bogus___2 , int x , int bogus___4 ,
+<         int bogus___3 ) 
+---
+> int sum(int x , int y ) 

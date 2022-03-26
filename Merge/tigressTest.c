@@ -3,7 +3,12 @@
 
 void init_tigress () {}
 
+int mul(int x) {
+	return x * 4;
+}
+
 int sum(int x, int y) {
+	x = mul(x);
 	return x + y;
 }
 

@@ -1,0 +1,85 @@
+3c3
+<   char _1_sum_$locals[40] ;
+---
+>   char _1_sum_$locals[12] ;
+7,8d6
+<   int _2__BARRIER_1 ;
+<   int _2__BARRIER_2 ;
+11,12d8
+<   _2__BARRIER_1 = 1;
+<   _2__BARRIER_2 = 1;
+17,22c13
+<     case _1_sum__store_void_star$right_STA_0$left_STA_1: 
+<     (_1_sum_$pc[0]) ++;
+<     *((void **)(_1_sum_$sp[0] + -1)->_void_star) = (_1_sum_$sp[0] + 0)->_void_star;
+<     _1_sum_$sp[0] += -2;
+<     break;
+<     case _1_sum__formal$result_STA_0$value_LIT_0: 
+---
+>     case _1_sum__local$result_STA_0$value_LIT_0: 
+24,31c15
+<     switch (*((int *)_1_sum_$pc[0])) {
+<     case 1: 
+<     (_1_sum_$sp[0] + 1)->_void_star = (void *)(& y);
+<     break;
+<     case 0: 
+<     (_1_sum_$sp[0] + 1)->_void_star = (void *)(& x);
+<     break;
+<     }
+---
+>     (_1_sum_$sp[0] + 1)->_void_star = (void *)(_1_sum_$locals + *((int *)_1_sum_$pc[0]));
+34a19,22
+>     case _1_sum__load_int$left_STA_0$result_STA_0: 
+>     (_1_sum_$pc[0]) ++;
+>     (_1_sum_$sp[0] + 0)->_int = *((int *)(_1_sum_$sp[0] + 0)->_void_star);
+>     break;
+40c28
+<     case _1_sum__call$func_LIT_0: 
+---
+>     case _1_sum__formal$result_STA_0$value_LIT_0: 
+44c32
+<     *((int *)(_1_sum_$locals + 12)) = getpid();
+---
+>     (_1_sum_$sp[0] + 1)->_void_star = (void *)(& y);
+46,47c34,35
+<     case 2: 
+<     printf(*((char const   * __restrict  *)(_1_sum_$locals + 24)), *((int *)(_1_sum_$locals + 32)));
+---
+>     case 0: 
+>     (_1_sum_$sp[0] + 1)->_void_star = (void *)(& x);
+50,72d37
+<     _1_sum_$pc[0] += 4;
+<     break;
+<     case _1_sum__goto$label_LAB_0: 
+<     (_1_sum_$pc[0]) ++;
+<     _1_sum_$pc[0] += *((int *)_1_sum_$pc[0]);
+<     break;
+<     case _1_sum__convert_void_star2void_star$left_STA_0$result_STA_0: 
+<     (_1_sum_$pc[0]) ++;
+<     (_1_sum_$sp[0] + 0)->_void_star = (_1_sum_$sp[0] + 0)->_void_star;
+<     break;
+<     case _1_sum__local$result_STA_0$value_LIT_0: 
+<     (_1_sum_$pc[0]) ++;
+<     (_1_sum_$sp[0] + 1)->_void_star = (void *)(_1_sum_$locals + *((int *)_1_sum_$pc[0]));
+<     (_1_sum_$sp[0]) ++;
+<     _1_sum_$pc[0] += 4;
+<     break;
+<     case _1_sum__return_int$expr_STA_0: 
+<     (_1_sum_$pc[0]) ++;
+<     return ((_1_sum_$sp[0] + 0)->_int);
+<     break;
+<     case _1_sum__string$result_STA_0$value_LIT_0: 
+<     (_1_sum_$pc[0]) ++;
+<     (_1_sum_$sp[0] + 1)->_void_star = (void *)(_1_sum_$strings + *((int *)_1_sum_$pc[0]));
+81c46
+<     case _1_sum__load_int$left_STA_0$result_STA_0: 
+---
+>     case _1_sum__return_int$expr_STA_0: 
+83c48,52
+<     (_1_sum_$sp[0] + 0)->_int = *((int *)(_1_sum_$sp[0] + 0)->_void_star);
+---
+>     return ((_1_sum_$sp[0] + 0)->_int);
+>     break;
+>     case _1_sum__goto$label_LAB_0: 
+>     (_1_sum_$pc[0]) ++;
+>     _1_sum_$pc[0] += *((int *)_1_sum_$pc[0]);

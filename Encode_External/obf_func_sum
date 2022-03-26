@@ -1,0 +1,84 @@
+int sum(int x , int y ) 
+{ 
+  char _2_sum_$locals[40] ;
+  union _2_sum_$node _2_sum_$stack[1][32] ;
+  union _2_sum_$node *_2_sum_$sp[1] ;
+  unsigned char *_2_sum_$pc[1] ;
+
+  {
+  _2_sum_$sp[0] = _2_sum_$stack[0];
+  _2_sum_$pc[0] = _2_sum_$array[0];
+  while (1) {
+    switch (*(_2_sum_$pc[0])) {
+    case _2_sum__goto$label_LAB_0: 
+    (_2_sum_$pc[0]) ++;
+    _2_sum_$pc[0] += *((int *)_2_sum_$pc[0]);
+    break;
+    case _2_sum__convert_void_star2void_star$left_STA_0$result_STA_0: 
+    (_2_sum_$pc[0]) ++;
+    (_2_sum_$sp[0] + 0)->_void_star = (_2_sum_$sp[0] + 0)->_void_star;
+    break;
+    case _2_sum__return_int$expr_STA_0: 
+    (_2_sum_$pc[0]) ++;
+    return ((_2_sum_$sp[0] + 0)->_int);
+    break;
+    case _2_sum__load_int$left_STA_0$result_STA_0: 
+    (_2_sum_$pc[0]) ++;
+    (_2_sum_$sp[0] + 0)->_int = *((int *)(_2_sum_$sp[0] + 0)->_void_star);
+    break;
+    case _2_sum__local$result_STA_0$value_LIT_0: 
+    (_2_sum_$pc[0]) ++;
+    (_2_sum_$sp[0] + 1)->_void_star = (void *)(_2_sum_$locals + *((int *)_2_sum_$pc[0]));
+    (_2_sum_$sp[0]) ++;
+    _2_sum_$pc[0] += 4;
+    break;
+    case _2_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1: 
+    (_2_sum_$pc[0]) ++;
+    (_2_sum_$sp[0] + -1)->_int = (_2_sum_$sp[0] + 0)->_int + (_2_sum_$sp[0] + -1)->_int;
+    (_2_sum_$sp[0]) --;
+    break;
+    case _2_sum__string$result_STA_0$value_LIT_0: 
+    (_2_sum_$pc[0]) ++;
+    (_2_sum_$sp[0] + 1)->_void_star = (void *)(_2_sum_$strings + *((int *)_2_sum_$pc[0]));
+    (_2_sum_$sp[0]) ++;
+    _2_sum_$pc[0] += 4;
+    break;
+    case _2_sum__formal$result_STA_0$value_LIT_0: 
+    (_2_sum_$pc[0]) ++;
+    switch (*((int *)_2_sum_$pc[0])) {
+    case 1: 
+    (_2_sum_$sp[0] + 1)->_void_star = (void *)(& y);
+    break;
+    case 0: 
+    (_2_sum_$sp[0] + 1)->_void_star = (void *)(& x);
+    break;
+    }
+    (_2_sum_$sp[0]) ++;
+    _2_sum_$pc[0] += 4;
+    break;
+    case _2_sum__call$func_LIT_0: 
+    (_2_sum_$pc[0]) ++;
+    switch (*((int *)_2_sum_$pc[0])) {
+    case 2: 
+    printf(*((char const   * __restrict  *)(_2_sum_$locals + 24)), *((int *)(_2_sum_$locals + 32)));
+    break;
+    case 1: 
+    *((int *)(_2_sum_$locals + 12)) = ((__pid_t ( __attribute__((__leaf__)) (*))(void))_1_init_tigress__externalFunctionPtrArray[0])();
+    break;
+    }
+    _2_sum_$pc[0] += 4;
+    break;
+    case _2_sum__store_int$left_STA_0$right_STA_1: 
+    (_2_sum_$pc[0]) ++;
+    *((int *)(_2_sum_$sp[0] + 0)->_void_star) = (_2_sum_$sp[0] + -1)->_int;
+    _2_sum_$sp[0] += -2;
+    break;
+    case _2_sum__store_void_star$left_STA_0$right_STA_1: 
+    (_2_sum_$pc[0]) ++;
+    *((void **)(_2_sum_$sp[0] + 0)->_void_star) = (_2_sum_$sp[0] + -1)->_void_star;
+    _2_sum_$sp[0] += -2;
+    break;
+    }
+  }
+}
+}
