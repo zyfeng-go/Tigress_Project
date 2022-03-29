@@ -1,0 +1,590 @@
+Thread	Address	Instruction	Result
+0000141F	.text:sum	Memory layout changed: 44 segments	Memory layout changed: 44 segments
+0000141F			ST0=FFFFFFFFFFFFFFFF ST1=FFFFFFFFFFFFFFFF ST2=FFFFFFFFFFFFFFFF ST3=FFFFFFFFFFFFFFFF ST4=FFFFFFFFFFFFFFFF ST5=FFFFFFFFFFFFFFFF ST6=FFFFFFFFFFFFFFFF ST7=FFFFFFFFFFFFFFFF CTRL=FFFF CS=0033 DS=0000 ES=0000 FS=0000 GS=0000 SS=002B RAX=0000000000000006 RBX=0000558DBD538BC0 RCX=0000558DBD538BC0 RDX=0000000000000009 RSI=0000000000000009 RDI=0000000000000006 RBP=00007FFCD90485C0 RSP=00007FFCD9048578 R8=0000000000000000 R9=00007F7B06D0CD50 R10=0000000000000003 R11=0000000000000000 R12=0000558DBD5385A0 R13=00007FFCD90486B0 R14=0000000000000000 R15=0000000000000000 EFL=00000202 XMM0= XMM1= XMM2= XMM3= XMM4= XMM5= XMM6= XMM7= XMM8= XMM9= XMM10= XMM11= XMM12= XMM13= XMM14= XMM15= MXCSR=FFFFFFFF MM0= MM1= MM2= MM3= 
+0000141F	.text:sum	push    rbp	RSP=00007FFCD9048570 
+0000141F	.text:sum+1	mov     rbp, rsp	RBP=00007FFCD9048570 
+0000141F	.text:sum+4	sub     rsp, 160h	RSP=00007FFCD9048410 
+0000141F	.text:sum+B	mov     [rbp+var_154], edi	
+0000141F	.text:sum+11	mov     [rbp+var_158], esi	
+0000141F	.text:sum+17	mov     rax, fs:28h	RAX=118FEE880F136300 
+0000141F	.text:sum+20	mov     [rbp+var_8], rax	
+0000141F	.text:sum+24	xor     eax, eax	RAX=0000000000000000 PF=1 ZF=1 
+0000141F	.text:sum+26	lea     rax, [rbp+var_120]	RAX=00007FFCD9048450 
+0000141F	.text:sum+2D	mov     [rbp+var_130], rax	
+0000141F	.text:sum+34	lea     rax, _1_sum_$array	RAX=0000558DBD73A060 
+0000141F	.text:sum+3B	mov     [rbp+var_128], rax	
+0000141F	.text:sum:loc_558DBD538893	mov     rax, [rbp+var_128]	
+0000141F	.text:sum+49	mov     rax, [rax]	RAX=0000558DBD538917 
+0000141F	.text:sum+4C	lea     r9, [rbp+var_138]	R9=00007FFCD9048438 
+0000141F	.text:sum+53	lea     r10, [rbp+var_130]	R10=00007FFCD9048440 
+0000141F	.text:sum+5A	lea     rcx, [rbp+var_120]	RCX=00007FFCD9048450 
+0000141F	.text:sum+61	lea     rdx, [rbp+var_14]	RDX=00007FFCD904855C 
+0000141F	.text:sum+65	lea     rsi, [rbp+var_158]	RSI=00007FFCD9048418 
+0000141F	.text:sum+6C	lea     rdi, [rbp+var_154]	RDI=00007FFCD904841C 
+0000141F	.text:sum+73	sub     rsp, 8	RSP=00007FFCD9048408 PF=0 AF=1 ZF=0 
+0000141F	.text:sum+77	lea     r8, [rbp+var_140]	R8=00007FFCD9048430 
+0000141F	.text:sum+7E	push    r8	RSP=00007FFCD9048400 
+0000141F	.text:sum+80	lea     r8, [rbp+var_144]	R8=00007FFCD904842C 
+0000141F	.text:sum+87	push    r8	RSP=00007FFCD90483F8 
+0000141F	.text:sum+89	lea     r8, [rbp+var_128]	R8=00007FFCD9048448 
+0000141F	.text:sum+90	push    r8	RSP=00007FFCD90483F0 
+0000141F	.text:sum+92	mov     r8, r10	R8=00007FFCD9048440 
+0000141F	.text:sum+95	call    rax	RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0	push    rbp	RSP=00007FFCD90483E0 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+1	mov     rbp, rsp	RBP=00007FFCD90483E0 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+4	mov     [rbp+var_8], rdi	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+8	mov     [rbp+var_10], rsi	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+C	mov     [rbp+var_18], rdx	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+10	mov     [rbp+var_20], rcx	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+14	mov     [rbp+var_28], r8	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+18	mov     [rbp+var_30], r9	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+1C	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+20	mov     rax, [rax]	RAX=0000558DBD73A060 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+23	lea     rdx, [rax+8]	RDX=0000558DBD73A068 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+27	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+2B	mov     [rax], rdx	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+2E	mov     rax, [rbp+arg_0]	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+32	mov     rax, [rax]	RAX=0000558DBD73A068 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+35	mov     eax, [rax]	RAX=0000000000000001 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+37	test    eax, eax	AF=0 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+39	jz      short loc_558DBD53896B	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+3B	cmp     eax, 1	PF=1 ZF=1 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+3E	jnz     short loc_558DBD53897E	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+40	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+44	mov     rax, [rax]	RAX=00007FFCD9048450 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+47	lea     rdx, [rax+8]	RDX=00007FFCD9048458 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+4B	mov     rax, [rbp+var_10]	RAX=00007FFCD9048418 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+4F	mov     [rdx], rax	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+52	jmp     short loc_558DBD53897E	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0:loc_558DBD53897E	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+6B	mov     rax, [rax]	RAX=00007FFCD9048450 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+6E	lea     rdx, [rax+8]	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+72	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+76	mov     [rax], rdx	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+79	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+7D	mov     rax, [rax]	RAX=0000558DBD73A068 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+80	lea     rdx, [rax+8]	RDX=0000558DBD73A070 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+84	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+88	mov     [rax], rdx	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+8B	mov     eax, 0	RAX=0000000000000000 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+90	pop     rbp	RBP=00007FFCD9048570 RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+91	retn	RSP=00007FFCD90483F0 
+0000141F	.text:sum+97	add     rsp, 20h	RSP=00007FFCD9048410 PF=0 ZF=0 
+0000141F	.text:sum+9B	mov     [rbp+var_13C], eax	
+0000141F	.text:sum+A1	cmp     [rbp+var_13C], 1	CF=1 PF=1 AF=1 SF=1 
+0000141F	.text:sum+A8	jnz     short loc_558DBD538893	
+0000141F	.text:sum:loc_558DBD538893	mov     rax, [rbp+var_128]	RAX=0000558DBD73A070 
+0000141F	.text:sum+49	mov     rax, [rax]	RAX=0000558DBD538A09 
+0000141F	.text:sum+4C	lea     r9, [rbp+var_138]	
+0000141F	.text:sum+53	lea     r10, [rbp+var_130]	
+0000141F	.text:sum+5A	lea     rcx, [rbp+var_120]	
+0000141F	.text:sum+61	lea     rdx, [rbp+var_14]	RDX=00007FFCD904855C 
+0000141F	.text:sum+65	lea     rsi, [rbp+var_158]	
+0000141F	.text:sum+6C	lea     rdi, [rbp+var_154]	
+0000141F	.text:sum+73	sub     rsp, 8	RSP=00007FFCD9048408 CF=0 PF=0 SF=0 
+0000141F	.text:sum+77	lea     r8, [rbp+var_140]	R8=00007FFCD9048430 
+0000141F	.text:sum+7E	push    r8	RSP=00007FFCD9048400 
+0000141F	.text:sum+80	lea     r8, [rbp+var_144]	R8=00007FFCD904842C 
+0000141F	.text:sum+87	push    r8	RSP=00007FFCD90483F8 
+0000141F	.text:sum+89	lea     r8, [rbp+var_128]	R8=00007FFCD9048448 
+0000141F	.text:sum+90	push    r8	RSP=00007FFCD90483F0 
+0000141F	.text:sum+92	mov     r8, r10	R8=00007FFCD9048440 
+0000141F	.text:sum+95	call    rax	RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0	push    rbp	RSP=00007FFCD90483E0 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+1	mov     rbp, rsp	RBP=00007FFCD90483E0 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+4	mov     [rbp+var_8], rdi	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+8	mov     [rbp+var_10], rsi	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+C	mov     [rbp+var_18], rdx	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+10	mov     [rbp+var_20], rcx	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+14	mov     [rbp+var_28], r8	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+18	mov     [rbp+var_30], r9	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+1C	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+20	mov     rax, [rax]	RAX=0000558DBD73A070 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+23	lea     rdx, [rax+8]	RDX=0000558DBD73A078 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+27	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+2B	mov     [rax], rdx	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+2E	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+32	mov     rax, [rax]	RAX=00007FFCD9048458 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+35	mov     rdx, [rax]	RDX=00007FFCD9048418 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+38	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+3C	mov     rax, [rax]	RAX=00007FFCD9048458 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+3F	mov     edx, [rdx]	RDX=0000000000000009 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+41	mov     [rax], edx	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+43	mov     eax, 0	RAX=0000000000000000 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+48	pop     rbp	RBP=00007FFCD9048570 RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+49	retn	RSP=00007FFCD90483F0 
+0000141F	.text:sum+97	add     rsp, 20h	RSP=00007FFCD9048410 AF=0 
+0000141F	.text:sum+9B	mov     [rbp+var_13C], eax	
+0000141F	.text:sum+A1	cmp     [rbp+var_13C], 1	CF=1 PF=1 AF=1 SF=1 
+0000141F	.text:sum+A8	jnz     short loc_558DBD538893	
+0000141F	.text:sum:loc_558DBD538893	mov     rax, [rbp+var_128]	RAX=0000558DBD73A078 
+0000141F	.text:sum+49	mov     rax, [rax]	RAX=0000558DBD538917 
+0000141F	.text:sum+4C	lea     r9, [rbp+var_138]	
+0000141F	.text:sum+53	lea     r10, [rbp+var_130]	
+0000141F	.text:sum+5A	lea     rcx, [rbp+var_120]	
+0000141F	.text:sum+61	lea     rdx, [rbp+var_14]	RDX=00007FFCD904855C 
+0000141F	.text:sum+65	lea     rsi, [rbp+var_158]	
+0000141F	.text:sum+6C	lea     rdi, [rbp+var_154]	
+0000141F	.text:sum+73	sub     rsp, 8	RSP=00007FFCD9048408 CF=0 PF=0 SF=0 
+0000141F	.text:sum+77	lea     r8, [rbp+var_140]	R8=00007FFCD9048430 
+0000141F	.text:sum+7E	push    r8	RSP=00007FFCD9048400 
+0000141F	.text:sum+80	lea     r8, [rbp+var_144]	R8=00007FFCD904842C 
+0000141F	.text:sum+87	push    r8	RSP=00007FFCD90483F8 
+0000141F	.text:sum+89	lea     r8, [rbp+var_128]	R8=00007FFCD9048448 
+0000141F	.text:sum+90	push    r8	RSP=00007FFCD90483F0 
+0000141F	.text:sum+92	mov     r8, r10	R8=00007FFCD9048440 
+0000141F	.text:sum+95	call    rax	RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0	push    rbp	RSP=00007FFCD90483E0 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+1	mov     rbp, rsp	RBP=00007FFCD90483E0 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+4	mov     [rbp+var_8], rdi	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+8	mov     [rbp+var_10], rsi	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+C	mov     [rbp+var_18], rdx	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+10	mov     [rbp+var_20], rcx	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+14	mov     [rbp+var_28], r8	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+18	mov     [rbp+var_30], r9	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+1C	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+20	mov     rax, [rax]	RAX=0000558DBD73A078 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+23	lea     rdx, [rax+8]	RDX=0000558DBD73A080 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+27	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+2B	mov     [rax], rdx	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+2E	mov     rax, [rbp+arg_0]	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+32	mov     rax, [rax]	RAX=0000558DBD73A080 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+35	mov     eax, [rax]	RAX=0000000000000000 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+37	test    eax, eax	PF=1 AF=0 ZF=1 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+39	jz      short loc_558DBD53896B	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0:loc_558DBD53896B	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+58	mov     rax, [rax]	RAX=00007FFCD9048458 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+5B	lea     rdx, [rax+8]	RDX=00007FFCD9048460 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+5F	mov     rax, [rbp+var_8]	RAX=00007FFCD904841C 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+63	mov     [rdx], rax	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+66	nop	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0:loc_558DBD53897E	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+6B	mov     rax, [rax]	RAX=00007FFCD9048458 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+6E	lea     rdx, [rax+8]	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+72	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+76	mov     [rax], rdx	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+79	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+7D	mov     rax, [rax]	RAX=0000558DBD73A080 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+80	lea     rdx, [rax+8]	RDX=0000558DBD73A088 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+84	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+88	mov     [rax], rdx	
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+8B	mov     eax, 0	RAX=0000000000000000 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+90	pop     rbp	RBP=00007FFCD9048570 RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__formal$result_STA_0$value_LIT_0+91	retn	RSP=00007FFCD90483F0 
+0000141F	.text:sum+97	add     rsp, 20h	RSP=00007FFCD9048410 PF=0 ZF=0 
+0000141F	.text:sum+9B	mov     [rbp+var_13C], eax	
+0000141F	.text:sum+A1	cmp     [rbp+var_13C], 1	CF=1 PF=1 AF=1 SF=1 
+0000141F	.text:sum+A8	jnz     short loc_558DBD538893	
+0000141F	.text:sum:loc_558DBD538893	mov     rax, [rbp+var_128]	RAX=0000558DBD73A088 
+0000141F	.text:sum+49	mov     rax, [rax]	RAX=0000558DBD538A09 
+0000141F	.text:sum+4C	lea     r9, [rbp+var_138]	
+0000141F	.text:sum+53	lea     r10, [rbp+var_130]	
+0000141F	.text:sum+5A	lea     rcx, [rbp+var_120]	
+0000141F	.text:sum+61	lea     rdx, [rbp+var_14]	RDX=00007FFCD904855C 
+0000141F	.text:sum+65	lea     rsi, [rbp+var_158]	
+0000141F	.text:sum+6C	lea     rdi, [rbp+var_154]	
+0000141F	.text:sum+73	sub     rsp, 8	RSP=00007FFCD9048408 CF=0 PF=0 SF=0 
+0000141F	.text:sum+77	lea     r8, [rbp+var_140]	R8=00007FFCD9048430 
+0000141F	.text:sum+7E	push    r8	RSP=00007FFCD9048400 
+0000141F	.text:sum+80	lea     r8, [rbp+var_144]	R8=00007FFCD904842C 
+0000141F	.text:sum+87	push    r8	RSP=00007FFCD90483F8 
+0000141F	.text:sum+89	lea     r8, [rbp+var_128]	R8=00007FFCD9048448 
+0000141F	.text:sum+90	push    r8	RSP=00007FFCD90483F0 
+0000141F	.text:sum+92	mov     r8, r10	R8=00007FFCD9048440 
+0000141F	.text:sum+95	call    rax	RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0	push    rbp	RSP=00007FFCD90483E0 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+1	mov     rbp, rsp	RBP=00007FFCD90483E0 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+4	mov     [rbp+var_8], rdi	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+8	mov     [rbp+var_10], rsi	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+C	mov     [rbp+var_18], rdx	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+10	mov     [rbp+var_20], rcx	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+14	mov     [rbp+var_28], r8	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+18	mov     [rbp+var_30], r9	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+1C	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+20	mov     rax, [rax]	RAX=0000558DBD73A088 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+23	lea     rdx, [rax+8]	RDX=0000558DBD73A090 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+27	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+2B	mov     [rax], rdx	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+2E	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+32	mov     rax, [rax]	RAX=00007FFCD9048460 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+35	mov     rdx, [rax]	RDX=00007FFCD904841C 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+38	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+3C	mov     rax, [rax]	RAX=00007FFCD9048460 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+3F	mov     edx, [rdx]	RDX=0000000000000006 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+41	mov     [rax], edx	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+43	mov     eax, 0	RAX=0000000000000000 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+48	pop     rbp	RBP=00007FFCD9048570 RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+49	retn	RSP=00007FFCD90483F0 
+0000141F	.text:sum+97	add     rsp, 20h	RSP=00007FFCD9048410 AF=0 
+0000141F	.text:sum+9B	mov     [rbp+var_13C], eax	
+0000141F	.text:sum+A1	cmp     [rbp+var_13C], 1	CF=1 PF=1 AF=1 SF=1 
+0000141F	.text:sum+A8	jnz     short loc_558DBD538893	
+0000141F	.text:sum:loc_558DBD538893	mov     rax, [rbp+var_128]	RAX=0000558DBD73A090 
+0000141F	.text:sum+49	mov     rax, [rax]	RAX=0000558DBD538A53 
+0000141F	.text:sum+4C	lea     r9, [rbp+var_138]	
+0000141F	.text:sum+53	lea     r10, [rbp+var_130]	
+0000141F	.text:sum+5A	lea     rcx, [rbp+var_120]	
+0000141F	.text:sum+61	lea     rdx, [rbp+var_14]	RDX=00007FFCD904855C 
+0000141F	.text:sum+65	lea     rsi, [rbp+var_158]	
+0000141F	.text:sum+6C	lea     rdi, [rbp+var_154]	
+0000141F	.text:sum+73	sub     rsp, 8	RSP=00007FFCD9048408 CF=0 PF=0 SF=0 
+0000141F	.text:sum+77	lea     r8, [rbp+var_140]	R8=00007FFCD9048430 
+0000141F	.text:sum+7E	push    r8	RSP=00007FFCD9048400 
+0000141F	.text:sum+80	lea     r8, [rbp+var_144]	R8=00007FFCD904842C 
+0000141F	.text:sum+87	push    r8	RSP=00007FFCD90483F8 
+0000141F	.text:sum+89	lea     r8, [rbp+var_128]	R8=00007FFCD9048448 
+0000141F	.text:sum+90	push    r8	RSP=00007FFCD90483F0 
+0000141F	.text:sum+92	mov     r8, r10	R8=00007FFCD9048440 
+0000141F	.text:sum+95	call    rax	RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1	push    rbp	RSP=00007FFCD90483E0 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+1	mov     rbp, rsp	RBP=00007FFCD90483E0 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+4	mov     [rbp+var_8], rdi	
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+8	mov     [rbp+var_10], rsi	
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+C	mov     [rbp+var_18], rdx	
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+10	mov     [rbp+var_20], rcx	
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+14	mov     [rbp+var_28], r8	
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+18	mov     [rbp+var_30], r9	
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+1C	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+20	mov     rax, [rax]	RAX=0000558DBD73A090 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+23	lea     rdx, [rax+8]	RDX=0000558DBD73A098 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+27	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+2B	mov     [rax], rdx	
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+2E	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+32	mov     rax, [rax]	RAX=00007FFCD9048460 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+35	mov     ecx, [rax]	RCX=0000000000000006 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+37	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+3B	mov     rax, [rax]	RAX=00007FFCD9048460 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+3E	sub     rax, 8	RAX=00007FFCD9048458 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+42	mov     edx, [rax]	RDX=0000000000000009 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+44	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+48	mov     rax, [rax]	RAX=00007FFCD9048460 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+4B	sub     rax, 8	RAX=00007FFCD9048458 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+4F	add     edx, ecx	RDX=000000000000000F PF=1 AF=0 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+51	mov     [rax], edx	
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+53	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+57	mov     rax, [rax]	RAX=00007FFCD9048460 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+5A	lea     rdx, [rax-8]	RDX=00007FFCD9048458 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+5E	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+62	mov     [rax], rdx	
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+65	mov     eax, 0	RAX=0000000000000000 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+6A	pop     rbp	RBP=00007FFCD9048570 RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__PlusA_int_int2int$left_STA_0$result_STA_0$right_STA_1+6B	retn	RSP=00007FFCD90483F0 
+0000141F	.text:sum+97	add     rsp, 20h	RSP=00007FFCD9048410 PF=0 
+0000141F	.text:sum+9B	mov     [rbp+var_13C], eax	
+0000141F	.text:sum+A1	cmp     [rbp+var_13C], 1	CF=1 PF=1 AF=1 SF=1 
+0000141F	.text:sum+A8	jnz     short loc_558DBD538893	
+0000141F	.text:sum:loc_558DBD538893	mov     rax, [rbp+var_128]	RAX=0000558DBD73A098 
+0000141F	.text:sum+49	mov     rax, [rax]	RAX=0000558DBD5387D7 
+0000141F	.text:sum+4C	lea     r9, [rbp+var_138]	
+0000141F	.text:sum+53	lea     r10, [rbp+var_130]	
+0000141F	.text:sum+5A	lea     rcx, [rbp+var_120]	RCX=00007FFCD9048450 
+0000141F	.text:sum+61	lea     rdx, [rbp+var_14]	RDX=00007FFCD904855C 
+0000141F	.text:sum+65	lea     rsi, [rbp+var_158]	
+0000141F	.text:sum+6C	lea     rdi, [rbp+var_154]	
+0000141F	.text:sum+73	sub     rsp, 8	RSP=00007FFCD9048408 CF=0 PF=0 SF=0 
+0000141F	.text:sum+77	lea     r8, [rbp+var_140]	R8=00007FFCD9048430 
+0000141F	.text:sum+7E	push    r8	RSP=00007FFCD9048400 
+0000141F	.text:sum+80	lea     r8, [rbp+var_144]	R8=00007FFCD904842C 
+0000141F	.text:sum+87	push    r8	RSP=00007FFCD90483F8 
+0000141F	.text:sum+89	lea     r8, [rbp+var_128]	R8=00007FFCD9048448 
+0000141F	.text:sum+90	push    r8	RSP=00007FFCD90483F0 
+0000141F	.text:sum+92	mov     r8, r10	R8=00007FFCD9048440 
+0000141F	.text:sum+95	call    rax	RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0	push    rbp	RSP=00007FFCD90483E0 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+1	mov     rbp, rsp	RBP=00007FFCD90483E0 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+4	mov     [rbp+var_8], rdi	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+8	mov     [rbp+var_10], rsi	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+C	mov     [rbp+var_18], rdx	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+10	mov     [rbp+var_20], rcx	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+14	mov     [rbp+var_28], r8	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+18	mov     [rbp+var_30], r9	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+1C	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+20	mov     rax, [rax]	RAX=0000558DBD73A098 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+23	lea     rdx, [rax+8]	RDX=0000558DBD73A0A0 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+27	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+2B	mov     [rax], rdx	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+2E	mov     rax, [rbp+arg_0]	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+32	mov     rax, [rax]	RAX=0000558DBD73A0A0 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+35	mov     eax, [rax]	RAX=0000000000000008 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+37	movsxd  rcx, eax	RCX=0000000000000008 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+3A	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+3E	mov     rax, [rax]	RAX=00007FFCD9048458 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+41	add     rax, 8	RAX=00007FFCD9048460 PF=1 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+45	mov     rdx, [rbp+var_18]	RDX=00007FFCD904855C 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+49	add     rdx, rcx	RDX=00007FFCD9048564 PF=0 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+4C	mov     [rax], rdx	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+4F	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+53	mov     rax, [rax]	RAX=00007FFCD9048458 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+56	lea     rdx, [rax+8]	RDX=00007FFCD9048460 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+5A	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+5E	mov     [rax], rdx	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+61	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+65	mov     rax, [rax]	RAX=0000558DBD73A0A0 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+68	lea     rdx, [rax+8]	RDX=0000558DBD73A0A8 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+6C	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+70	mov     [rax], rdx	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+73	mov     eax, 0	RAX=0000000000000000 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+78	pop     rbp	RBP=00007FFCD9048570 RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+79	retn	RSP=00007FFCD90483F0 
+0000141F	.text:sum+97	add     rsp, 20h	RSP=00007FFCD9048410 AF=0 
+0000141F	.text:sum+9B	mov     [rbp+var_13C], eax	
+0000141F	.text:sum+A1	cmp     [rbp+var_13C], 1	CF=1 PF=1 AF=1 SF=1 
+0000141F	.text:sum+A8	jnz     short loc_558DBD538893	
+0000141F	.text:sum:loc_558DBD538893	mov     rax, [rbp+var_128]	RAX=0000558DBD73A0A8 
+0000141F	.text:sum+49	mov     rax, [rax]	RAX=0000558DBD5389A9 
+0000141F	.text:sum+4C	lea     r9, [rbp+var_138]	
+0000141F	.text:sum+53	lea     r10, [rbp+var_130]	
+0000141F	.text:sum+5A	lea     rcx, [rbp+var_120]	RCX=00007FFCD9048450 
+0000141F	.text:sum+61	lea     rdx, [rbp+var_14]	RDX=00007FFCD904855C 
+0000141F	.text:sum+65	lea     rsi, [rbp+var_158]	
+0000141F	.text:sum+6C	lea     rdi, [rbp+var_154]	
+0000141F	.text:sum+73	sub     rsp, 8	RSP=00007FFCD9048408 CF=0 PF=0 SF=0 
+0000141F	.text:sum+77	lea     r8, [rbp+var_140]	R8=00007FFCD9048430 
+0000141F	.text:sum+7E	push    r8	RSP=00007FFCD9048400 
+0000141F	.text:sum+80	lea     r8, [rbp+var_144]	R8=00007FFCD904842C 
+0000141F	.text:sum+87	push    r8	RSP=00007FFCD90483F8 
+0000141F	.text:sum+89	lea     r8, [rbp+var_128]	R8=00007FFCD9048448 
+0000141F	.text:sum+90	push    r8	RSP=00007FFCD90483F0 
+0000141F	.text:sum+92	mov     r8, r10	R8=00007FFCD9048440 
+0000141F	.text:sum+95	call    rax	RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1	push    rbp	RSP=00007FFCD90483E0 
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+1	mov     rbp, rsp	RBP=00007FFCD90483E0 
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+4	mov     [rbp+var_8], rdi	
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+8	mov     [rbp+var_10], rsi	
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+C	mov     [rbp+var_18], rdx	
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+10	mov     [rbp+var_20], rcx	
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+14	mov     [rbp+var_28], r8	
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+18	mov     [rbp+var_30], r9	
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+1C	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+20	mov     rax, [rax]	RAX=0000558DBD73A0A8 
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+23	lea     rdx, [rax+8]	RDX=0000558DBD73A0B0 
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+27	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+2B	mov     [rax], rdx	
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+2E	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+32	mov     rax, [rax]	RAX=00007FFCD9048460 
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+35	lea     rdx, [rax-8]	RDX=00007FFCD9048458 
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+39	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+3D	mov     rax, [rax]	RAX=00007FFCD9048460 
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+40	mov     rax, [rax]	RAX=00007FFCD9048564 
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+43	mov     edx, [rdx]	RDX=000000000000000F 
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+45	mov     [rax], edx	
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+47	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+4B	mov     rax, [rax]	RAX=00007FFCD9048460 
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+4E	lea     rdx, [rax-10h]	RDX=00007FFCD9048450 
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+52	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+56	mov     [rax], rdx	
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+59	mov     eax, 0	RAX=0000000000000000 
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+5E	pop     rbp	RBP=00007FFCD9048570 RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__store_int$left_STA_0$right_STA_1+5F	retn	RSP=00007FFCD90483F0 
+0000141F	.text:sum+97	add     rsp, 20h	RSP=00007FFCD9048410 AF=0 
+0000141F	.text:sum+9B	mov     [rbp+var_13C], eax	
+0000141F	.text:sum+A1	cmp     [rbp+var_13C], 1	CF=1 PF=1 AF=1 SF=1 
+0000141F	.text:sum+A8	jnz     short loc_558DBD538893	
+0000141F	.text:sum:loc_558DBD538893	mov     rax, [rbp+var_128]	RAX=0000558DBD73A0B0 
+0000141F	.text:sum+49	mov     rax, [rax]	RAX=0000558DBD5386AA 
+0000141F	.text:sum+4C	lea     r9, [rbp+var_138]	
+0000141F	.text:sum+53	lea     r10, [rbp+var_130]	
+0000141F	.text:sum+5A	lea     rcx, [rbp+var_120]	
+0000141F	.text:sum+61	lea     rdx, [rbp+var_14]	RDX=00007FFCD904855C 
+0000141F	.text:sum+65	lea     rsi, [rbp+var_158]	
+0000141F	.text:sum+6C	lea     rdi, [rbp+var_154]	
+0000141F	.text:sum+73	sub     rsp, 8	RSP=00007FFCD9048408 CF=0 PF=0 SF=0 
+0000141F	.text:sum+77	lea     r8, [rbp+var_140]	R8=00007FFCD9048430 
+0000141F	.text:sum+7E	push    r8	RSP=00007FFCD9048400 
+0000141F	.text:sum+80	lea     r8, [rbp+var_144]	R8=00007FFCD904842C 
+0000141F	.text:sum+87	push    r8	RSP=00007FFCD90483F8 
+0000141F	.text:sum+89	lea     r8, [rbp+var_128]	R8=00007FFCD9048448 
+0000141F	.text:sum+90	push    r8	RSP=00007FFCD90483F0 
+0000141F	.text:sum+92	mov     r8, r10	R8=00007FFCD9048440 
+0000141F	.text:sum+95	call    rax	RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__goto$label_LAB_0	push    rbp	RSP=00007FFCD90483E0 
+0000141F	.text:_1_sum__goto$label_LAB_0+1	mov     rbp, rsp	RBP=00007FFCD90483E0 
+0000141F	.text:_1_sum__goto$label_LAB_0+4	mov     [rbp+var_8], rdi	
+0000141F	.text:_1_sum__goto$label_LAB_0+8	mov     [rbp+var_10], rsi	
+0000141F	.text:_1_sum__goto$label_LAB_0+C	mov     [rbp+var_18], rdx	
+0000141F	.text:_1_sum__goto$label_LAB_0+10	mov     [rbp+var_20], rcx	
+0000141F	.text:_1_sum__goto$label_LAB_0+14	mov     [rbp+var_28], r8	
+0000141F	.text:_1_sum__goto$label_LAB_0+18	mov     [rbp+var_30], r9	
+0000141F	.text:_1_sum__goto$label_LAB_0+1C	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__goto$label_LAB_0+20	mov     rax, [rax]	RAX=0000558DBD73A0B0 
+0000141F	.text:_1_sum__goto$label_LAB_0+23	lea     rdx, [rax+8]	RDX=0000558DBD73A0B8 
+0000141F	.text:_1_sum__goto$label_LAB_0+27	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__goto$label_LAB_0+2B	mov     [rax], rdx	
+0000141F	.text:_1_sum__goto$label_LAB_0+2E	mov     rax, [rbp+arg_0]	
+0000141F	.text:_1_sum__goto$label_LAB_0+32	mov     rdx, [rax]	
+0000141F	.text:_1_sum__goto$label_LAB_0+35	mov     rax, [rbp+arg_0]	
+0000141F	.text:_1_sum__goto$label_LAB_0+39	mov     rax, [rax]	RAX=0000558DBD73A0B8 
+0000141F	.text:_1_sum__goto$label_LAB_0+3C	mov     eax, [rax]	RAX=0000000000000001 
+0000141F	.text:_1_sum__goto$label_LAB_0+3E	cdqe	
+0000141F	.text:_1_sum__goto$label_LAB_0+40	shl     rax, 3	RAX=0000000000000008 AF=0 
+0000141F	.text:_1_sum__goto$label_LAB_0+44	add     rdx, rax	RDX=0000558DBD73A0C0 PF=1 AF=1 
+0000141F	.text:_1_sum__goto$label_LAB_0+47	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__goto$label_LAB_0+4B	mov     [rax], rdx	
+0000141F	.text:_1_sum__goto$label_LAB_0+4E	mov     eax, 0	RAX=0000000000000000 
+0000141F	.text:_1_sum__goto$label_LAB_0+53	pop     rbp	RBP=00007FFCD9048570 RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__goto$label_LAB_0+54	retn	RSP=00007FFCD90483F0 
+0000141F	.text:sum+97	add     rsp, 20h	RSP=00007FFCD9048410 PF=0 AF=0 
+0000141F	.text:sum+9B	mov     [rbp+var_13C], eax	
+0000141F	.text:sum+A1	cmp     [rbp+var_13C], 1	CF=1 PF=1 AF=1 SF=1 
+0000141F	.text:sum+A8	jnz     short loc_558DBD538893	
+0000141F	.text:sum:loc_558DBD538893	mov     rax, [rbp+var_128]	RAX=0000558DBD73A0C0 
+0000141F	.text:sum+49	mov     rax, [rax]	RAX=0000558DBD5387D7 
+0000141F	.text:sum+4C	lea     r9, [rbp+var_138]	
+0000141F	.text:sum+53	lea     r10, [rbp+var_130]	
+0000141F	.text:sum+5A	lea     rcx, [rbp+var_120]	
+0000141F	.text:sum+61	lea     rdx, [rbp+var_14]	RDX=00007FFCD904855C 
+0000141F	.text:sum+65	lea     rsi, [rbp+var_158]	
+0000141F	.text:sum+6C	lea     rdi, [rbp+var_154]	
+0000141F	.text:sum+73	sub     rsp, 8	RSP=00007FFCD9048408 CF=0 PF=0 SF=0 
+0000141F	.text:sum+77	lea     r8, [rbp+var_140]	R8=00007FFCD9048430 
+0000141F	.text:sum+7E	push    r8	RSP=00007FFCD9048400 
+0000141F	.text:sum+80	lea     r8, [rbp+var_144]	R8=00007FFCD904842C 
+0000141F	.text:sum+87	push    r8	RSP=00007FFCD90483F8 
+0000141F	.text:sum+89	lea     r8, [rbp+var_128]	R8=00007FFCD9048448 
+0000141F	.text:sum+90	push    r8	RSP=00007FFCD90483F0 
+0000141F	.text:sum+92	mov     r8, r10	R8=00007FFCD9048440 
+0000141F	.text:sum+95	call    rax	RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0	push    rbp	RSP=00007FFCD90483E0 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+1	mov     rbp, rsp	RBP=00007FFCD90483E0 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+4	mov     [rbp+var_8], rdi	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+8	mov     [rbp+var_10], rsi	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+C	mov     [rbp+var_18], rdx	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+10	mov     [rbp+var_20], rcx	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+14	mov     [rbp+var_28], r8	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+18	mov     [rbp+var_30], r9	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+1C	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+20	mov     rax, [rax]	RAX=0000558DBD73A0C0 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+23	lea     rdx, [rax+8]	RDX=0000558DBD73A0C8 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+27	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+2B	mov     [rax], rdx	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+2E	mov     rax, [rbp+arg_0]	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+32	mov     rax, [rax]	RAX=0000558DBD73A0C8 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+35	mov     eax, [rax]	RAX=0000000000000008 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+37	movsxd  rcx, eax	RCX=0000000000000008 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+3A	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+3E	mov     rax, [rax]	RAX=00007FFCD9048450 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+41	add     rax, 8	RAX=00007FFCD9048458 AF=0 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+45	mov     rdx, [rbp+var_18]	RDX=00007FFCD904855C 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+49	add     rdx, rcx	RDX=00007FFCD9048564 AF=1 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+4C	mov     [rax], rdx	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+4F	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+53	mov     rax, [rax]	RAX=00007FFCD9048450 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+56	lea     rdx, [rax+8]	RDX=00007FFCD9048458 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+5A	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+5E	mov     [rax], rdx	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+61	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+65	mov     rax, [rax]	RAX=0000558DBD73A0C8 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+68	lea     rdx, [rax+8]	RDX=0000558DBD73A0D0 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+6C	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+70	mov     [rax], rdx	
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+73	mov     eax, 0	RAX=0000000000000000 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+78	pop     rbp	RBP=00007FFCD9048570 RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__local$result_STA_0$value_LIT_0+79	retn	RSP=00007FFCD90483F0 
+0000141F	.text:sum+97	add     rsp, 20h	RSP=00007FFCD9048410 AF=0 
+0000141F	.text:sum+9B	mov     [rbp+var_13C], eax	
+0000141F	.text:sum+A1	cmp     [rbp+var_13C], 1	CF=1 PF=1 AF=1 SF=1 
+0000141F	.text:sum+A8	jnz     short loc_558DBD538893	
+0000141F	.text:sum:loc_558DBD538893	mov     rax, [rbp+var_128]	RAX=0000558DBD73A0D0 
+0000141F	.text:sum+49	mov     rax, [rax]	RAX=0000558DBD538A09 
+0000141F	.text:sum+4C	lea     r9, [rbp+var_138]	
+0000141F	.text:sum+53	lea     r10, [rbp+var_130]	
+0000141F	.text:sum+5A	lea     rcx, [rbp+var_120]	RCX=00007FFCD9048450 
+0000141F	.text:sum+61	lea     rdx, [rbp+var_14]	RDX=00007FFCD904855C 
+0000141F	.text:sum+65	lea     rsi, [rbp+var_158]	
+0000141F	.text:sum+6C	lea     rdi, [rbp+var_154]	
+0000141F	.text:sum+73	sub     rsp, 8	RSP=00007FFCD9048408 CF=0 PF=0 SF=0 
+0000141F	.text:sum+77	lea     r8, [rbp+var_140]	R8=00007FFCD9048430 
+0000141F	.text:sum+7E	push    r8	RSP=00007FFCD9048400 
+0000141F	.text:sum+80	lea     r8, [rbp+var_144]	R8=00007FFCD904842C 
+0000141F	.text:sum+87	push    r8	RSP=00007FFCD90483F8 
+0000141F	.text:sum+89	lea     r8, [rbp+var_128]	R8=00007FFCD9048448 
+0000141F	.text:sum+90	push    r8	RSP=00007FFCD90483F0 
+0000141F	.text:sum+92	mov     r8, r10	R8=00007FFCD9048440 
+0000141F	.text:sum+95	call    rax	RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0	push    rbp	RSP=00007FFCD90483E0 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+1	mov     rbp, rsp	RBP=00007FFCD90483E0 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+4	mov     [rbp+var_8], rdi	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+8	mov     [rbp+var_10], rsi	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+C	mov     [rbp+var_18], rdx	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+10	mov     [rbp+var_20], rcx	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+14	mov     [rbp+var_28], r8	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+18	mov     [rbp+var_30], r9	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+1C	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+20	mov     rax, [rax]	RAX=0000558DBD73A0D0 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+23	lea     rdx, [rax+8]	RDX=0000558DBD73A0D8 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+27	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+2B	mov     [rax], rdx	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+2E	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+32	mov     rax, [rax]	RAX=00007FFCD9048458 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+35	mov     rdx, [rax]	RDX=00007FFCD9048564 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+38	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+3C	mov     rax, [rax]	RAX=00007FFCD9048458 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+3F	mov     edx, [rdx]	RDX=000000000000000F 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+41	mov     [rax], edx	
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+43	mov     eax, 0	RAX=0000000000000000 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+48	pop     rbp	RBP=00007FFCD9048570 RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__load_int$left_STA_0$result_STA_0+49	retn	RSP=00007FFCD90483F0 
+0000141F	.text:sum+97	add     rsp, 20h	RSP=00007FFCD9048410 AF=0 
+0000141F	.text:sum+9B	mov     [rbp+var_13C], eax	
+0000141F	.text:sum+A1	cmp     [rbp+var_13C], 1	CF=1 PF=1 AF=1 SF=1 
+0000141F	.text:sum+A8	jnz     short loc_558DBD538893	
+0000141F	.text:sum:loc_558DBD538893	mov     rax, [rbp+var_128]	RAX=0000558DBD73A0D8 
+0000141F	.text:sum+49	mov     rax, [rax]	RAX=0000558DBD538B6D 
+0000141F	.text:sum+4C	lea     r9, [rbp+var_138]	
+0000141F	.text:sum+53	lea     r10, [rbp+var_130]	
+0000141F	.text:sum+5A	lea     rcx, [rbp+var_120]	
+0000141F	.text:sum+61	lea     rdx, [rbp+var_14]	RDX=00007FFCD904855C 
+0000141F	.text:sum+65	lea     rsi, [rbp+var_158]	
+0000141F	.text:sum+6C	lea     rdi, [rbp+var_154]	
+0000141F	.text:sum+73	sub     rsp, 8	RSP=00007FFCD9048408 CF=0 PF=0 SF=0 
+0000141F	.text:sum+77	lea     r8, [rbp+var_140]	R8=00007FFCD9048430 
+0000141F	.text:sum+7E	push    r8	RSP=00007FFCD9048400 
+0000141F	.text:sum+80	lea     r8, [rbp+var_144]	R8=00007FFCD904842C 
+0000141F	.text:sum+87	push    r8	RSP=00007FFCD90483F8 
+0000141F	.text:sum+89	lea     r8, [rbp+var_128]	R8=00007FFCD9048448 
+0000141F	.text:sum+90	push    r8	RSP=00007FFCD90483F0 
+0000141F	.text:sum+92	mov     r8, r10	R8=00007FFCD9048440 
+0000141F	.text:sum+95	call    rax	RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__return_int$expr_STA_0	push    rbp	RSP=00007FFCD90483E0 
+0000141F	.text:_1_sum__return_int$expr_STA_0+1	mov     rbp, rsp	RBP=00007FFCD90483E0 
+0000141F	.text:_1_sum__return_int$expr_STA_0+4	mov     [rbp+var_8], rdi	
+0000141F	.text:_1_sum__return_int$expr_STA_0+8	mov     [rbp+var_10], rsi	
+0000141F	.text:_1_sum__return_int$expr_STA_0+C	mov     [rbp+var_18], rdx	
+0000141F	.text:_1_sum__return_int$expr_STA_0+10	mov     [rbp+var_20], rcx	
+0000141F	.text:_1_sum__return_int$expr_STA_0+14	mov     [rbp+var_28], r8	
+0000141F	.text:_1_sum__return_int$expr_STA_0+18	mov     [rbp+var_30], r9	
+0000141F	.text:_1_sum__return_int$expr_STA_0+1C	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__return_int$expr_STA_0+20	mov     rax, [rax]	RAX=0000558DBD73A0D8 
+0000141F	.text:_1_sum__return_int$expr_STA_0+23	lea     rdx, [rax+8]	RDX=0000558DBD73A0E0 
+0000141F	.text:_1_sum__return_int$expr_STA_0+27	mov     rax, [rbp+arg_0]	RAX=00007FFCD9048448 
+0000141F	.text:_1_sum__return_int$expr_STA_0+2B	mov     [rax], rdx	
+0000141F	.text:_1_sum__return_int$expr_STA_0+2E	mov     rax, [rbp+var_28]	RAX=00007FFCD9048440 
+0000141F	.text:_1_sum__return_int$expr_STA_0+32	mov     rax, [rax]	RAX=00007FFCD9048458 
+0000141F	.text:_1_sum__return_int$expr_STA_0+35	mov     edx, [rax]	RDX=000000000000000F 
+0000141F	.text:_1_sum__return_int$expr_STA_0+37	mov     rax, [rbp+arg_10]	RAX=00007FFCD9048430 
+0000141F	.text:_1_sum__return_int$expr_STA_0+3B	mov     [rax], edx	
+0000141F	.text:_1_sum__return_int$expr_STA_0+3D	mov     eax, 1	RAX=0000000000000001 
+0000141F	.text:_1_sum__return_int$expr_STA_0+42	pop     rbp	RBP=00007FFCD9048570 RSP=00007FFCD90483E8 
+0000141F	.text:_1_sum__return_int$expr_STA_0+43	retn	RSP=00007FFCD90483F0 
+0000141F	.text:sum+97	add     rsp, 20h	RSP=00007FFCD9048410 AF=0 
+0000141F	.text:sum+9B	mov     [rbp+var_13C], eax	
+0000141F	.text:sum+A1	cmp     [rbp+var_13C], 1	PF=1 ZF=1 
+0000141F	.text:sum+A8	jnz     short loc_558DBD538893	
+0000141F	.text:sum+AA	mov     eax, [rbp+var_140]	RAX=000000000000000F 
+0000141F	.text:sum+B0	mov     rdx, [rbp+var_8]	RDX=118FEE880F136300 
+0000141F	.text:sum+B4	xor     rdx, fs:28h	RDX=0000000000000000 
+0000141F	.text:sum+BD	jz      short locret_558DBD538915	
+0000141F	.text:sum:locret_558DBD538915	leave	RBP=00007FFCD90485C0 RSP=00007FFCD9048578 
+0000141F	.text:sum+C5	retn	RSP=00007FFCD9048580 
+0000141F	.text:main+5B	mov     [rbp+var_8], eax	
+0000141F	.text:main+5E	mov     eax, [rbp+var_8]	
+0000141F	.text:main+61	mov     [rbp+var_4], eax	
+0000141F	.text:main+64	mov     eax, [rbp+var_4]	
+0000141F	.text:main+67	mov     esi, eax	RSI=000000000000000F 
+0000141F	.text:main+69	lea     rdi, format; \"The sum is %d.\\n\"	RDI=0000558DBD538C45 
+0000141F	.text:main+70	mov     eax, 0	RAX=0000000000000000 
+0000141F	.text:main+75	call    _printf	RSP=00007FFCD9048578 
+0000141F	.plt:_printf	jmp     cs:printf_ptr	RAX=000000000000000F RCX=0000000000000000 RSI=0000558DBD9502A0 RDI=00007F7B06CD97E0 RSP=00007FFCD9048580 R8=0000000000000000 R9=000000000000000F R10=0000558DBD538C52 R11=0000000000000246 ZF=0 
+0000141F	.text:main+7A	mov     eax, 0	RAX=0000000000000000 
+0000141F	.text:main+7F	leave	RBP=0000000000000000 RSP=00007FFCD90485C8 
+

@@ -1,0 +1,296 @@
+Thread	Address	Instruction	Result
+00001609	.text:sum	Memory layout changed: 43 segments	Memory layout changed: 43 segments
+00001609			ST0=FFFFFFFFFFFFFFFF ST1=FFFFFFFFFFFFFFFF ST2=FFFFFFFFFFFFFFFF ST3=FFFFFFFFFFFFFFFF ST4=FFFFFFFFFFFFFFFF ST5=FFFFFFFFFFFFFFFF ST6=FFFFFFFFFFFFFFFF ST7=FFFFFFFFFFFFFFFF CTRL=FFFF CS=0033 DS=0000 ES=0000 FS=0000 GS=0000 SS=002B RAX=0000000000000006 RBX=00005569944EC9F0 RCX=00005569944EC9F0 RDX=0000000000000009 RSI=0000000000000009 RDI=0000000000000006 RBP=00007FFE59FBBEE0 RSP=00007FFE59FBBE98 R8=0000000000000000 R9=00007FE36CC9AD50 R10=0000000000000003 R11=0000000000000000 R12=00005569944EC5C0 R13=00007FFE59FBBFD0 R14=0000000000000000 R15=0000000000000000 EFL=00000206 XMM0= XMM1= XMM2= XMM3= XMM4= XMM5= XMM6= XMM7= XMM8= XMM9= XMM10= XMM11= XMM12= XMM13= XMM14= XMM15= MXCSR=FFFFFFFF MM0= MM1= MM2= MM3= 
+00001609	.text:sum	push    rbp	RSP=00007FFE59FBBE90 
+00001609	.text:sum+1	mov     rbp, rsp	RBP=00007FFE59FBBE90 
+00001609	.text:sum+4	sub     rsp, 140h	RSP=00007FFE59FBBD50 
+00001609	.text:sum+B	mov     [rbp+var_134], edi	
+00001609	.text:sum+11	mov     [rbp+var_138], esi	
+00001609	.text:sum+17	mov     rax, fs:28h	RAX=E78D0A907FBDBC00 
+00001609	.text:sum+20	mov     [rbp+var_8], rax	
+00001609	.text:sum+24	xor     eax, eax	RAX=0000000000000000 ZF=1 
+00001609	.text:sum+26	lea     rax, [rbp+var_120]	RAX=00007FFE59FBBD70 
+00001609	.text:sum+2D	mov     [rbp+var_130], rax	
+00001609	.text:sum+34	lea     rax, _1_sum_$array	RAX=00005569946ED010 
+00001609	.text:sum+3B	mov     [rbp+var_128], rax	
+00001609	.text:sum:loc_5569944EC78D	mov     rax, [rbp+var_128]	
+00001609	.text:sum+49	movzx   eax, byte ptr [rax]	RAX=0000000000000003 
+00001609	.text:sum+4C	movzx   eax, al	
+00001609	.text:sum+4F	cmp     eax, 5Bh ; '['	CF=1 PF=0 AF=1 ZF=0 SF=1 
+00001609	.text:sum+52	jz      short loc_5569944EC7DC	
+00001609	.text:sum+54	cmp     eax, 5Bh ; '['	
+00001609	.text:sum+57	jg      short loc_5569944EC7C1	
+00001609	.text:sum+59	cmp     eax, 3	CF=0 PF=1 AF=0 ZF=1 SF=0 
+00001609	.text:sum+5C	jz      loc_5569944EC927	
+00001609	.text:sum:loc_5569944EC927	mov     rax, [rbp+var_128]	RAX=00005569946ED010 
+00001609	.text:sum+1E3	add     rax, 1	RAX=00005569946ED011 ZF=0 
+00001609	.text:sum+1E7	mov     [rbp+var_128], rax	
+00001609	.text:sum+1EE	mov     rax, [rbp+var_128]	
+00001609	.text:sum+1F5	mov     eax, [rax]	RAX=0000000000000001 
+00001609	.text:sum+1F7	test    eax, eax	PF=0 
+00001609	.text:sum+1F9	jz      short loc_5569944EC962	
+00001609	.text:sum+1FB	cmp     eax, 1	PF=1 ZF=1 
+00001609	.text:sum+1FE	jnz     short loc_5569944EC978	
+00001609	.text:sum+200	mov     rax, [rbp+var_130]	RAX=00007FFE59FBBD70 
+00001609	.text:sum+207	lea     rdx, [rax+8]	RDX=00007FFE59FBBD78 
+00001609	.text:sum+20B	lea     rax, [rbp+var_138]	RAX=00007FFE59FBBD58 
+00001609	.text:sum+212	mov     [rdx], rax	
+00001609	.text:sum+215	jmp     short loc_5569944EC978	
+00001609	.text:sum:loc_5569944EC978	mov     rax, [rbp+var_130]	RAX=00007FFE59FBBD70 
+00001609	.text:sum+234	add     rax, 8	RAX=00007FFE59FBBD78 ZF=0 
+00001609	.text:sum+238	mov     [rbp+var_130], rax	
+00001609	.text:sum+23F	mov     rax, [rbp+var_128]	RAX=00005569946ED011 
+00001609	.text:sum+246	add     rax, 4	RAX=00005569946ED015 PF=0 
+00001609	.text:sum+24A	mov     [rbp+var_128], rax	
+00001609	.text:sum+251	jmp     short loc_5569944EC9CA	
+00001609	.text:sum:loc_5569944EC9CA	jmp     loc_5569944EC78D	
+00001609	.text:sum:loc_5569944EC78D	mov     rax, [rbp+var_128]	
+00001609	.text:sum+49	movzx   eax, byte ptr [rax]	RAX=00000000000000FC 
+00001609	.text:sum+4C	movzx   eax, al	
+00001609	.text:sum+4F	cmp     eax, 5Bh ; '['	
+00001609	.text:sum+52	jz      short loc_5569944EC7DC	
+00001609	.text:sum+54	cmp     eax, 5Bh ; '['	
+00001609	.text:sum+57	jg      short loc_5569944EC7C1	
+00001609	.text:sum:loc_5569944EC7C1	cmp     eax, 67h ; 'g'	PF=1 
+00001609	.text:sum+79	jz      loc_5569944EC8D9	
+00001609	.text:sum+7F	cmp     eax, 0FCh	ZF=1 
+00001609	.text:sum+84	jz      loc_5569944EC87A	
+00001609	.text:sum:loc_5569944EC87A	mov     rax, [rbp+var_128]	RAX=00005569946ED015 
+00001609	.text:sum+136	add     rax, 1	RAX=00005569946ED016 PF=0 ZF=0 
+00001609	.text:sum+13A	mov     [rbp+var_128], rax	
+00001609	.text:sum+141	mov     rax, [rbp+var_130]	RAX=00007FFE59FBBD78 
+00001609	.text:sum+148	mov     rdx, [rax]	RDX=00007FFE59FBBD58 
+00001609	.text:sum+14B	mov     rax, [rbp+var_130]	
+00001609	.text:sum+152	mov     edx, [rdx]	RDX=0000000000000009 
+00001609	.text:sum+154	mov     [rax], edx	
+00001609	.text:sum+156	jmp     loc_5569944EC9CA	
+00001609	.text:sum:loc_5569944EC9CA	jmp     loc_5569944EC78D	
+00001609	.text:sum:loc_5569944EC78D	mov     rax, [rbp+var_128]	RAX=00005569946ED016 
+00001609	.text:sum+49	movzx   eax, byte ptr [rax]	RAX=0000000000000003 
+00001609	.text:sum+4C	movzx   eax, al	
+00001609	.text:sum+4F	cmp     eax, 5Bh ; '['	CF=1 AF=1 SF=1 
+00001609	.text:sum+52	jz      short loc_5569944EC7DC	
+00001609	.text:sum+54	cmp     eax, 5Bh ; '['	
+00001609	.text:sum+57	jg      short loc_5569944EC7C1	
+00001609	.text:sum+59	cmp     eax, 3	CF=0 PF=1 AF=0 ZF=1 SF=0 
+00001609	.text:sum+5C	jz      loc_5569944EC927	
+00001609	.text:sum:loc_5569944EC927	mov     rax, [rbp+var_128]	RAX=00005569946ED016 
+00001609	.text:sum+1E3	add     rax, 1	RAX=00005569946ED017 ZF=0 
+00001609	.text:sum+1E7	mov     [rbp+var_128], rax	
+00001609	.text:sum+1EE	mov     rax, [rbp+var_128]	
+00001609	.text:sum+1F5	mov     eax, [rax]	RAX=0000000000000000 
+00001609	.text:sum+1F7	test    eax, eax	ZF=1 
+00001609	.text:sum+1F9	jz      short loc_5569944EC962	
+00001609	.text:sum:loc_5569944EC962	mov     rax, [rbp+var_130]	RAX=00007FFE59FBBD78 
+00001609	.text:sum+21E	lea     rdx, [rax+8]	RDX=00007FFE59FBBD80 
+00001609	.text:sum+222	lea     rax, [rbp+var_134]	RAX=00007FFE59FBBD5C 
+00001609	.text:sum+229	mov     [rdx], rax	
+00001609	.text:sum+22C	nop	
+00001609	.text:sum:loc_5569944EC978	mov     rax, [rbp+var_130]	RAX=00007FFE59FBBD78 
+00001609	.text:sum+234	add     rax, 8	RAX=00007FFE59FBBD80 PF=0 AF=1 ZF=0 
+00001609	.text:sum+238	mov     [rbp+var_130], rax	
+00001609	.text:sum+23F	mov     rax, [rbp+var_128]	RAX=00005569946ED017 
+00001609	.text:sum+246	add     rax, 4	RAX=00005569946ED01B PF=1 AF=0 
+00001609	.text:sum+24A	mov     [rbp+var_128], rax	
+00001609	.text:sum+251	jmp     short loc_5569944EC9CA	
+00001609	.text:sum:loc_5569944EC9CA	jmp     loc_5569944EC78D	
+00001609	.text:sum:loc_5569944EC78D	mov     rax, [rbp+var_128]	
+00001609	.text:sum+49	movzx   eax, byte ptr [rax]	RAX=00000000000000FC 
+00001609	.text:sum+4C	movzx   eax, al	
+00001609	.text:sum+4F	cmp     eax, 5Bh ; '['	PF=0 
+00001609	.text:sum+52	jz      short loc_5569944EC7DC	
+00001609	.text:sum+54	cmp     eax, 5Bh ; '['	
+00001609	.text:sum+57	jg      short loc_5569944EC7C1	
+00001609	.text:sum:loc_5569944EC7C1	cmp     eax, 67h ; 'g'	PF=1 
+00001609	.text:sum+79	jz      loc_5569944EC8D9	
+00001609	.text:sum+7F	cmp     eax, 0FCh	ZF=1 
+00001609	.text:sum+84	jz      loc_5569944EC87A	
+00001609	.text:sum:loc_5569944EC87A	mov     rax, [rbp+var_128]	RAX=00005569946ED01B 
+00001609	.text:sum+136	add     rax, 1	RAX=00005569946ED01C PF=0 ZF=0 
+00001609	.text:sum+13A	mov     [rbp+var_128], rax	
+00001609	.text:sum+141	mov     rax, [rbp+var_130]	RAX=00007FFE59FBBD80 
+00001609	.text:sum+148	mov     rdx, [rax]	RDX=00007FFE59FBBD5C 
+00001609	.text:sum+14B	mov     rax, [rbp+var_130]	
+00001609	.text:sum+152	mov     edx, [rdx]	RDX=0000000000000006 
+00001609	.text:sum+154	mov     [rax], edx	
+00001609	.text:sum+156	jmp     loc_5569944EC9CA	
+00001609	.text:sum:loc_5569944EC9CA	jmp     loc_5569944EC78D	
+00001609	.text:sum:loc_5569944EC78D	mov     rax, [rbp+var_128]	RAX=00005569946ED01C 
+00001609	.text:sum+49	movzx   eax, byte ptr [rax]	RAX=0000000000000067 
+00001609	.text:sum+4C	movzx   eax, al	
+00001609	.text:sum+4F	cmp     eax, 5Bh ; '['	PF=1 AF=1 
+00001609	.text:sum+52	jz      short loc_5569944EC7DC	
+00001609	.text:sum+54	cmp     eax, 5Bh ; '['	
+00001609	.text:sum+57	jg      short loc_5569944EC7C1	
+00001609	.text:sum:loc_5569944EC7C1	cmp     eax, 67h ; 'g'	AF=0 ZF=1 
+00001609	.text:sum+79	jz      loc_5569944EC8D9	
+00001609	.text:sum:loc_5569944EC8D9	mov     rax, [rbp+var_128]	RAX=00005569946ED01C 
+00001609	.text:sum+195	add     rax, 1	RAX=00005569946ED01D ZF=0 
+00001609	.text:sum+199	mov     [rbp+var_128], rax	
+00001609	.text:sum+1A0	mov     rax, [rbp+var_130]	RAX=00007FFE59FBBD80 
+00001609	.text:sum+1A7	mov     ecx, [rax]	RCX=0000000000000006 
+00001609	.text:sum+1A9	mov     rax, [rbp+var_130]	
+00001609	.text:sum+1B0	sub     rax, 8	RAX=00007FFE59FBBD78 AF=1 
+00001609	.text:sum+1B4	mov     edx, [rax]	RDX=0000000000000009 
+00001609	.text:sum+1B6	mov     rax, [rbp+var_130]	RAX=00007FFE59FBBD80 
+00001609	.text:sum+1BD	sub     rax, 8	RAX=00007FFE59FBBD78 
+00001609	.text:sum+1C1	add     edx, ecx	RDX=000000000000000F AF=0 
+00001609	.text:sum+1C3	mov     [rax], edx	
+00001609	.text:sum+1C5	mov     rax, [rbp+var_130]	RAX=00007FFE59FBBD80 
+00001609	.text:sum+1CC	sub     rax, 8	RAX=00007FFE59FBBD78 AF=1 
+00001609	.text:sum+1D0	mov     [rbp+var_130], rax	
+00001609	.text:sum+1D7	jmp     loc_5569944EC9CA	
+00001609	.text:sum:loc_5569944EC9CA	jmp     loc_5569944EC78D	
+00001609	.text:sum:loc_5569944EC78D	mov     rax, [rbp+var_128]	RAX=00005569946ED01D 
+00001609	.text:sum+49	movzx   eax, byte ptr [rax]	RAX=000000000000005B 
+00001609	.text:sum+4C	movzx   eax, al	
+00001609	.text:sum+4F	cmp     eax, 5Bh ; '['	AF=0 ZF=1 
+00001609	.text:sum+52	jz      short loc_5569944EC7DC	
+00001609	.text:sum:loc_5569944EC7DC	mov     rax, [rbp+var_128]	RAX=00005569946ED01D 
+00001609	.text:sum+98	add     rax, 1	RAX=00005569946ED01E ZF=0 
+00001609	.text:sum+9C	mov     [rbp+var_128], rax	
+00001609	.text:sum+A3	mov     rax, [rbp+var_128]	
+00001609	.text:sum+AA	mov     eax, [rax]	RAX=0000000000000008 
+00001609	.text:sum+AC	movsxd  rdx, eax	RDX=0000000000000008 
+00001609	.text:sum+AF	mov     rax, [rbp+var_130]	RAX=00007FFE59FBBD78 
+00001609	.text:sum+B6	add     rax, 8	RAX=00007FFE59FBBD80 PF=0 AF=1 
+00001609	.text:sum+BA	lea     rcx, [rbp+var_14]	RCX=00007FFE59FBBE7C 
+00001609	.text:sum+BE	add     rdx, rcx	RDX=00007FFE59FBBE84 PF=1 
+00001609	.text:sum+C1	mov     [rax], rdx	
+00001609	.text:sum+C4	mov     rax, [rbp+var_130]	RAX=00007FFE59FBBD78 
+00001609	.text:sum+CB	add     rax, 8	RAX=00007FFE59FBBD80 PF=0 
+00001609	.text:sum+CF	mov     [rbp+var_130], rax	
+00001609	.text:sum+D6	mov     rax, [rbp+var_128]	RAX=00005569946ED01E 
+00001609	.text:sum+DD	add     rax, 4	RAX=00005569946ED022 PF=1 
+00001609	.text:sum+E1	mov     [rbp+var_128], rax	
+00001609	.text:sum+E8	jmp     loc_5569944EC9CA	
+00001609	.text:sum:loc_5569944EC9CA	jmp     loc_5569944EC78D	
+00001609	.text:sum:loc_5569944EC78D	mov     rax, [rbp+var_128]	
+00001609	.text:sum+49	movzx   eax, byte ptr [rax]	RAX=0000000000000064 
+00001609	.text:sum+4C	movzx   eax, al	
+00001609	.text:sum+4F	cmp     eax, 5Bh ; '['	
+00001609	.text:sum+52	jz      short loc_5569944EC7DC	
+00001609	.text:sum+54	cmp     eax, 5Bh ; '['	
+00001609	.text:sum+57	jg      short loc_5569944EC7C1	
+00001609	.text:sum:loc_5569944EC7C1	cmp     eax, 67h ; 'g'	CF=1 PF=0 SF=1 
+00001609	.text:sum+79	jz      loc_5569944EC8D9	
+00001609	.text:sum+7F	cmp     eax, 0FCh	
+00001609	.text:sum+84	jz      loc_5569944EC87A	
+00001609	.text:sum+8A	cmp     eax, 64h ; 'd'	CF=0 PF=1 AF=0 ZF=1 SF=0 
+00001609	.text:sum+8D	jz      short loc_5569944EC838	
+00001609	.text:sum:loc_5569944EC838	mov     rax, [rbp+var_128]	RAX=00005569946ED022 
+00001609	.text:sum+F4	add     rax, 1	RAX=00005569946ED023 PF=0 ZF=0 
+00001609	.text:sum+F8	mov     [rbp+var_128], rax	
+00001609	.text:sum+FF	mov     rax, [rbp+var_130]	RAX=00007FFE59FBBD80 
+00001609	.text:sum+106	lea     rdx, [rax-8]	RDX=00007FFE59FBBD78 
+00001609	.text:sum+10A	mov     rax, [rbp+var_130]	
+00001609	.text:sum+111	mov     rax, [rax]	RAX=00007FFE59FBBE84 
+00001609	.text:sum+114	mov     edx, [rdx]	RDX=000000000000000F 
+00001609	.text:sum+116	mov     [rax], edx	
+00001609	.text:sum+118	mov     rax, [rbp+var_130]	RAX=00007FFE59FBBD80 
+00001609	.text:sum+11F	sub     rax, 10h	RAX=00007FFE59FBBD70 
+00001609	.text:sum+123	mov     [rbp+var_130], rax	
+00001609	.text:sum+12A	jmp     loc_5569944EC9CA	
+00001609	.text:sum:loc_5569944EC9CA	jmp     loc_5569944EC78D	
+00001609	.text:sum:loc_5569944EC78D	mov     rax, [rbp+var_128]	RAX=00005569946ED023 
+00001609	.text:sum+49	movzx   eax, byte ptr [rax]	RAX=0000000000000001 
+00001609	.text:sum+4C	movzx   eax, al	
+00001609	.text:sum+4F	cmp     eax, 5Bh ; '['	CF=1 PF=1 AF=1 SF=1 
+00001609	.text:sum+52	jz      short loc_5569944EC7DC	
+00001609	.text:sum+54	cmp     eax, 5Bh ; '['	
+00001609	.text:sum+57	jg      short loc_5569944EC7C1	
+00001609	.text:sum+59	cmp     eax, 3	PF=0 
+00001609	.text:sum+5C	jz      loc_5569944EC927	
+00001609	.text:sum+62	cmp     eax, 5Ah ; 'Z'	
+00001609	.text:sum+65	jz      loc_5569944EC99E	
+00001609	.text:sum+6B	cmp     eax, 1	CF=0 PF=1 AF=0 ZF=1 SF=0 
+00001609	.text:sum+6E	jz      loc_5569944EC8A6	
+00001609	.text:sum:loc_5569944EC8A6	mov     rax, [rbp+var_128]	RAX=00005569946ED023 
+00001609	.text:sum+162	add     rax, 1	RAX=00005569946ED024 ZF=0 
+00001609	.text:sum+166	mov     [rbp+var_128], rax	
+00001609	.text:sum+16D	mov     rdx, [rbp+var_128]	RDX=00005569946ED024 
+00001609	.text:sum+174	mov     rax, [rbp+var_128]	
+00001609	.text:sum+17B	mov     eax, [rax]	RAX=0000000000000004 
+00001609	.text:sum+17D	cdqe	
+00001609	.text:sum+17F	add     rax, rdx	RAX=00005569946ED028 
+00001609	.text:sum+182	mov     [rbp+var_128], rax	
+00001609	.text:sum+189	jmp     loc_5569944EC9CA	
+00001609	.text:sum:loc_5569944EC9CA	jmp     loc_5569944EC78D	
+00001609	.text:sum:loc_5569944EC78D	mov     rax, [rbp+var_128]	
+00001609	.text:sum+49	movzx   eax, byte ptr [rax]	RAX=000000000000005B 
+00001609	.text:sum+4C	movzx   eax, al	
+00001609	.text:sum+4F	cmp     eax, 5Bh ; '['	ZF=1 
+00001609	.text:sum+52	jz      short loc_5569944EC7DC	
+00001609	.text:sum:loc_5569944EC7DC	mov     rax, [rbp+var_128]	RAX=00005569946ED028 
+00001609	.text:sum+98	add     rax, 1	RAX=00005569946ED029 PF=0 ZF=0 
+00001609	.text:sum+9C	mov     [rbp+var_128], rax	
+00001609	.text:sum+A3	mov     rax, [rbp+var_128]	
+00001609	.text:sum+AA	mov     eax, [rax]	RAX=0000000000000008 
+00001609	.text:sum+AC	movsxd  rdx, eax	RDX=0000000000000008 
+00001609	.text:sum+AF	mov     rax, [rbp+var_130]	RAX=00007FFE59FBBD70 
+00001609	.text:sum+B6	add     rax, 8	RAX=00007FFE59FBBD78 PF=1 
+00001609	.text:sum+BA	lea     rcx, [rbp+var_14]	
+00001609	.text:sum+BE	add     rdx, rcx	RDX=00007FFE59FBBE84 AF=1 
+00001609	.text:sum+C1	mov     [rax], rdx	
+00001609	.text:sum+C4	mov     rax, [rbp+var_130]	RAX=00007FFE59FBBD70 
+00001609	.text:sum+CB	add     rax, 8	RAX=00007FFE59FBBD78 AF=0 
+00001609	.text:sum+CF	mov     [rbp+var_130], rax	
+00001609	.text:sum+D6	mov     rax, [rbp+var_128]	RAX=00005569946ED029 
+00001609	.text:sum+DD	add     rax, 4	RAX=00005569946ED02D 
+00001609	.text:sum+E1	mov     [rbp+var_128], rax	
+00001609	.text:sum+E8	jmp     loc_5569944EC9CA	
+00001609	.text:sum:loc_5569944EC9CA	jmp     loc_5569944EC78D	
+00001609	.text:sum:loc_5569944EC78D	mov     rax, [rbp+var_128]	
+00001609	.text:sum+49	movzx   eax, byte ptr [rax]	RAX=00000000000000FC 
+00001609	.text:sum+4C	movzx   eax, al	
+00001609	.text:sum+4F	cmp     eax, 5Bh ; '['	PF=0 
+00001609	.text:sum+52	jz      short loc_5569944EC7DC	
+00001609	.text:sum+54	cmp     eax, 5Bh ; '['	
+00001609	.text:sum+57	jg      short loc_5569944EC7C1	
+00001609	.text:sum:loc_5569944EC7C1	cmp     eax, 67h ; 'g'	PF=1 
+00001609	.text:sum+79	jz      loc_5569944EC8D9	
+00001609	.text:sum+7F	cmp     eax, 0FCh	ZF=1 
+00001609	.text:sum+84	jz      loc_5569944EC87A	
+00001609	.text:sum:loc_5569944EC87A	mov     rax, [rbp+var_128]	RAX=00005569946ED02D 
+00001609	.text:sum+136	add     rax, 1	RAX=00005569946ED02E ZF=0 
+00001609	.text:sum+13A	mov     [rbp+var_128], rax	
+00001609	.text:sum+141	mov     rax, [rbp+var_130]	RAX=00007FFE59FBBD78 
+00001609	.text:sum+148	mov     rdx, [rax]	
+00001609	.text:sum+14B	mov     rax, [rbp+var_130]	
+00001609	.text:sum+152	mov     edx, [rdx]	RDX=000000000000000F 
+00001609	.text:sum+154	mov     [rax], edx	
+00001609	.text:sum+156	jmp     loc_5569944EC9CA	
+00001609	.text:sum:loc_5569944EC9CA	jmp     loc_5569944EC78D	
+00001609	.text:sum:loc_5569944EC78D	mov     rax, [rbp+var_128]	RAX=00005569946ED02E 
+00001609	.text:sum+49	movzx   eax, byte ptr [rax]	RAX=000000000000005A 
+00001609	.text:sum+4C	movzx   eax, al	
+00001609	.text:sum+4F	cmp     eax, 5Bh ; '['	CF=1 AF=1 SF=1 
+00001609	.text:sum+52	jz      short loc_5569944EC7DC	
+00001609	.text:sum+54	cmp     eax, 5Bh ; '['	
+00001609	.text:sum+57	jg      short loc_5569944EC7C1	
+00001609	.text:sum+59	cmp     eax, 3	CF=0 PF=0 AF=0 SF=0 
+00001609	.text:sum+5C	jz      loc_5569944EC927	
+00001609	.text:sum+62	cmp     eax, 5Ah ; 'Z'	PF=1 ZF=1 
+00001609	.text:sum+65	jz      loc_5569944EC99E	
+00001609	.text:sum:loc_5569944EC99E	mov     rax, [rbp+var_128]	RAX=00005569946ED02E 
+00001609	.text:sum+25A	add     rax, 1	RAX=00005569946ED02F PF=0 ZF=0 
+00001609	.text:sum+25E	mov     [rbp+var_128], rax	
+00001609	.text:sum+265	mov     rax, [rbp+var_130]	RAX=00007FFE59FBBD78 
+00001609	.text:sum+26C	mov     eax, [rax]	RAX=000000000000000F 
+00001609	.text:sum+26E	mov     rsi, [rbp+var_8]	RSI=E78D0A907FBDBC00 
+00001609	.text:sum+272	xor     rsi, fs:28h	RSI=0000000000000000 PF=1 ZF=1 
+00001609	.text:sum+27B	jz      short locret_5569944EC9D4	
+00001609	.text:sum:locret_5569944EC9D4	leave	RBP=00007FFE59FBBEE0 RSP=00007FFE59FBBE98 
+00001609	.text:sum+28A	retn	RSP=00007FFE59FBBEA0 
+00001609	.text:main+5B	mov     [rbp+var_8], eax	
+00001609	.text:main+5E	mov     eax, [rbp+var_8]	
+00001609	.text:main+61	mov     [rbp+var_4], eax	
+00001609	.text:main+64	mov     eax, [rbp+var_4]	
+00001609	.text:main+67	mov     esi, eax	RSI=000000000000000F 
+00001609	.text:main+69	lea     rdi, format; \"The sum is %d.\\n\"	RDI=00005569944ECA75 
+00001609	.text:main+70	mov     eax, 0	RAX=0000000000000000 
+00001609	.text:main+75	call    _printf	RSP=00007FFE59FBBE98 
+00001609	.plt:_printf	jmp     cs:printf_ptr	RAX=000000000000000F RCX=0000000000000000 RDX=0000000000000000 RSI=0000556994D4F2A0 RDI=00007FE36CC677E0 RSP=00007FFE59FBBEA0 R9=000000000000000F R10=00005569944ECA82 R11=0000000000000246 PF=0 ZF=0 
+00001609	.text:main+7A	mov     eax, 0	RAX=0000000000000000 
+00001609	.text:main+7F	leave	RBP=0000000000000000 RSP=00007FFE59FBBEE8 
+
